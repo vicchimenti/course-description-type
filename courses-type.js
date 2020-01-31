@@ -31,7 +31,7 @@ try {
     var facultyBioLink = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Faculty Profile Link' output='normal' display_field='value' />");
     var prerequisites = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Prerequisites' output='normal' display_field='value' />");
     var groupDescription = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Group Description' output='normal' display_field='value' />");
-    var keywords = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Keywords' output='normal' display_field='value' />");
+    var keyWords = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Keywords' output='normal' display_field='value' />");
 
 
     /* -- Wrap the content fields -- */
@@ -85,36 +85,37 @@ try {
     // }
 
 
-
-    /* -- Write Program Level 6 Details --*/
-    if (budget != "") {
-      document.write('<div class="row levelSix">');
-      document.write('<div class="col-xs-12 programDetails budget"><h5>Program Budgets</h5>' + budget + '</div>');
-      document.write('</div>');
-    } else {
-      document.write('<div class="row levelSix budget" style="display: none"><h5>No Budget Provided</h5></div>');
-    }
-    /* -- Write Program Level 7 Details --*/
+    /* -- Write Program Level 2 Details --*/
     if (prerequisites != "") {
-      document.write('<div class="row levelSeven">');
-      document.write('<div class="col-xs-12 programDetails prerequisites"><h5>Additional Prerequisites</h5><p>' + prerequisites + '</p></div>');
+      document.write('<div class="row levelTwo">');
+      document.write('<div class="col-xs-12 courseDetails prerequisites"><h5>Prerequisites</h5><p>' + prerequisites + '</p></div>');
       document.write('</div>');
     } else {
-      document.write('<div class="row levelSeven prerequisites" style="display: none"><h5>No Prerequisites Provided</h5></div>');
+      document.write('<div class="row levelTwo courseDetails prerequisites" style="display: none"><h5>No Prerequisites Provided</h5></div>');
     }
-    /* -- Write Program Level 8 Details --*/
+
+    /* -- Write Program Level 3 Details --*/
+    if (groupDescription != "") {
+      document.write('<div class="row levelThree">');
+      document.write('<div class="col-xs-12 courseDetails groupDescription"><h5>Group Description: </h5>' + groupDescription + '</div>');
+      document.write('</div>');
+    } else {
+      document.write('<div class="row levelThree courseDetails" style="display: none"><h5>No Group Description Provided</h5></div>');
+    }
+
+    /* -- Write Program Level 4 Details --*/
     if (keyWords != "") {
       /* -- Keywords is a hidden field that is used to add searchable keywords when creating a program item but is not displayed on the live page -- */
-      document.write('<div class="row levelEight">');
-      document.write('<div class="col-xs-12 programDetails keyWords" style="display: none"><h5>Keywords</h5><p>' + keyWords + '</p></div>');
+      document.write('<div class="row levelFour">');
+      document.write('<div class="col-xs-12 courseDetails keyWords" style="display: none"><h5>Keywords</h5><p>' + keyWords + '</p></div>');
       document.write('</div>');
     } else {
-      document.write('<div class="row levelEight keyWords" style="display: none"><h5>No Keywords Provided</h5></div>');
+      document.write('<div class="row levelFour keyWords" style="display: none"><h5>No Keywords Provided</h5></div>');
     }
 
 
     /* -- Write Closing Tags -- */
-    document.write('');
+    document.write('</div></div>');
     document.write(endingHTML);
 
   /* -- Error Checking -- */
