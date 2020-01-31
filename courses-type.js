@@ -7,6 +7,9 @@
 *   following link:
 *   @see https://www.seattleu.edu/core/for-students/course-descriptions-20sq/
 *
+*   This content type will work in conjunction with the Organizer and each item
+*   will contain one searchable, categorizable course.
+*
 *   @version 1.0
 */
 
