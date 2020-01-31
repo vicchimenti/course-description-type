@@ -43,6 +43,7 @@ try {
     var buttonLink = '<button class="btn btn-link" type="button" id="button<t4 type=\'meta\' meta=\'content_id\' />" data-toggle="collapse" data-target="#collapse<t4 type=\'meta\' meta=\'content_id\' />" aria-expanded="false" aria-controls="collapse<t4 type=\'meta\' meta=\'content_id\' />">';
     var collapseDiv = '<div class="collapse" id="collapse<t4 type=\'meta\' meta=\'content_id\' />">';
 
+
     /* -- Write the card header -- */
     document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, beginningHTML));
     document.write('<div class="card">');
@@ -56,46 +57,35 @@ try {
     document.write('<div class="courseSummary"><h5 class="courseSummary">Course Summary: ' + courseSummary + '</h5></div></div>');
 
 
-
     /* -- Write the collapsible body -- */
     document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, collapseDiv));
 
     /* -- Write Program Cards--*/
-    document.write('<div class="card-body">');
-    document.write('<div class="destinations" style="display: none"><ul class="destination">' + listOfDestinations + '</ul></div>');
-    document.write('<div class="container-fluid">');
+    document.write('<div class="card-body">');              // close this div
+    document.write('<div class="container-fluid">');        // close this div
+
+    /* -- Write the collapsed viewable summary header -- */
+    document.write('<div class="row fullcourseDescriptionWrapper">');
+    document.write('<div class="col-xs-12 col-sm-4 properCourseName"><h5>Proper Course Name: </h5><span class="properCourseName">' + properCourseName + '</span>></div>');
+    document.write('<div class="col-xs-12 col-sm-4 courseDescription"><h5>Course Description: </h5><span class="courseDescription">' + courseDescription + '</span></div></div>');
+
+    /* -- Write Program Level 1 Details --*/
+    document.write('<div class="row levelOne">');
+    document.write('<div class="col-xs-12 col-sm-4 courseDetails term"><h5>Term: </h5><span class="term">' + term + '</span></div>');
+    document.write('<div class="col-xs-12 col-sm-4 courseDetails year"><h5>Year: </h5><span class="year"> ' + year + '</span></div>');
+    document.write('<div class="col-xs-12 col-sm-4 courseDetails faculty"><h5>Faculty: </h5><span class="faculty"> ' + faculty + '</span></div>');
+    document.write('</div>');
+
 
     /* -- Write Program Link- IF not null --*/
-    if (externalWebsiteLink != "") {
-      document.write('<div class="row externalLink boxlinks"><a class="programItemExternalWebsiteLink" target="_blank" href="' + externalWebsiteLink + '">Visit Program Website</a></div>');
-    } else {
-      document.write('<div class="row externalLink" style="display: none"><h1>No Link Provided</h1></div>');
-    }
+    // if (externalWebsiteLink != "") {
+    //   document.write('<div class="row externalLink boxlinks"><a class="programItemExternalWebsiteLink" target="_blank" href="' + externalWebsiteLink + '">Visit Program Website</a></div>');
+    // } else {
+    //   document.write('<div class="row externalLink" style="display: none"><h1>No Link Provided</h1></div>');
+    // }
 
-    /* -- Write Program Level 1 Summary Stats --*/
-    document.write('<div class="row levelOne">');
-    document.write('<div class="col-xs-12 col-sm-4 programDetails fees"><h5>SU Program Fee</h5><ul class="programFee">' + listOfProgramFees + '</ul></div>');
-    document.write('<div class="col-xs-12 col-sm-4 programDetails gradePoint"><h5>GPA</h5><ul class="gpa"> ' + listOfGPA + '</ul></div>');
-    document.write('<div class="col-xs-12 col-sm-4 programDetails types"><h5>Type</h5><ul class="programType"> ' + listOfTypes + '</ul></div>');
-    document.write('</div>');
-    /* -- Write Program Level 2 Summary Stats --*/
-    document.write('<div class="row levelTwo">');
-    document.write('<div class="col-xs-12 col-sm-4 programDetails languages"><h5>Language</h5><ul class="language">' + listOfLanguages + '</ul></div>');
-    document.write('<div class="col-xs-12 col-sm-4 programDetails providers"><h5>Providers</h5><ul class="provider">' + listOfProviders + '</ul></div>');
-    document.write('<div class="col-xs-12 col-sm-4 programDetails housingAccommodations"><h5>Housing</h5><ul class="housing"> ' + listOfHousing + '</ul></div>');
-    document.write('</div>');
-    /* -- Write Program Level 3 Details --*/
-    document.write('<div class="row levelThree">');
-    document.write('<div class="col-xs-12 programDetails terms"><h5>Term</h5><ul class="term">' + listOfTerms + '</ul></div>');
-    document.write('</div>');
-    /* -- Write Program Level 4 Details --*/
-    document.write('<div class="row levelFour">');
-    document.write('<div class="col-xs-12 programDetails features"><h5>Features</h5><ul class="feature">' + listOfFeatures + '</ul></div>');
-    document.write('</div>');
-    /* -- Write Program Level 5 Details --*/
-    document.write('<div class="row levelFive">');
-    document.write('<div class="col-xs-12 programDetails fieldOfStudy"><h5>Field of Study</h5><ul class="field">' + listOfStudyAreas + '</ul></div>');
-    document.write('</div>');
+
+
     /* -- Write Program Level 6 Details --*/
     if (budget != "") {
       document.write('<div class="row levelSix">');
