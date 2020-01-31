@@ -28,7 +28,7 @@ try {
     var term = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Term' output='normal' display_field='value' />");
     var year = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Year' output='normal' display_field='value' />");
     var faculty = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Faculty' output='normal' display_field='value' />");
-    var facultyBioLink = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Faculty Profile Link' output='normal' display_field='value' />");
+    // var facultyBioLink = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Faculty Profile Link' output='normal' display_field='value' />");
     var prerequisites = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Prerequisites' output='normal' display_field='value' />");
     var groupDescription = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Group Description' output='normal' display_field='value' />");
     var keyWords = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Keywords' output='normal' display_field='value' />");
@@ -53,7 +53,8 @@ try {
 
     /* -- Write the collapsed viewable summary header -- */
     document.write('<div class="row courseSummaryWrapper">');
-    document.write('<div class="col-xs-12 col-sm-4 courseSummaryHeader"><h5>Course Number: </h5><span class="courseNumber">' + courseNumber + '</span><h5>Section: </h5><span class="section">' + section + '</span><h5>Course Type: </h5><span class="courseType">' + courseType + '</span><h5>Module: </h5><span class="courseModule">' + courseModule + '</span></div>');
+    document.write('<div class="col-xs-12 col-sm-4 courseSummaryHeader">');
+    document.write('<h5>Course Number: </h5><span class="courseNumber">' + courseNumber + '</span><h5>Section: </h5><span class="section">' + section + '</span><h5>Course Type: </h5><span class="courseType">' + courseType + '</span><h5>Module: </h5><span class="courseModule">' + courseModule + '</span></div>');
     document.write('<div class="courseSummary"><h5 class="courseSummary">Course Summary: ' + courseSummary + '</h5></div></div>');
 
 
@@ -72,8 +73,8 @@ try {
     /* -- Write Program Level 1 Details --*/
     document.write('<div class="row levelOne">');
     document.write('<div class="col-xs-12 col-sm-4 courseDetails term"><h5>Term: </h5><span class="term">' + term + '</span></div>');
-    document.write('<div class="col-xs-12 col-sm-4 courseDetails year"><h5>Year: </h5><span class="year"> ' + year + '</span></div>');
-    document.write('<div class="col-xs-12 col-sm-4 courseDetails faculty"><h5>Faculty: </h5><span class="faculty"> ' + faculty + '</span></div>');
+    document.write('<div class="col-xs-12 col-sm-4 courseDetails year"><h5>Year: </h5><span class="year">' + year + '</span></div>');
+    document.write('<div class="col-xs-12 col-sm-4 courseDetails faculty"><h5>Faculty: </h5><span class="faculty">' + faculty + '</span></div>');
     document.write('</div>');
 
 
