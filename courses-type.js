@@ -1,19 +1,20 @@
-/***
-*   @author Victor Chimenti, MSCS 2020
-*   @file course-type.js
-*
-*   This new content type is being adapted from the education abroad program type
-*   and is intended to replace the plain text course desctiptions shown in the
-*   following link:
-*   @see https://www.seattleu.edu/core/for-students/course-descriptions-20sq/
-*
-*   This content type will work in conjunction with the Organizer and each item
-*   will contain one searchable, categorizable course.
-*
-*   @version 1.0
-*/
-
 <script>
+  /***
+  *   @author Victor Chimenti, MSCS 2020
+  *   @file course-type.js
+  *
+  *   This new content type is being adapted from the education abroad program type
+  *   and is intended to replace the plain text course desctiptions shown in the
+  *   following link:
+  *   @see https://www.seattleu.edu/core/for-students/course-descriptions-20sq/
+  *
+  *   This content type will work in conjunction with the Organizer and each item
+  *   will contain one searchable, categorizable course.
+  *
+  *   @version 1.0
+  */
+
+
 
   try {
       /* -- Initialize function scope variables -- */
