@@ -81,13 +81,13 @@
     text-decoration: none;
 }
 
-.courseItemWrapper .courseItem button span.courseSummaryWrapper {
+.courseItemWrapper .courseItem button span.courseTitle {
     display: inline-block;
     font-size: 2.0rem;
     padding-bottom: 5px;
 }
 
-.courseItemWrapper .courseItem button:hover span.courseSummaryWrapper {
+.courseItemWrapper .courseItem button:hover span.courseTitle {
     text-decoration: underline;
 }
 
@@ -110,19 +110,19 @@
     display: none;
 }
 
-h5.programDestination {
+/* h5.programDestination {
     font-family: sans-serif;
     padding-left: 10px;
-}
+} */
 
-@media (max-width:767.999px) {
+/* @media (max-width:767.999px) {
     h5.programDestination {
         padding-left: 30px;
     }
-}
+} */
 
 
-.educationAbroadItemWrapper .educationAbroadItem .descriptionWrapper {
+.courseItemWrapper .courseItem .courseSummaryWrapper {
     color: black;
     display: block;
     font-size: 1.5rem;
@@ -134,27 +134,27 @@ h5.programDestination {
     text-decoration: none;
 }
 
-figure.programImageWrapper {
+/* figure.programImageWrapper {
     border: 1px solid #999;
     display: inline-block;
     float: right;
     height: auto;
     margin: 0 0 10px 20px;
     max-width: 50%;
-}
+} */
 
-figure img.programImage {
+/* figure img.programImage {
     max-height: 225px;
     padding: 15px 15px 10px 15px;
     vertical-align: top;
-}
+} */
 
-figure figcaption.programImageCaption {
+/* figure figcaption.programImageCaption {
     padding-bottom: 5px;
     text-align: center;
-}
+} */
 
-@media (max-width: 338px) {
+/* @media (max-width: 338px) {
     figure figcaption.programImageCaption {
         font-size: x-small;
     }
@@ -172,20 +172,20 @@ figure figcaption.programImageCaption {
         float: none;
         vertical-align: top;
     }
-}
+} */
 
 @media (max-width:767.999px) {
-    .educationAbroadItemWrapper .educationAbroadItem .descriptionWrapper {
+    .courseItemWrapper .courseItem .courseSummaryWrapper {
         margin-bottom: 5px;
         padding-bottom: 5px;
     }
 }
 
-.educationAbroadItemWrapper .educationAbroadItem .descriptionWrapper p.programDescription {
+.courseItemWrapper .courseItem .courseSummaryWrapper p.courseSummary {
     min-height: 230px;
 }
 
-.educationAbroadItemWrapper .educationAbroadItem .card-body {
+.courseItemWrapper .courseItem .card-body {
     color: black;
     display: block;
     font-size: 1.5rem;
@@ -200,21 +200,21 @@ figure figcaption.programImageCaption {
     height: auto;
 }
 
-.educationAbroadItemWrapper .educationAbroadItem .programCity {
+/* .courseItemWrapper .courseItem .programCity {
     padding-left: 20px;
-}
+} */
 
-.educationAbroadItemWrapper .educationAbroadItem .card-img-top {
+/* .courseItemWrapper .courseItem .card-img-top {
     height: auto;
     max-width: 600px;
     width: 100%;
-}
+} */
 
-.educationAbroadItemWrapper .educationAbroadItem #image-link {
+/* .educationAbroadItemWrapper .educationAbroadItem #image-link {
     padding-bottom: 30px;
-}
+} */
 
-.educationAbroadItemWrapper .educationAbroadItem .externalLink {
+/* .educationAbroadItemWrapper .educationAbroadItem .externalLink {
     padding-left: 20px;
 }
 
@@ -238,24 +238,24 @@ figure figcaption.programImageCaption {
 
 .standardContent .boxlinks a.programItemExternalWebsiteLink:visited {
     text-decoration: none;
-}
+} */
 
 
-.educationAbroadItemWrapper .educationAbroadItem .card-body .programDetails {
+.courseItemWrapper .courseItem .card-body .courseDetails {
     padding: 20px;
 }
 
-.educationAbroadItemWrapper .educationAbroadItem .card-body .programDetails p {
+.courseItemWrapper .courseItem .card-body .courseDetails p {
     float: left;
     margin: 0 10px 10px 0;
     padding: 5px;
 }
 
-.educationAbroadItemWrapper .educationAbroadItem .card-body .programDetails h5 {
+.courseItemWrapper .courseItem .card-body .courseDetails h5 {
     font-family: sans-serif;
 }
 
-.educationAbroadItemWrapper .educationAbroadItem .card-body .programDetails ul li {
+/* .courseItemWrapper .courseItem .card-body .courseDetails ul li {
     background: #4d4d4d;
     color: #ffffff;
     float: left;
@@ -266,4 +266,4 @@ figure figcaption.programImageCaption {
 
 .educationAbroadItemWrapper .educationAbroadItem .card-body .programDetails ul li:before {
     content: '';
-}
+} */
