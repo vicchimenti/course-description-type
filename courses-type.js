@@ -53,7 +53,7 @@ try {
   document.write('<span class="courseTitle"><i class="fas fa-minus"></i><i class="fas fa-plus"></i><span class="courseTitle">' + commonName + '</span></span></button>');
 
   /* -- Write the open viewable summary header -- */
-  document.write('<div class="courseSummaryWrapper">');
+  document.write('<div class="col-xs-12 courseSummaryWrapper">');
   document.write('<div class="row col-xs-12 courseSummaryHeader">');
   document.write('<div class="col-xs-12 col-sm-3 courseNumber"><h5>Course Number: </h5><span class="courseNumber">' + courseNumber + '</span></div>');
   document.write('<div class="col-xs-12 col-sm-3 courseSection"><h5>Section: </h5><span class="courseSection">' + courseSection + '</span></div>');
@@ -70,9 +70,9 @@ try {
   document.write('<div class="container-fluid">');        // close this div?
 
   /* -- Write the collapsed viewable summary header -- */
-  document.write('<div class="row fullcourseDescriptionWrapper">');
-  document.write('<div class="col-xs-12 col-sm-4 properCourseName"><h5>Proper Course Name: </h5><span class="properCourseName">' + properCourseName + '</span>></div>');
-  document.write('<div class="col-xs-12 col-sm-4 courseDescription"><h5>Course Description: </h5><span class="courseDescription">' + courseDescription + '</span></div></div>');
+  document.write('<div class="col-xs-12 fullcourseDescriptionWrapper">');
+  document.write('<div class="row col-xs-12 properCourseName"><h5>Proper Course Name: </h5><span class="properCourseName">' + properCourseName + '</span>></div>');
+  document.write('<div class="row col-xs-12 courseDescription"><h5>Course Description: </h5><span class="courseDescription">' + courseDescription + '</span></div></div>');
 
   /* -- Write Program Level 1 Details --*/
   document.write('<div class="row levelOne">');
