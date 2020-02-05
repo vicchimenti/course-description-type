@@ -52,10 +52,14 @@ try {
   document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, buttonLink));
   document.write('<span class="courseTitle"><i class="fas fa-minus"></i><i class="fas fa-plus"></i><span class="courseTitle">' + commonName + '</span></span></button>');
 
-  /* -- Write the collapsed viewable summary header -- */
-  document.write('<div class="row courseSummaryWrapper">');
-  document.write('<div class="col-xs-12 col-sm-4 courseSummaryHeader"><h5>Course Number: </h5><span class="courseNumber">' + courseNumber + '</span><h5>Section: </h5><span class="courseSection">' + courseSection + '</span><h5>Course Type: </h5><span class="courseType">' + courseType + '</span><h5>Module: </h5><span class="ucorModule">' + ucorModule + '</span></div>');
-  document.write('<div class="courseSummary"><h5 class="courseSummary">Course Summary: ' + courseSummary + '</h5></div></div>');
+  /* -- Write the open viewable summary header -- */
+  document.write('<div class="courseSummaryWrapper">');
+  document.write('<div class="row col-xs-12 courseSummaryHeader">');
+  document.write('<div class="col-xs-12 col-sm-3 courseNumber"><h5>Course Number: </h5><span class="courseNumber">' + courseNumber + '</span></div>');
+  document.write('<div class="col-xs-12 col-sm-3 courseSection"><h5>Section: </h5><span class="courseSection">' + courseSection + '</span></div>');
+  document.write('<div class="col-xs-12 col-sm-3 courseType"><h5>Course Type: </h5><span class="courseType">' + courseType + '</span></div>');
+  document.write('<div class="col-xs-12 col-sm-3 ucorModule"><h5>Module: </h5><span class="ucorModule">' + ucorModule + '</span></div></div>'); // close the row div
+  document.write('<div class="row col-xs-12 courseSummary"><h5 class="courseSummary">Course Summary: ' + courseSummary + '</h5></div></div></div>'); // close all open courseSummaryWrapper divs and the cardHeader
 
 
   /* -- Write the collapsible body -- */
@@ -107,7 +111,7 @@ try {
 
 
   /* -- Write Closing Tags -- */
-  document.write('</div></div></div></div></div>');
+  document.write('</div></div></div></div>');
   document.write(endingHTML);
 
 /* -- Error Checking -- */
