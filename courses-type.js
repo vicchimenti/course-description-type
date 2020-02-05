@@ -77,14 +77,6 @@ try {
   document.write('<div class="col-xs-12 col-sm-4 courseDetails faculty"><h5>Faculty: </h5><span class="faculty">' + faculty + '</span></div></div>');
 
 
-  /* -- Write Program Link- IF not null --*/
-  // if (externalWebsiteLink != "") {
-  //   document.write('<div class="row externalLink boxlinks"><a class="programItemExternalWebsiteLink" target="_blank" href="' + externalWebsiteLink + '">Visit Program Website</a></div>');
-  // } else {
-  //   document.write('<div class="row externalLink" style="display: none"><h1>No Link Provided</h1></div>');
-  // }
-
-
   /* -- Write Program Level 2 Details --*/
   if (prerequisites != "") {
     document.write('<div class="row levelTwo">');
@@ -97,7 +89,7 @@ try {
   /* -- Write Program Level 3 Details --*/
   if (groupDescription != "") {
     document.write('<div class="row levelThree">');
-    document.write('<div class="col-xs-12 courseDetails groupDescription"><h5>Group Description: </h5><p>' + groupDescription + '</p></div>');
+    document.write('<div class="col-xs-12 courseDetails groupDescription"><h5>Group Description: </h5><p class="standardContent">' + groupDescription + '</p></div>');
     document.write('</div>');
   } else {
     document.write('<div class="row levelThree courseDetails" style="display: none"><h5>No Group Description Provided</h5></div>');
