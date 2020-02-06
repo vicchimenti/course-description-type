@@ -1,4 +1,5 @@
 <!-
+/**
 *   @author Victor Chimenti, MSCS 2020
 *   @file filter-fields.html
 *   @see UCOR, UNIVERSITY CORE CURRICULUM, https://www.seattleu.edu/core/for-students/course-descriptions-20sq/
@@ -6,7 +7,8 @@
 *
 *   UCOR Courses Content Type Filter/Search fields
 *   Intneded to reduce the number of Core Courses that render based on user provided parameters
-*
+*   User may filter by keyword input, course type, term, module, common course name, and faculty
+*/
 ->
 
 <form action="#">
@@ -278,73 +280,5 @@
                 </select>
             </div>
         </div>
-
-        <!-- Search By Destination -->
-        <div class="col-xs-12 col-md-4 input input-wrap">
-            <label for="SelectBox-ByDestination">Destination</label>
-            <div class="select-input">
-                <select name="SelectBox-ByDestination" id="SelectBox-ByDestination">
-                    <option value="" selected>Select a Destination...</option>
-                    <option value="Vietnam">Vietnam</option>
-                    <option value="Other Foreign Country">Other Foreign Country</option>
-                </select>
-            </div>
-        </div>
-
-
-
-        <!-- Search By Fees -->
-        <div class="col-xs-12 col-md-4 input input-wrap">
-            <label for="SelectBox-ByProgramFee">SU Program Fee</label>
-            <div class="select-input">
-                <select name="SelectBox-ByProgramFee" id="SelectBox-ByProgramFee">
-                    <option value="" selected>Select a Fee...</option>
-                    <option value="0">0</option>
-                    <option value="2000">2,000</option>
-                    <option value="4000">4,000</option>
-                    <option value="6000">6,000</option>
-                    <option value="8000">8,000</option>
-                    <option value="10000">10,000</option>
-                    <option value="12000">12,000</option>
-                    <option value="Varies">Varies</option>
-                    <option value="N/A">N/A</option>
-                </select>
-            </div>
-        </div>
-
-        <!-- Search By Feature -->
-        <div class="col-xs-12 col-md-4 input input-wrap">
-            <label for="SelectBox-ByFeature">Features</label>
-            <div class="select-input">
-                <select name="SelectBox-ByFeature" id="SelectBox-ByFeature">
-                    <option value="" selected>Select a Feature...</option>
-                    <option value="Courses With Locals">Courses With Locals</option>
-                    <option value="Courses With Study Abroad Students">Courses With Study Abroad Students</option>
-                    <option value="Host University Program">Host University Program</option>
-                    <option value="Hybrid Program">Hybrid Program</option>
-                    <option value="Internship Opportunities">Internship Opportunities</option>
-                    <option value="Language Intensive Program">Language Intensive Program</option>
-                    <option value="No Foreign Language Pre-Requisites">No Foreign Language Pre-Requisites</option>
-                    <option value="Research Opportunities">Research Opportunities</option>
-                    <option value="Study Center Program">Study Center Program</option>
-                </select>
-            </div>
-        </div>
-
-        <!-- Search By Field of Study -->
-        <div class="col-xs-12 col-md-4 input input-wrap">
-            <label for="SelectBox-ByFieldOfStudy">Field of Study</label>
-            <div class="select-input">
-                <select name="SelectBox-ByFieldOfStudy" id="SelectBox-ByFieldOfStudy">
-                    <option value="" selected>Select Field of Study...</option>
-                    <option value="Accounting">Accounting</option>
-                    <option value="Arabic">Arabic</option>
-                    <option value="Art History">Art History</option>
-                    <option value="Writing Studies">Writing Studies</option>
-                </select>
-            </div>
-        </div>
-
-
     </fieldset>
 </form>
