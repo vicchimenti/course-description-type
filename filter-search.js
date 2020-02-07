@@ -82,7 +82,6 @@ $(function () {
                     $(function resultsMessage() {
                         // assign array of currently visible content items
                         let visibleItems = $('.courseItemWrapper').not('.hideByText, .hideByTerm, .hideByModule, .hideByCommon, .hideByFaculty');
-                        console.log("visibleItems length: " + visibleItems.length);
                         // check to see if array is empty
                         if (visibleItems.length == 0) {
                             // when array is empty show the results message
