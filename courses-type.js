@@ -59,7 +59,7 @@ try {
   document.write('<div class="col-xs-12 col-sm-3 courseSections"><h5>Section: </h5><span class="courseSection">' + courseSection + '</span></div>');
   document.write('<div class="col-xs-12 col-sm-3 courseTypes"><h5>Course Type: </h5><span class="courseType">' + courseType + '</span></div>');
   document.write('<div class="col-xs-12 col-sm-3 ucorModules"><h5>Module: </h5><span class="ucorModule">' + ucorModule + '</span></div></div>'); // close the row div
-  document.write('<div class="row col-xs-12 courseSummaries"><h5 class="courseSummary">Course Summary: ' + courseSummary + '</h5></div></div></div>'); // close all open courseSummaryWrapper divs and the cardHeader
+  document.write('<div class="row col-xs-12 courseSummaries"><h5 class="courseSummary">Course Summary:</h5><p class ="courseSummary">' + courseSummary + '</p></div></div></div>'); // close all open courseSummaryWrapper divs and the cardHeader
 
 
   /* -- Write the collapsible body -- */
