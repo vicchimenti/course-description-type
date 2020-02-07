@@ -55,11 +55,11 @@ try {
   /* -- Write the open viewable summary header -- */
   document.write('<div class="col-xs-12 courseSummaryWrapper">');
   document.write('<div class="row col-xs-12 courseSummaryHeader">');
-  document.write('<div class="col-xs-12 col-sm-3 courseNumber"><h5>Course Number: </h5><span class="courseNumber">' + courseNumber + '</span></div>');
-  document.write('<div class="col-xs-12 col-sm-3 courseSection"><h5>Section: </h5><span class="courseSection">' + courseSection + '</span></div>');
-  document.write('<div class="col-xs-12 col-sm-3 courseType"><h5>Course Type: </h5><span class="courseType">' + courseType + '</span></div>');
-  document.write('<div class="col-xs-12 col-sm-3 ucorModule"><h5>Module: </h5><span class="ucorModule">' + ucorModule + '</span></div></div>'); // close the row div
-  document.write('<div class="row col-xs-12 courseSummary"><h5 class="courseSummary">Course Summary: ' + courseSummary + '</h5></div></div></div>'); // close all open courseSummaryWrapper divs and the cardHeader
+  document.write('<div class="col-xs-12 col-sm-3 courseNumbers"><h5>Course Number: </h5><span class="courseNumber">' + courseNumber + '</span></div>');
+  document.write('<div class="col-xs-12 col-sm-3 courseSections"><h5>Section: </h5><span class="courseSection">' + courseSection + '</span></div>');
+  document.write('<div class="col-xs-12 col-sm-3 courseTypes"><h5>Course Type: </h5><span class="courseType">' + courseType + '</span></div>');
+  document.write('<div class="col-xs-12 col-sm-3 ucorModules"><h5>Module: </h5><span class="ucorModule">' + ucorModule + '</span></div></div>'); // close the row div
+  document.write('<div class="row col-xs-12 courseSummaries"><h5 class="courseSummary">Course Summary: ' + courseSummary + '</h5></div></div></div>'); // close all open courseSummaryWrapper divs and the cardHeader
 
 
   /* -- Write the collapsible body -- */
@@ -71,29 +71,29 @@ try {
 
   /* -- Write the collapsed viewable summary header -- */
   document.write('<div class="col-xs-12 fullcourseDescriptionWrapper">');
-  document.write('<div class="row col-xs-12 properCourseName"><h5>Proper Course Name: </h5><span class="properCourseName">' + properCourseName + '</span>></div>');
-  document.write('<div class="row col-xs-12 courseDescription"><h5>Course Description: </h5><span class="courseDescription">' + courseDescription + '</span></div></div>');
+  document.write('<div class="row col-xs-12 properCourseNames"><h5>Proper Course Name: </h5><span class="properCourseName">' + properCourseName + '</span>></div>');
+  document.write('<div class="row col-xs-12 courseDescriptions"><h5>Course Description: </h5><span class="courseDescription">' + courseDescription + '</span></div></div>');
 
   /* -- Write Program Level 1 Details --*/
   document.write('<div class="row levelOne">');
-  document.write('<div class="col-xs-12 col-sm-4 courseDetails term"><h5>Term: </h5><span class="term">' + term + '</span></div>');
-  document.write('<div class="col-xs-12 col-sm-4 courseDetails year"><h5>Year: </h5><span class="year">' + year + '</span></div>');
-  document.write('<div class="col-xs-12 col-sm-4 courseDetails faculty"><h5>Faculty: </h5><span class="faculty">' + faculty + '</span></div></div>');
+  document.write('<div class="col-xs-12 col-sm-4 courseDetails terms"><h5>Term: </h5><span class="term">' + term + '</span></div>');
+  document.write('<div class="col-xs-12 col-sm-4 courseDetails years"><h5>Year: </h5><span class="year">' + year + '</span></div>');
+  document.write('<div class="col-xs-12 col-sm-4 courseDetails instructors"><h5>Faculty: </h5><span class="faculty">' + faculty + '</span></div></div>');
 
 
   /* -- Write Program Level 2 Details --*/
   if (prerequisites != "") {
     document.write('<div class="row levelTwo">');
-    document.write('<div class="col-xs-12 courseDetails prerequisites"><h5>Prerequisites</h5><p>' + prerequisites + '</p></div>');
+    document.write('<div class="col-xs-12 courseDetails prerequisite"><h5>Prerequisites</h5><p class="prerequisites">' + prerequisites + '</p></div>');
     document.write('</div>');
   } else {
-    document.write('<div class="row levelTwo courseDetails prerequisites" style="display: none"><h5>No Prerequisites Provided</h5></div>');
+    document.write('<div class="row levelTwo courseDetails prerequisite" style="display: none"><h5>No Prerequisites Provided</h5></div>');
   }
 
   /* -- Write Program Level 3 Details --*/
   if (groupDescription != "") {
     document.write('<div class="row levelThree">');
-    document.write('<div class="col-xs-12 courseDetails groupDescription"><h5>Group Description: </h5><p class="standardContent">' + groupDescription + '</p></div>');
+    document.write('<div class="col-xs-12 courseDetails groupDescriptions"><h5>Group Description: </h5><p class="standardContent groupDescription">' + groupDescription + '</p></div>');
     document.write('</div>');
   } else {
     document.write('<div class="row levelThree courseDetails" style="display: none"><h5>No Group Description Provided</h5></div>');
@@ -103,7 +103,7 @@ try {
   if (keyWords != "") {
     /* -- Keywords is a hidden field that is used to add searchable keywords when creating a program item but is not displayed on the live page -- */
     document.write('<div class="row levelFour">');
-    document.write('<div class="col-xs-12 courseDetails keyWords" style="display: none"><h5>Keywords</h5><p>' + keyWords + '</p></div>');
+    document.write('<div class="col-xs-12 courseDetails keyWord" style="display: none"><h5>Keywords</h5><p class="keyWords">' + keyWords + '</p></div>');
     document.write('</div>');
   } else {
     document.write('<div class="row levelFour keyWords" style="display: none"><h5>No Keywords Provided</h5></div>');
