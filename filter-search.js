@@ -8,7 +8,7 @@
 *   This script searches the categorized courses content items for matches to the
 *   user selected search parameters in the filter field dropdown menus
 *
-*
+*   @version 1.0
 */
 
 <script>
