@@ -46,7 +46,7 @@
     width: 100%;
 }
 
-.hideByText, .hideByDestination, .hideByTerm, .hideByProgramFee, .hideByFeature, .hideByFieldOfStudy, .hideResultsMessage {
+.hideByText, .hidByTerm, .hideByModule, .hideByCommon, .hideByFaculty, .hideResultsMessage {
     display: none;
 }
 
