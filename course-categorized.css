@@ -56,10 +56,6 @@
     margin: 15px;
 }
 
-/* .standardContent h2.organizerTitle {
-    padding: 0 0 20px 15px;
-} */
-
 .courseItemWrapper .courseItem .card {
     height: auto;
 
@@ -110,18 +106,6 @@
     display: none;
 }
 
-/* h5.programDestination {
-    font-family: sans-serif;
-    padding-left: 10px;
-} */
-
-/* @media (max-width:767.999px) {
-    h5.programDestination {
-        padding-left: 30px;
-    }
-} */
-
-
 .courseItemWrapper .courseItem .courseSummaryWrapper {
     color: black;
     display: block;
@@ -133,46 +117,6 @@
     text-align: left;
     text-decoration: none;
 }
-
-/* figure.programImageWrapper {
-    border: 1px solid #999;
-    display: inline-block;
-    float: right;
-    height: auto;
-    margin: 0 0 10px 20px;
-    max-width: 50%;
-} */
-
-/* figure img.programImage {
-    max-height: 225px;
-    padding: 15px 15px 10px 15px;
-    vertical-align: top;
-} */
-
-/* figure figcaption.programImageCaption {
-    padding-bottom: 5px;
-    text-align: center;
-} */
-
-/* @media (max-width: 338px) {
-    figure figcaption.programImageCaption {
-        font-size: x-small;
-    }
-}
-
-@media (max-width: 256px) {
-    figure figcaption.programImageCaption {
-        font-size: xx-small;
-    }
-}
-
-@media (max-width:767.999px) {
-    figure.programImageWrapper {
-        display: inline-block;
-        float: none;
-        vertical-align: top;
-    }
-} */
 
 @media (max-width:767.999px) {
     .courseItemWrapper .courseItem .courseSummaryWrapper {
@@ -200,47 +144,6 @@
     height: auto;
 }
 
-/* .courseItemWrapper .courseItem .programCity {
-    padding-left: 20px;
-} */
-
-/* .courseItemWrapper .courseItem .card-img-top {
-    height: auto;
-    max-width: 600px;
-    width: 100%;
-} */
-
-/* .educationAbroadItemWrapper .educationAbroadItem #image-link {
-    padding-bottom: 30px;
-} */
-
-/* .educationAbroadItemWrapper .educationAbroadItem .externalLink {
-    padding-left: 20px;
-}
-
-.boxlinks a.programItemExternalWebsiteLink {
-    color: #aa0000;
-    text-decoration: none;
-    width: max-content;
-}
-
-.educationAbroadItemWrapper .standardContent .boxlinks a.programItemExternalWebsiteLink:focus {
-    background: #088099;
-    color: #fff;
-    text-decoration: underline;
-}
-
-.educationAbroadItemWrapper .standardContent .boxlinks a.programItemExternalWebsiteLink:hover {
-    background: #088099;
-    color: #fff;
-    text-decoration: underline;
-}
-
-.standardContent .boxlinks a.programItemExternalWebsiteLink:visited {
-    text-decoration: none;
-} */
-
-
 .courseItemWrapper .courseItem .card-body .courseDetails {
     padding: 20px;
 }
@@ -254,16 +157,3 @@
 .courseItemWrapper .courseItem .card-body .courseDetails h5 {
     font-family: sans-serif;
 }
-
-/* .courseItemWrapper .courseItem .card-body .courseDetails ul li {
-    background: #4d4d4d;
-    color: #ffffff;
-    float: left;
-    line-height: 1.2;
-    margin: 0 10px 10px 0;
-    padding: 5px;
-}
-
-.educationAbroadItemWrapper .educationAbroadItem .card-body .programDetails ul li:before {
-    content: '';
-} */
