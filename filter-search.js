@@ -27,14 +27,14 @@ $(function () {
                     var key = $(this).val().toLowerCase();
                     // filter the education abroad items for the input key
                     $(function () {
-                        $('.educationAbroadItemWrapper').filter(function () {
+                        $('.courseItemWrapper').filter(function () {
                             // when the search key is not present in the item then hide the item
                             $(this).toggleClass('hideByText', !($(this).text().toLowerCase().indexOf(key) > -1));
                         });
                     });
                     $(function resultsMessage() {
                         // assign array of currently visible content items
-                        var visibleItems = $('.educationAbroadItemWrapper').not('.hideByText, .hidByTerm, .hideByModule, .hideByCommon, .hideByFaculty');
+                        var visibleItems = $('.courseItemWrapper').not('.hideByText, .hidByTerm, .hideByModule, .hideByCommon, .hideByFaculty');
                         // check to see if array is empty
                         if (visibleItems.length == 0) {
                             // when array is empty show the results message
@@ -69,19 +69,19 @@ $(function () {
                             var value = $(this).text();
                             // Check to see if the Key and Value are a Match
                             if (value.match(key)) {
-                                $(this).parents('.educationAbroadItemWrapper').removeClass('hideByTerm');
+                                $(this).parents('.courseItemWrapper').removeClass('hideByTerm');
                             } else {
-                                $(this).parents('.educationAbroadItemWrapper').addClass('hideByTerm');
+                                $(this).parents('.courseItemWrapper').addClass('hideByTerm');
                             }
                         });
                     // Else the Search Key is Null so Reset all Content Items to Visible
                     } else {
-                        $('.educationAbroadItemWrapper').removeClass('hideByTerm');
+                        $('.courseItemWrapper').removeClass('hideByTerm');
                     }
                     // check results for null
                     $(function resultsMessage() {
                         // assign array of currently visible content items
-                        var visibleItems = $('.educationAbroadItemWrapper').not('.hideByText, .hidByTerm, .hideByModule, .hideByCommon, .hideByFaculty');
+                        var visibleItems = $('.courseItemWrapper').not('.hideByText, .hidByTerm, .hideByModule, .hideByCommon, .hideByFaculty');
                         // check to see if array is empty
                         if (visibleItems.length == 0) {
                             // when array is empty show the results message
