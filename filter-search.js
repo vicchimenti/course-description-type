@@ -99,188 +99,189 @@ $(function () {
 });
 
 
-//   ***   Program Fee Filter   ***   //
-$(function () {
-    $(window).load(function () {
-        setTimeout(function () {
-            $(function() {
-                $('#SelectBox-ByProgramFee').change(function () {
-                    // Assign Search Key
-                    var key = $(this).val();
-                    // If Search Key is Not Null then Compare to the Term List Items in Each Content Item
-                    if (key) {
-                        $('.programFee').filter(function(i,e) {
-                            var value = $(this).text();
-                            // When the Selected Value is Numeric Compare with Content Items
-                            if (!isNaN(key)) {
-                                // When the Content Item is Numeric Parse for higher/lower values
-                                if ((!isNaN(value)) && (value)) {
-                                    var keyInt = Number(key);
-                                    var valueInt = Number(value);
-                                    // When the Content Value is Lower then Show the Item
-                                    if (keyInt >= valueInt) {
-                                        $(this).parents('.educationAbroadItemWrapper').removeClass('hideByProgramFee');
-                                    // When the Content Value is Higher then Hide the Item
-                                    } else {
-                                        $(this).parents('.educationAbroadItemWrapper').addClass('hideByProgramFee');
-                                    }
-                                // Selected Value is Numeric and the Content Value is Not then Hide it
-                                } else {
-                                    $(this).parents('.educationAbroadItemWrapper').addClass('hideByProgramFee');
-                                }
-                            // When the Selected Value is Not Numeric compare both for a match
-                            } else {
-                                if (value.match(key)) {
-                                    $(this).parents('.educationAbroadItemWrapper').removeClass('hideByProgramFee');
-                                } else {
-                                    $(this).parents('.educationAbroadItemWrapper').addClass('hideByProgramFee');
-                                }
-                            }
-                        });
-                    // When the Selected Value is NULL or Whitespace, reset the group and show all items
-                    } else {
-                        $('.educationAbroadItemWrapper').removeClass('hideByProgramFee');
-                    }
-                    // check results for null
-                    $(function resultsMessage() {
-                        // assign array of currently visible content items
-                        var visibleItems = $('.educationAbroadItemWrapper').not('.hideByText, .hidByTerm, .hideByModule, .hideByCommon, .hideByFaculty');
-                        // check to see if array is empty
-                        if (visibleItems.length == 0) {
-                            // when array is empty show the results message
-                            $('.noResultsToShow').removeClass('hideResultsMessage');
-                        } else {
-                            // when array has content items suppress the results message
-                            $('.noResultsToShow').addClass('hideResultsMessage');
-                        }
-                    });
-                });
-            });
-        }, 10);
-    });
-});
 
 
-//   ***   Destination Filter   ***   //
-$(function () {
-    $(window).load(function () {
-        setTimeout(function () {
-            $(function() {
-                $('#SelectBox-ByDestination').change(function () {
-                    // Assign Search Key
-                    var key = $(this).val();
-                    // If Search Key is Not Null then Compare to the Term List Items in Each Content Item
-                    if (key) {
-                        $('.destination').filter(function(i,e) {
-                            var value = $(this).text();
-                            if (value.match(key)) {
-                                $(this).parents('.educationAbroadItemWrapper').removeClass('hideByDestination');
-                            } else {
-                                $(this).parents('.educationAbroadItemWrapper').addClass('hideByDestination');
-                            }
-                        });
-                    } else {
-                        $('.educationAbroadItemWrapper').removeClass('hideByDestination');
-                    }
-                    // check results for null
-                    $(function resultsMessage() {
-                        // assign array of currently visible content items
-                        var visibleItems = $('.educationAbroadItemWrapper').not('.hideByText, .hidByTerm, .hideByModule, .hideByCommon, .hideByFaculty');
-                        // check to see if array is empty
-                        if (visibleItems.length == 0) {
-                            // when array is empty show the results message
-                            $('.noResultsToShow').removeClass('hideResultsMessage');
-                        } else {
-                            // when array has content items suppress the results message
-                            $('.noResultsToShow').addClass('hideResultsMessage');
-                        }
-                    });
-                });
-            });
-        }, 10);
-    });
-});
 
-//   ***   Feature Filter   ***   //
-$(function () {
-    $(window).load(function () {
-        setTimeout(function () {
-            $(function() {
-                $('#SelectBox-ByFeature').change(function () {
-                    // Assign Search Key
-                    var key = $(this).val();
-                    // If Search Key is Not Null then Compare to the Term List Items in Each Content Item
-                    if (key) {
-                        $('.feature').filter(function(i,e) {
-                            var value = $(this).text();
-                            if (value.match(key)) {
-                                $(this).parents('.educationAbroadItemWrapper').removeClass('hideByFeature');
-                            } else {
-                                $(this).parents('.educationAbroadItemWrapper').addClass('hideByFeature');
-                            }
-                        });
-                    } else {
-                        $('.educationAbroadItemWrapper').removeClass('hideByFeature');
-                    }
-                    // check results for null
-                    $(function resultsMessage() {
-                        // assign array of currently visible content items
-                        var visibleItems = $('.educationAbroadItemWrapper').not('.hideByText, .hidByTerm, .hideByModule, .hideByCommon, .hideByFaculty');
-                        // check to see if array is empty
-                        if (visibleItems.length == 0) {
-                            // when array is empty show the results message
-                            $('.noResultsToShow').removeClass('hideResultsMessage');
-                        } else {
-                            // when array has content items suppress the results message
-                            $('.noResultsToShow').addClass('hideResultsMessage');
-                        }
-                    });
-                });
-            });
-        }, 10);
-    });
-});
+// //   ***   Destination Filter   ***   //
+// $(function () {
+//     $(window).load(function () {
+//         setTimeout(function () {
+//             $(function() {
+//                 $('#SelectBox-ByDestination').change(function () {
+//                     // Assign Search Key
+//                     var key = $(this).val();
+//                     // If Search Key is Not Null then Compare to the Term List Items in Each Content Item
+//                     if (key) {
+//                         $('.destination').filter(function(i,e) {
+//                             var value = $(this).text();
+//                             if (value.match(key)) {
+//                                 $(this).parents('.educationAbroadItemWrapper').removeClass('hideByDestination');
+//                             } else {
+//                                 $(this).parents('.educationAbroadItemWrapper').addClass('hideByDestination');
+//                             }
+//                         });
+//                     } else {
+//                         $('.educationAbroadItemWrapper').removeClass('hideByDestination');
+//                     }
+//                     // check results for null
+//                     $(function resultsMessage() {
+//                         // assign array of currently visible content items
+//                         var visibleItems = $('.educationAbroadItemWrapper').not('.hideByText, .hidByTerm, .hideByModule, .hideByCommon, .hideByFaculty');
+//                         // check to see if array is empty
+//                         if (visibleItems.length == 0) {
+//                             // when array is empty show the results message
+//                             $('.noResultsToShow').removeClass('hideResultsMessage');
+//                         } else {
+//                             // when array has content items suppress the results message
+//                             $('.noResultsToShow').addClass('hideResultsMessage');
+//                         }
+//                     });
+//                 });
+//             });
+//         }, 10);
+//     });
+// });
+
+// //   ***   Feature Filter   ***   //
+// $(function () {
+//     $(window).load(function () {
+//         setTimeout(function () {
+//             $(function() {
+//                 $('#SelectBox-ByFeature').change(function () {
+//                     // Assign Search Key
+//                     var key = $(this).val();
+//                     // If Search Key is Not Null then Compare to the Term List Items in Each Content Item
+//                     if (key) {
+//                         $('.feature').filter(function(i,e) {
+//                             var value = $(this).text();
+//                             if (value.match(key)) {
+//                                 $(this).parents('.educationAbroadItemWrapper').removeClass('hideByFeature');
+//                             } else {
+//                                 $(this).parents('.educationAbroadItemWrapper').addClass('hideByFeature');
+//                             }
+//                         });
+//                     } else {
+//                         $('.educationAbroadItemWrapper').removeClass('hideByFeature');
+//                     }
+//                     // check results for null
+//                     $(function resultsMessage() {
+//                         // assign array of currently visible content items
+//                         var visibleItems = $('.educationAbroadItemWrapper').not('.hideByText, .hidByTerm, .hideByModule, .hideByCommon, .hideByFaculty');
+//                         // check to see if array is empty
+//                         if (visibleItems.length == 0) {
+//                             // when array is empty show the results message
+//                             $('.noResultsToShow').removeClass('hideResultsMessage');
+//                         } else {
+//                             // when array has content items suppress the results message
+//                             $('.noResultsToShow').addClass('hideResultsMessage');
+//                         }
+//                     });
+//                 });
+//             });
+//         }, 10);
+//     });
+// });
 
 
-//   ***   Field of Study Filter   ***   //
-$(function () {
-    $(window).load(function () {
-        setTimeout(function () {
-            $(function() {
-                $('#SelectBox-ByFieldOfStudy').change(function () {
-                    // Assign Search Key
-                    var key = $(this).val();
-                    // If Search Key is Not Null then Compare to the Term List Items in Each Content Item
-                    if (key) {
-                        $('.fieldOfStudy').filter(function(i,e) {
-                            var value = $(this).text();
-                            if (value.match(key)) {
-                                $(this).parents('.educationAbroadItemWrapper').removeClass('hideByFieldOfStudy');
-                            } else {
-                                $(this).parents('.educationAbroadItemWrapper').addClass('hideByFieldOfStudy');
-                            }
-                        });
-                    } else {
-                        $('.educationAbroadItemWrapper').removeClass('hideByFieldOfStudy');
-                    }
-                    // check results for null
-                    $(function resultsMessage() {
-                        // assign array of currently visible content items
-                        var visibleItems = $('.educationAbroadItemWrapper').not('.hideByText, .hidByTerm, .hideByModule, .hideByCommon, .hideByFaculty');
-                        // check to see if array is empty
-                        if (visibleItems.length == 0) {
-                            // when array is empty show the results message
-                            $('.noResultsToShow').removeClass('hideResultsMessage');
-                        } else {
-                            // when array has content items suppress the results message
-                            $('.noResultsToShow').addClass('hideResultsMessage');
-                        }
-                    });
-                });
-            });
-        }, 10);
-    });
-});
+// //   ***   Field of Study Filter   ***   //
+// $(function () {
+//     $(window).load(function () {
+//         setTimeout(function () {
+//             $(function() {
+//                 $('#SelectBox-ByFieldOfStudy').change(function () {
+//                     // Assign Search Key
+//                     var key = $(this).val();
+//                     // If Search Key is Not Null then Compare to the Term List Items in Each Content Item
+//                     if (key) {
+//                         $('.fieldOfStudy').filter(function(i,e) {
+//                             var value = $(this).text();
+//                             if (value.match(key)) {
+//                                 $(this).parents('.educationAbroadItemWrapper').removeClass('hideByFieldOfStudy');
+//                             } else {
+//                                 $(this).parents('.educationAbroadItemWrapper').addClass('hideByFieldOfStudy');
+//                             }
+//                         });
+//                     } else {
+//                         $('.educationAbroadItemWrapper').removeClass('hideByFieldOfStudy');
+//                     }
+//                     // check results for null
+//                     $(function resultsMessage() {
+//                         // assign array of currently visible content items
+//                         var visibleItems = $('.educationAbroadItemWrapper').not('.hideByText, .hidByTerm, .hideByModule, .hideByCommon, .hideByFaculty');
+//                         // check to see if array is empty
+//                         if (visibleItems.length == 0) {
+//                             // when array is empty show the results message
+//                             $('.noResultsToShow').removeClass('hideResultsMessage');
+//                         } else {
+//                             // when array has content items suppress the results message
+//                             $('.noResultsToShow').addClass('hideResultsMessage');
+//                         }
+//                     });
+//                 });
+//             });
+//         }, 10);
+//     });
+// });
 
+// //   ***   Program Fee Filter   ***   //
+// $(function () {
+//     $(window).load(function () {
+//         setTimeout(function () {
+//             $(function() {
+//                 $('#SelectBox-ByProgramFee').change(function () {
+//                     // Assign Search Key
+//                     var key = $(this).val();
+//                     // If Search Key is Not Null then Compare to the Term List Items in Each Content Item
+//                     if (key) {
+//                         $('.programFee').filter(function(i,e) {
+//                             var value = $(this).text();
+//                             // When the Selected Value is Numeric Compare with Content Items
+//                             if (!isNaN(key)) {
+//                                 // When the Content Item is Numeric Parse for higher/lower values
+//                                 if ((!isNaN(value)) && (value)) {
+//                                     var keyInt = Number(key);
+//                                     var valueInt = Number(value);
+//                                     // When the Content Value is Lower then Show the Item
+//                                     if (keyInt >= valueInt) {
+//                                         $(this).parents('.educationAbroadItemWrapper').removeClass('hideByProgramFee');
+//                                     // When the Content Value is Higher then Hide the Item
+//                                     } else {
+//                                         $(this).parents('.educationAbroadItemWrapper').addClass('hideByProgramFee');
+//                                     }
+//                                 // Selected Value is Numeric and the Content Value is Not then Hide it
+//                                 } else {
+//                                     $(this).parents('.educationAbroadItemWrapper').addClass('hideByProgramFee');
+//                                 }
+//                             // When the Selected Value is Not Numeric compare both for a match
+//                             } else {
+//                                 if (value.match(key)) {
+//                                     $(this).parents('.educationAbroadItemWrapper').removeClass('hideByProgramFee');
+//                                 } else {
+//                                     $(this).parents('.educationAbroadItemWrapper').addClass('hideByProgramFee');
+//                                 }
+//                             }
+//                         });
+//                     // When the Selected Value is NULL or Whitespace, reset the group and show all items
+//                     } else {
+//                         $('.educationAbroadItemWrapper').removeClass('hideByProgramFee');
+//                     }
+//                     // check results for null
+//                     $(function resultsMessage() {
+//                         // assign array of currently visible content items
+//                         var visibleItems = $('.educationAbroadItemWrapper').not('.hideByText, .hidByTerm, .hideByModule, .hideByCommon, .hideByFaculty');
+//                         // check to see if array is empty
+//                         if (visibleItems.length == 0) {
+//                             // when array is empty show the results message
+//                             $('.noResultsToShow').removeClass('hideResultsMessage');
+//                         } else {
+//                             // when array has content items suppress the results message
+//                             $('.noResultsToShow').addClass('hideResultsMessage');
+//                         }
+//                     });
+//                 });
+//             });
+//         }, 10);
+//     });
+// });
 
 </script>
