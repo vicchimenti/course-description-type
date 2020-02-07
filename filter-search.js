@@ -68,7 +68,7 @@ $(function () {
                         $('.term').filter(function(i,e) {
                             var value = $(this).text();
                             // Check to see if the Key and Value are a Match
-                            if (value.contains(key)) {
+                            if (value.is(':contains(key)')) {
                                 $(this).parents('.courseItemWrapper').removeClass('hideByTerm');
                             } else {
                                 $(this).parents('.courseItemWrapper').addClass('hideByTerm');
