@@ -52,6 +52,53 @@ $(function () {
 });
 
 
+//   ***   Type Filter   ***   //
+$(function () {
+    // After the DOM is ready, Wait until the window loads
+    $(window).load(function () {
+        // Once window loads set a timeout delay
+        setTimeout(function () {
+            $(function() {
+                // When the Dropdown Menu Selector Course Types Change - Execute change function
+                $('#SelectBox-ByType').change(function () {
+                    // Assign Search Key
+                    let key = $(this).val();
+                    // If Search Key is Not Null then Compare to the Type List Items in Each Content Item
+                    if (key) {
+                        $('.courseType').filter(function(i,e) {
+                            var value = $(this).text();
+                            // Check to see if the Key and Value are a Match
+                            if (value.match(key)) {
+                                $(this).parents('.courseItemWrapper').removeClass('hideByType');
+                            } else {
+                                $(this).parents('.courseItemWrapper').addClass('hideByType');
+                            }
+                        });
+                    // Else the Search Key is Null so Reset all Content Items to Visible
+                    } else {
+                        $('.courseItemWrapper').removeClass('hideByType');
+                    }
+                    // check results for null
+                    $(function resultsMessage() {
+                        // assign array of currently visible content items
+                        let visibleItems = $('.courseItemWrapper').not('.hideByText, hideByType, .hideByTerm, .hideByModule, .hideByCommon, .hideByFaculty');
+                        // check to see if array is empty
+                        if (visibleItems.length == 0) {
+                            // when array is empty show the results message
+                            $('.noResultsToShow').removeClass('hideResultsMessage');
+                        } else {
+                            // when array has content items suppress the results message
+                            $('.noResultsToShow').addClass('hideResultsMessage');
+                        }
+                    });
+                });
+            });
+        // Delay the change function
+        }, 10);
+    });
+});
+
+
 //   ***   Term Filter   ***   //
 $(function () {
     // After the DOM is ready, Wait until the window loads
@@ -81,7 +128,7 @@ $(function () {
                     // check results for null
                     $(function resultsMessage() {
                         // assign array of currently visible content items
-                        let visibleItems = $('.courseItemWrapper').not('.hideByText, .hideByTerm, .hideByModule, .hideByCommon, .hideByFaculty');
+                        let visibleItems = $('.courseItemWrapper').not('.hideByText, hideByType, .hideByTerm, .hideByModule, .hideByCommon, .hideByFaculty');
                         // check to see if array is empty
                         if (visibleItems.length == 0) {
                             // when array is empty show the results message
