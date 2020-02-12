@@ -1,6 +1,6 @@
   /***
   *   @author Victor Chimenti, MSCS 2020
-  *   @file course-type.js
+  *   @file course-type2.js
   *
   *   This new content type is being adapted from the education abroad program type
   *   and is intended to replace the plain text course desctiptions shown in the
@@ -10,7 +10,7 @@
   *   This content type will work in conjunction with the Organizer and each item
   *   will contain one searchable, categorizable course.
   *
-  *   @version 1.0
+  *   @version 2.0
   */
 
 
@@ -36,13 +36,13 @@ try {
 
 
   /* -- Wrap the content fields -- */
-  var beginningHTML = '<div class="accordion courseItemWrapper" id="id<t4 type=\'meta\' meta=\'content_id\' />"><div class="accordion-group courseItem standardContent"><t4 type=\'meta\' meta=\'html_anchor\' />';
+  var beginningHTML = '<div class="courseItemWrapper" id="id<t4 type=\'meta\' meta=\'content_id\' />"><div class="courseItem standardContent"><t4 type=\'meta\' meta=\'html_anchor\' />';
   var endingHTML = '</div></div>';
 
   /*  -- Parse out Runtime Generated Content IDs -- */
   var cardHeader = '<div class="card-header" id="heading<t4 type=\'meta\' meta=\'content_id\' />">';
-  var buttonLink = '<button class="btn btn-link" type="button" id="button<t4 type=\'meta\' meta=\'content_id\' />" data-toggle="collapse" data-target="#collapse<t4 type=\'meta\' meta=\'content_id\' />" aria-expanded="false" aria-controls="collapse<t4 type=\'meta\' meta=\'content_id\' />">';
-  var collapseDiv = '<div class="collapse" id="collapse<t4 type=\'meta\' meta=\'content_id\' />">';
+  // var buttonLink = '<button class="btn btn-link" type="button" id="button<t4 type=\'meta\' meta=\'content_id\' />" data-toggle="collapse" data-target="#collapse<t4 type=\'meta\' meta=\'content_id\' />" aria-expanded="false" aria-controls="collapse<t4 type=\'meta\' meta=\'content_id\' />">';
+  // var collapseDiv = '<div class="collapse" id="collapse<t4 type=\'meta\' meta=\'content_id\' />">';
 
 
   /* -- Write the card header -- */
