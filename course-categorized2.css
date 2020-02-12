@@ -1,0 +1,158 @@
+#filterFieldWrapper {
+    border-bottom:1px solid #ccc;
+    margin: 0 10px 10px 10px;
+}
+
+@media (max-width:767.999px) {
+    #filterFieldWrapper {
+        padding-bottom: 2rem;
+    }
+}
+
+@media (min-width:767.999px) and (max-width: 991.999px) {
+    fieldset {
+        padding-bottom: 20px;
+    }
+}
+
+#filterField {
+    padding: 15px 0 30px 0;
+    border-top: 0;
+}
+
+#filterField input[type=text] {
+    color: #333333;
+    font-weight: 400;
+    font-size: 1.4rem;
+    height: 34px;
+    padding: 5px;
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#filterField select {
+    color: #333333;
+    font-weight: 400;
+    font-size: 1.4rem;
+    height: 34px;
+    padding: 5px;
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 17px;
+    width: 100%;
+}
+
+.hideByText, .hideByType, .hideByTerm, .hideByModule, .hideByCommon, .hideByFaculty, .hideResultsMessage {
+    display: none;
+}
+
+.noResultsToShow {
+    background: #e3e3da;
+    padding: 30px;
+    margin: 15px;
+}
+
+.courseItemWrapper .courseItem .card {
+    height: auto;
+    padding: 0 20px 30px 10px;
+}
+
+.courseItemWrapper .courseItem .card-Header {
+    margin-bottom: 5px;
+    padding: 5px 20px 0 15px;
+}
+
+.courseItemWrapper .courseItem button {
+    color: #aa0000;
+    display: inline-block;
+    line-height: 20px;
+    min-height: 60px;
+    padding: 20px 20px 0 10px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.courseItemWrapper .courseItem button span.courseTitle {
+    display: inline-block;
+    font-size: 2.0rem;
+    padding-bottom: 5px;
+}
+
+.courseItemWrapper .courseItem button:hover span.courseTitle {
+    text-decoration: underline;
+}
+
+.courseItemWrapper .courseItem button .fas {
+    background-color: inherit;
+    color: #aa0000;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.courseItemWrapper .courseItem button .fa-plus {
+    display: none;
+}
+
+.courseItemWrapper .courseItem button[aria-expanded="false"] .fa-plus {
+    display: initial;
+}
+
+.courseItemWrapper .courseItem button[aria-expanded="false"] .fa-minus {
+    display: none;
+}
+
+.courseItemWrapper .courseItem .courseSummaryWrapper {
+    color: black;
+    display: block;
+    font-size: 1.5rem;
+    line-height: 20px;
+    min-height: 60px;
+    margin-bottom: 30px;
+    padding: 0 20px 20px 10px;
+    text-align: left;
+    text-decoration: none;
+}
+
+@media (max-width:767.999px) {
+    .courseItemWrapper .courseItem .courseSummaryWrapper {
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+    }
+}
+
+.courseItemWrapper .courseItem .courseSummaryWrapper p.courseSummary {
+    min-height: 230px;
+}
+
+.courseItemWrapper .courseItem .card-body {
+    color: black;
+    display: block;
+    font-size: 1.5rem;
+    line-height: 20px;
+    min-height: 60px;
+    padding: 0 20px 20px 20px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.accordion .accordion-group .card {
+    height: auto;
+}
+
+.courseItemWrapper .courseItem .card-body .courseDetails {
+    padding: 20px;
+}
+
+.courseItemWrapper .courseItem .card-body .courseDetails p {
+    float: left;
+    margin: 0 10px 10px 0;
+    padding: 5px;
+}
+
+.courseItemWrapper .courseItem .card-body .courseDetails h5 {
+    font-family: sans-serif;
+}
