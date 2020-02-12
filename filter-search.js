@@ -81,7 +81,7 @@ $(function () {
                     // check results for null
                     $(function resultsMessage() {
                         // assign array of currently visible content items
-                        let visibleItems = $('.courseItemWrapper').not('.hideByText, hideByType, .hideByTerm, .hideByModule, .hideByCommon, .hideByFaculty');
+                        let visibleItems = $('.courseItemWrapper').not('.hideByText, .hideByType, .hideByTerm, .hideByModule, .hideByCommon, .hideByFaculty');
                         // check to see if array is empty
                         if (visibleItems.length == 0) {
                             // when array is empty show the results message
@@ -128,7 +128,7 @@ $(function () {
                     // check results for null
                     $(function resultsMessage() {
                         // assign array of currently visible content items
-                        let visibleItems = $('.courseItemWrapper').not('.hideByText, hideByType, .hideByTerm, .hideByModule, .hideByCommon, .hideByFaculty');
+                        let visibleItems = $('.courseItemWrapper').not('.hideByText, .hideByType, .hideByTerm, .hideByModule, .hideByCommon, .hideByFaculty');
                         // check to see if array is empty
                         if (visibleItems.length == 0) {
                             // when array is empty show the results message
