@@ -49,8 +49,8 @@ try {
   document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, beginningHTML));
   document.write('<div class="card">');
   document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, cardHeader));
-  document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, buttonLink));
-  document.write('<span class="courseTitle"><i class="fas fa-minus"></i><i class="fas fa-plus"></i><span class="courseTitle">' + commonName + '</span></span></button>');
+  // document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, buttonLink));
+  document.write('<span class="courseTitle"><span class="courseTitle">' + commonName + '</span></span>');
 
   /* -- Write the open viewable summary header -- */
   document.write('<div class="col-xs-12 courseSummaryWrapper">');
@@ -58,12 +58,12 @@ try {
   document.write('<div class="col-xs-12 col-sm-3 courseNumbers"><h5>Course Number: </h5><span class="courseNumber">' + courseNumber + '</span></div>');
   document.write('<div class="col-xs-12 col-sm-3 courseSections"><h5>Section: </h5><span class="courseSection">' + courseSection + '</span></div>');
   document.write('<div class="col-xs-12 col-sm-3 courseTypes"><h5>Course Type: </h5><span class="courseType">' + courseType + '</span></div>');
-  document.write('<div class="col-xs-12 col-sm-3 ucorModules"><h5>Module: </h5><span class="ucorModule">' + ucorModule + '</span></div></div>'); // close the row div
-  document.write('<div class="row col-xs-12 courseSummaries"><h5 class="courseSummary">Course Summary:</h5><span class ="courseSummary">' + courseSummary + '</span></div></div></div>'); // close all open courseSummaryWrapper divs and the cardHeader
+  document.write('<div class="col-xs-12 col-sm-3 ucorModules"><h5>Module: </h5><span class="ucorModule">' + ucorModule + '</span></div></div></div></div>'); // close the row div
+  // document.write('<div class="row col-xs-12 courseSummaries"><h5 class="courseSummary">Course Summary:</h5><span class ="courseSummary">' + courseSummary + '</span></div></div></div>'); // close all open courseSummaryWrapper divs and the cardHeader
 
 
   /* -- Write the collapsible body -- */
-  document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, collapseDiv));
+  // document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, collapseDiv));
 
   /* -- Write Program Cards--*/
   document.write('<div class="card-body">');              // close this div?
@@ -111,7 +111,7 @@ try {
 
 
   /* -- Write Closing Tags -- */
-  document.write('</div></div></div></div>');
+  document.write('</div></div></div>');
   document.write(endingHTML);
 
 /* -- Error Checking -- */
