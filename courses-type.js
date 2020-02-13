@@ -64,6 +64,7 @@ try {
   document.write('<div class="col-xs-12 col-sm-4 courseDetails years"><h5>Year: </h5><span class="year">' + year + '</span></div>');
   document.write('<div class="col-xs-12 col-sm-4 courseDetails instructors"><h5>Faculty: </h5><span class="faculty">' + faculty + '</span></div></div>');
   document.write('<div class="row col-xs-12 courseSummaries"><h5 class="courseSummary">Course Summary:</h5><span class ="courseSummary">' + courseSummary + '</span></div></div>');
+  document.write('</div>'); // close card-header
 
 
   /* -- Write the collapsible body -- */
@@ -115,7 +116,8 @@ try {
 
 
   /* -- Write Closing Tags -- */
-  document.write('</div></div></div></div>');
+  document.write('</div></div></div>');  // close the card-body and container-fluid and collapse div
+  document.write('</div>'); // close the card
   document.write(endingHTML);
 
 /* -- Error Checking -- */
