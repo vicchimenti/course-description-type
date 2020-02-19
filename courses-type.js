@@ -82,10 +82,6 @@ try {
   document.write('<div class="row col-xs-12 properCourseNames"><h5>Proper Course Name: </h5><span class="properCourseName">' + properCourseName + '</span></div>');
   document.write('<div class="row col-xs-12 courseDescriptions"><h5>Course Description: </h5><span class="courseDescription">' + courseDescription + '</span></div></div>');
 
-
-
-
-
   /* -- Write Program Level 1 Details --*/
   if (syllabus != "") {
     document.write('<div class="row levelOne">');
@@ -112,9 +108,6 @@ try {
   } else {
     document.write('<div class="row levelThree textbooks" style="display: none"><h5>No Textbooks Provided</h5></div>');
   }
-
-
-
 
   /* -- Write Program Level 4 Details --*/
   if (prerequisites != "") {
