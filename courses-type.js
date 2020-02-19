@@ -79,23 +79,9 @@ try {
   document.write('<div class="row col-xs-12 properCourseNames"><h5>Proper Course Name: </h5><span class="properCourseName">' + properCourseName + '</span></div>');
   document.write('<div class="row col-xs-12 courseDescriptions"><h5>Course Description: </h5><span class="courseDescription">' + courseDescription + '</span></div></div>');
 
-  /* -- Write Program Level 1 Details --*/
-  if (prerequisites != "") {
-    document.write('<div class="row levelOne">');
-    document.write('<div class="col-xs-12 courseDetails prerequisite"><h5>Prerequisites</h5><p class="prerequisites">' + prerequisites + '</p></div>');
-    document.write('</div>');
-  } else {
-    document.write('<div class="row levelOne courseDetails prerequisite" style="display: none"><h5>No Prerequisites Provided</h5></div>');
-  }
 
-  /* -- Write Program Level 2 Details --*/
-  if (groupDescription != "") {
-    document.write('<div class="row levelTwo">');
-    document.write('<div class="col-xs-12 courseDetails groupDescriptions"><h5>Group Description: </h5><p class="standardContent groupDescription">' + groupDescription + '</p></div>');
-    document.write('</div>');
-  } else {
-    document.write('<div class="row levelTwo courseDetails" style="display: none"><h5>No Group Description Provided</h5></div>');
-  }
+
+
 
   /* -- Write Program Level 3 Details --*/
   if (keyWords != "") {
@@ -105,6 +91,34 @@ try {
     document.write('</div>');
   } else {
     document.write('<div class="row levelThree keyWords" style="display: none"><h5>No Keywords Provided</h5></div>');
+  }
+
+  /* -- Write Program Level 4 Details --*/
+  if (prerequisites != "") {
+    document.write('<div class="row levelFour">');
+    document.write('<div class="col-xs-12 courseDetails prerequisite"><h5>Prerequisites</h5><p class="prerequisites">' + prerequisites + '</p></div>');
+    document.write('</div>');
+  } else {
+    document.write('<div class="row levelFour courseDetails prerequisite" style="display: none"><h5>No Prerequisites Provided</h5></div>');
+  }
+
+  /* -- Write Program Level 5 Details --*/
+  if (groupDescription != "") {
+    document.write('<div class="row levelFive">');
+    document.write('<div class="col-xs-12 courseDetails groupDescriptions"><h5>Group Description: </h5><p class="standardContent groupDescription">' + groupDescription + '</p></div>');
+    document.write('</div>');
+  } else {
+    document.write('<div class="row levelFive courseDetails" style="display: none"><h5>No Group Description Provided</h5></div>');
+  }
+
+  /* -- Write Program Level 6 Details --*/
+  if (keyWords != "") {
+    /* -- Keywords is a hidden field that is used to add searchable keywords when creating a program item but is not displayed on the live page -- */
+    document.write('<div class="row levelSix">');
+    document.write('<div class="col-xs-12 courseDetails keyWord" style="display: none"><h5>Keywords</h5><p class="keyWords">' + keyWords + '</p></div>');
+    document.write('</div>');
+  } else {
+    document.write('<div class="row levelSix keyWords" style="display: none"><h5>No Keywords Provided</h5></div>');
   }
 
 
