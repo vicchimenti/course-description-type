@@ -23,13 +23,14 @@ try {
   var courseSection = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Course Section' output='normal' display_field='value' />");
   var courseType = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Course Type' output='normal' display_field='value' />");
   var ucorModule = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='UCOR Module' output='normal' display_field='value' />");
-  var courseSummary = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Course Summary' output='normal' display_field='value' />");
+  // var courseSummary = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Course Summary' output='normal' display_field='value' />");
   var properCourseName = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Proper Course Name' output='normal' display_field='value' />");
   var courseDescription = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Course Description' output='normal' display_field='value' />");
   var term = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Term' output='normal' display_field='value' />");
   var year = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Year' output='normal' display_field='value' />");
   var faculty = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Faculty' output='normal' display_field='value' />");
   // var facultyBioLink = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Faculty Profile Link' output='normal' display_field='value' />");
+  var syllabus = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Syllabus' output='normal' display_field='value' />");
   var prerequisites = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Prerequisites' output='normal' display_field='value' />");
   var groupDescription = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Group Description' output='normal' display_field='value' />");
   var keyWords = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Keywords' output='normal' display_field='value' />");
@@ -83,15 +84,35 @@ try {
 
 
 
-  /* -- Write Program Level 3 Details --*/
-  if (keyWords != "") {
-    /* -- Keywords is a hidden field that is used to add searchable keywords when creating a program item but is not displayed on the live page -- */
-    document.write('<div class="row levelThree">');
-    document.write('<div class="col-xs-12 courseDetails keyWord" style="display: none"><h5>Keywords</h5><p class="keyWords">' + keyWords + '</p></div>');
+  /* -- Write Program Level 1 Details --*/
+  if (syllabus != "") {
+    document.write('<div class="row levelOne">');
+    document.write('<div class="col-xs-12 courseDetails syllabus" style="display: none"><h5>Syllabus</h5><p class="syllabus">' + syllabus + '</p></div>');
     document.write('</div>');
   } else {
-    document.write('<div class="row levelThree keyWords" style="display: none"><h5>No Keywords Provided</h5></div>');
+    document.write('<div class="row levelOne syllabus" style="display: none"><h5>No Syllabus Provided</h5></div>');
   }
+
+  /* -- Write Program Level 2 Details --*/
+  if (assignments != "") {
+    document.write('<div class="row levelTwo">');
+    document.write('<div class="col-xs-12 courseDetails assignments" style="display: none"><h5>Assignments</h5><p class="assignments">' + assignments + '</p></div>');
+    document.write('</div>');
+  } else {
+    document.write('<div class="row levelTwo assignments" style="display: none"><h5>No Assignments Provided</h5></div>');
+  }
+
+  /* -- Write Program Level 3 Details --*/
+  if (textbooks != "") {
+    document.write('<div class="row levelThree">');
+    document.write('<div class="col-xs-12 courseDetails textbooks" style="display: none"><h5>Textbooks</h5><p class="textbooks">' + textbooks + '</p></div>');
+    document.write('</div>');
+  } else {
+    document.write('<div class="row levelThree textbooks" style="display: none"><h5>No Textbooks Provided</h5></div>');
+  }
+
+
+
 
   /* -- Write Program Level 4 Details --*/
   if (prerequisites != "") {
