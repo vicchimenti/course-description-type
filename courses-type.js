@@ -31,8 +31,8 @@ try {
   var faculty = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Faculty' output='normal' display_field='value' />");
   // var facultyBioLink = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Faculty Profile Link' output='normal' display_field='value' />");
   var syllabus = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Syllabus' output='normal' display_field='value' />");
-
   var assignments = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Assignments' output='normal' display_field='value' />");
+  var textbooks = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Textbooks' output='normal' display_field='value' />");
   var prerequisites = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Prerequisites' output='normal' display_field='value' />");
   var groupDescription = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Group Description' output='normal' display_field='value' />");
   var keyWords = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Keywords' output='normal' display_field='value' />");
@@ -61,21 +61,21 @@ try {
   document.write('<div class="col-xs-12 col-sm-3 courseNumbers"><h5>Course Number: </h5><span class="courseNumber">' + courseNumber + '</span></div>');
   document.write('<div class="col-xs-12 col-sm-3 courseSections"><h5>Section: </h5><span class="courseSection">' + courseSection + '</span></div>');
   document.write('<div class="col-xs-12 col-sm-3 courseTypes"><h5>Course Type: </h5><span class="courseType">' + courseType + '</span></div>');
-  document.write('<div class="col-xs-12 col-sm-3 ucorModules"><h5>Module: </h5><span class="ucorModule">' + ucorModule + '</span></div></div>'); // close the row div
+  document.write('<div class="col-xs-12 col-sm-3 ucorModules"><h5>Module: </h5><span class="ucorModule">' + ucorModule + '</span></div></div>'); // close the courseSummaryHeader row div
   document.write('<div class="row col-xs-12 courseSummaryHeader2">');
   document.write('<div class="col-xs-12 col-sm-4 courseDetails terms"><h5>Term: </h5><span class="term">' + term + '</span></div>');
   document.write('<div class="col-xs-12 col-sm-4 courseDetails years"><h5>Year: </h5><span class="year">' + year + '</span></div>');
   document.write('<div class="col-xs-12 col-sm-4 courseDetails instructors"><h5>Faculty: </h5><span class="faculty">' + faculty + '</span></div></div>');
-  document.write('<div class="row col-xs-12 courseSummaries"><h5 class="courseSummary">Course Summary:</h5><span class ="courseSummary">' + courseSummary + '</span></div></div>');
-  document.write('</div>'); // close card-header
+  // document.write('<div class="row col-xs-12 courseSummaries"><h5 class="courseSummary">Course Summary:</h5><span class ="courseSummary">' + courseSummary + '</span></div>');
+  document.write('</div></div>'); // close courseSummaryWrapper courseSummaryHeader2 divs
 
 
   /* -- Write the collapsible body -- */
   document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, collapseDiv));
 
   /* -- Write Program Cards--*/
-  document.write('<div class="card-body">');              // close this div?
-  document.write('<div class="container-fluid">');        // close this div?
+  document.write('<div class="card-body">');              // TODO: close this div? : where
+  document.write('<div class="container-fluid">');        // TODO: close this div? : where
 
   /* -- Write the collapsed viewable summary header -- */
   document.write('<div class="col-xs-12 fullcourseDescriptionWrapper">');
