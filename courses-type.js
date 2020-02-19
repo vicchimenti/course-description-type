@@ -65,7 +65,7 @@ try {
   document.write('<div class="col-xs-12 col-sm-3 courseTypes"><h5>Course Type: </h5><span class="courseType">' + courseType + '</span></div></div>'); // TODO: Temp closes courseSummaryHeader row div while ucorModule commented
   // document.write('<div class="col-xs-12 col-sm-3 ucorModules"><h5>Module: </h5><span class="ucorModule">' + ucorModule + '</span></div></div>'); // close the courseSummaryHeader row div
   document.write('<div class="row col-xs-12 courseSummaryHeader2">');
-  document.write('<div class="col-xs-12 col-sm-4 courseDetails terms"><h5>Term: </h5><span class="term">' + term + '</span></div>');
+  // document.write('<div class="col-xs-12 col-sm-4 courseDetails terms"><h5>Term: </h5><span class="term">' + term + '</span></div>');
   document.write('<div class="col-xs-12 col-sm-4 courseDetails years"><h5>Year: </h5><span class="year">' + year + '</span></div>');
   document.write('<div class="col-xs-12 col-sm-4 courseDetails instructors"><h5>Faculty: </h5><span class="faculty">' + faculty + '</span></div></div>');
   // document.write('<div class="row col-xs-12 courseSummaries"><h5 class="courseSummary">Course Summary:</h5><span class ="courseSummary">' + courseSummary + '</span></div>');
