@@ -69,7 +69,7 @@ try {
   document.write('<div class="col-xs-12 col-sm-6 courseDetails years"><h5>Year: </h5><span class="year">' + year + '</span></div>');
   document.write('<div class="col-xs-12 col-sm-6 courseDetails instructors"><h5>Faculty: </h5><span class="faculty">' + faculty + '</span></div>');
   // document.write('<div class="row col-xs-12 courseSummaries"><h5 class="courseSummary">Course Summary:</h5><span class ="courseSummary">' + courseSummary + '</span></div>');
-  document.write('</div></div>'); // close courseSummaryWrapper courseSummaryHeader2 divs
+  document.write('</div></div></div>'); // close courseSummaryWrapper courseSummaryHeader2 and card header divs
 
 
   /* -- Write the collapsible body -- */
