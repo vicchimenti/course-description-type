@@ -77,7 +77,8 @@ try {
 
   /* -- Write the collapsed viewable summary header -- */
   document.write('<div class="col-xs-12 fullcourseDescriptionWrapper">');
-  document.write('<div class="row col-xs-12 ucorModules"><h5>Module: </h5><span class="ucorModule">' + ucorModule + '</span><h5>Proper Course Name: </h5><span class="properCourseName">' + properCourseName + '</span></div>');
+  document.write('<div class="row col-xs-12 ucorModules"><h5>Module: </h5><span class="ucorModule">' + ucorModule + '</span></div>');
+  document.write('<div class="row col-xs-12 properCourseName><h5>Proper Course Name: </h5><span class="properCourseName">' + properCourseName + '</span></div>');
   document.write('<div class="row col-xs-12 courseDescriptions"><h5>Course Description: </h5><span class="courseDescription">' + courseDescription + '</span></div></div>'); // close fullcourseDescriptionWrapper div
 
   /* -- Write Program Level 1 Details --*/
