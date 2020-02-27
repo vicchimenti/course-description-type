@@ -124,6 +124,10 @@
     }
 }
 
+.courseSummaryWrapper span.courseType {
+    font-size: 1.75rem;
+}
+
 .courseItemWrapper .courseItem .courseSummaryWrapper p.courseSummary {
     min-height: 230px;
 }
