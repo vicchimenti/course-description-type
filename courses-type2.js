@@ -70,8 +70,8 @@ try {
   // document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, collapseDiv));
 
   /* -- Write Program Cards--*/
-  document.write('<div class="card-body">');              // close this div?
-  document.write('<div class="container-fluid">');        // close this div?
+  document.write('<div class="card-body">');              
+  document.write('<div class="container-fluid">');        
 
   /* -- Write the collapsed viewable summary header -- */
   document.write('<div class="col-xs-12 fullcourseDescriptionWrapper">');
