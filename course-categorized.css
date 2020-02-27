@@ -79,6 +79,7 @@
 .courseItemWrapper .courseItem button span.courseTitle {
     display: inline-block;
     font-size: 2.0rem;
+    font-weight: bold;
     padding-bottom: 5px;
 }
 
@@ -126,7 +127,9 @@
 
 .courseSummaryWrapper span.courseType {
     font-size: 1.75rem;
+    font-weight: bold;
 }
+
 
 .courseItemWrapper .courseItem .courseSummaryWrapper p.courseSummary {
     min-height: 230px;
