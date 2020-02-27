@@ -57,11 +57,11 @@ try {
 
   /* -- Write the open viewable summary header -- */
   document.write('<div class="col-xs-12 courseSummaryWrapper">');
-  document.write('<div class="row col-xs-12 courseTypes"><h4>Course Type: </h4><span class="courseType">' + courseType + '</span></div>');
+  document.write('<div class="row col-xs-12 courseDetails courseTypes"><h4>Course Type: </h4><span class="courseType">' + courseType + '</span></div>');
   document.write('<div class="row col-xs-12 courseSummaryHeader">');
-  document.write('<div class="col-xs-12 col-sm-4 courseNumbers"><h5>Course Number: </h5><span class="courseNumber">' + courseNumber + '</span></div>');
-  document.write('<div class="col-xs-12 col-sm-4 courseSections"><h5>Section: </h5><span class="courseSection">' + courseSection + '</span></div>');
-  document.write('<div class="col-xs-12 col-sm-4 ucorModules"><h5>Module: </h5><span class="ucorModule">' + ucorModule + '</span></div></div>');  // Closes courseSummaryHeader row div 
+  document.write('<div class="col-xs-12 col-sm-4 courseDetails courseNumbers"><h5>Course Number: </h5><span class="courseNumber">' + courseNumber + '</span></div>');
+  document.write('<div class="col-xs-12 col-sm-4 courseDetails courseSections"><h5>Section: </h5><span class="courseSection">' + courseSection + '</span></div>');
+  document.write('<div class="col-xs-12 col-sm-4 courseDetails ucorModules"><h5>Module: </h5><span class="ucorModule">' + ucorModule + '</span></div></div>');  // Closes courseSummaryHeader row div 
   document.write('<div class="row col-xs-12 courseSummaryHeader2">');
   document.write('<div class="col-xs-12 col-sm-4 courseDetails terms"><h5>Term: </h5><span class="term">' + term + '</span></div>');
   document.write('<div class="col-xs-12 col-sm-4 courseDetails years"><h5>Year: </h5><span class="year">' + year + '</span></div>');
@@ -78,8 +78,8 @@ try {
 
   /* -- Write the collapsed viewable summary header -- */
   document.write('<div class="col-xs-12 fullcourseDescriptionWrapper">');
-  document.write('<div class="row col-xs-12 properCourseName"><h5>Course Title: </h5><span class="properCourseName">' + properCourseName + '</span></div>');
-  document.write('<div class="row col-xs-12 courseDescriptions"><h5>Course Description: </h5><span class="courseDescription">' + courseDescription + '</span></div></div>'); // close fullcourseDescriptionWrapper div
+  document.write('<div class="row col-xs-12 courseDetails properCourseName"><h5>Course Title: </h5><span class="properCourseName">' + properCourseName + '</span></div>');
+  document.write('<div class="row col-xs-12 courseDetails courseDescriptions"><h5>Course Description: </h5><span class="courseDescription">' + courseDescription + '</span></div></div>'); // close fullcourseDescriptionWrapper div
 
   /* -- Write Program Level 1 Details --*/
   if (syllabus != "") {
