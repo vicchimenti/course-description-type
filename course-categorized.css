@@ -62,7 +62,7 @@
 }
 
 div.card .card-header {
-    font-type: sans-serif;
+    font-style: sans-serif;
     font-weight: 600;
     margin-bottom: 5px;
     padding: 5px 20px 0 15px;
@@ -78,15 +78,27 @@ div.card .card-header {
     text-decoration: none;
 }
 
-div.card .card-header button span.courseTitle {
+div.card .card-header button span.courseTitleWrapper {
     display: inline-block;
     font-size: 2.0rem;
     font-weight: 700;
     padding-bottom: 5px;
 }
 
-.courseItemWrapper .courseItem button:hover span.courseTitle {
+div.card div.card-header button:hover span.courseTitle {
     text-decoration: underline;
+}
+
+div.card div.card-header button:hover i.fas {
+    text-decoration: none;
+}
+
+div.card div.card-header button:active i.fas {
+    text-decoration: none;
+}
+
+div.card div.card-header button:visited i.fas {
+    text-decoration: none;
 }
 
 .courseItemWrapper .courseItem button .fas {
