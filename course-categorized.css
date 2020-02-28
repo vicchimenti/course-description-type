@@ -44,24 +44,24 @@
     margin: 15px;
 }
 
-.standardContent h2 {
+div.organizerWrapper div.organizer h2.organizerTitle {
     font-family: sans-serif;
     font-weight: 600;
 }
 
-.courseItemWrapper .courseItem .card {
+div.organizerWrapper div.organizer div.courseItemWrapper div.courseItem div.card {
     height: auto;
     padding: 0 20px 30px 10px;
 }
 
-div.card .card-header {
+div.organizerWrapper div.organizer div.courseItemWrapper div.card .card-header {
     font-family: sans-serif;
     font-weight: 600;
     margin-bottom: 5px;
     padding: 5px 20px 0 15px;
 }
 
-.courseItemWrapper .courseItem button {
+div.organizerWrapper div.organizer div.courseItemWrapper .courseItem button {
     color: #aa0000;
     display: inline-block;
     line-height: 20px;
@@ -71,49 +71,49 @@ div.card .card-header {
     text-decoration: none;
 }
 
-div.card .card-header button span.courseTitleWrapper {
+div.organizerWrapper div.organizer div.courseItemWrapper div.card .card-header button span.courseTitleWrapper {
     display: inline-block;
     font-size: 2.0rem;
     font-weight: 700;
     padding-bottom: 5px;
 }
 
-div.card div.card-header button:hover span.courseTitle {
+div.courseItemWrapper div.card div.card-header button:hover span.courseTitle {
     text-decoration: underline;
 }
 
-div.card div.card-header button:hover i.fas {
+div.courseItemWrapper div.card div.card-header button:hover i.fas {
     text-decoration: none;
 }
 
-div.card div.card-header button:active i.fas {
+div.courseItemWrapper div.card div.card-header button:active i.fas {
     text-decoration: none;
 }
 
-div.card div.card-header button:visited i.fas {
+div.courseItemWrapper div.card div.card-header button:visited i.fas {
     text-decoration: none;
 }
 
-.courseItemWrapper .courseItem button .fas {
+div.courseItemWrapper .courseItem button .fas {
     background-color: inherit;
     color: #aa0000;
     display: inline-block;
     padding-right: 10px;
 }
 
-.courseItemWrapper .courseItem button .fa-plus {
+div.organizerWrapper div.organizer div.courseItemWrapper .courseItem button .fa-plus {
     display: none;
 }
 
-.courseItemWrapper .courseItem button[aria-expanded="false"] .fa-plus {
+div.courseItemWrapper .courseItem button[aria-expanded="false"] .fa-plus {
     display: initial;
 }
 
-.courseItemWrapper .courseItem button[aria-expanded="false"] .fa-minus {
+div.courseItemWrapper .courseItem button[aria-expanded="false"] .fa-minus {
     display: none;
 }
 
-div.card div.courseSummaryWrapper {
+div.courseItemWrapper div.card div.courseSummaryWrapper {
     color: black;
     display: block;
     font-size: 1.5rem;
@@ -126,22 +126,22 @@ div.card div.courseSummaryWrapper {
     text-decoration: none;
 }
 
-div.card .card-header h4 {
+div.courseItemWrapper div.card .card-header h4 {
     font-size: 1.75rem;
     font-weight: 600;
 }
 
-div.card .card-header .courseSummaryWrapper span.courseType {
+div.courseItemWrapper div.card .card-header .courseSummaryWrapper span.courseType {
     font-size: 1.75rem;
     font-weight: 600;
 }
 
 
-.courseItemWrapper .courseItem .courseSummaryWrapper p.courseSummary {
+div.courseItemWrapper .courseItem .courseSummaryWrapper p.courseSummary {
     min-height: 230px;
 }
 
-div.card div.card-body div.courseDetails{
+div.courseItemWrapper div.card div.card-body div.courseDetails{
     color: black;
     display: block;
     font-size: 1.5rem;
@@ -153,31 +153,31 @@ div.card div.card-body div.courseDetails{
     text-decoration: none;
 }
 
-div.card .card-body h5 {
+div.courseItemWrapper div.card .card-body h5 {
     font-size: 1.8rem;
     font-weight: 600;
 }
 
-div.card .card-body h4 {
+div.courseItemWrapper div.card .card-body h4 {
     font-size: 1.75rem;
     font-weight: 600;
 }
 
-.accordion .accordion-group .card {
+div.courseItemWrapper.accordion .accordion-group .card {
     height: auto;
 }
 
-.courseItemWrapper .courseItem .card-body .courseDetails {
+div.courseItemWrapper .courseItem .card-body .courseDetails {
     padding: 20px;
 }
 
-.courseItemWrapper .courseItem .card-body .courseDetails p {
+div.courseItemWrapper .courseItem .card-body .courseDetails p {
     float: left;
     margin: 0 10px 10px 0;
     padding: 5px;
 }
 
-.courseItemWrapper .courseItem .card-body .courseDetails h5 {
+div.courseItemWrapper .courseItem .card-body .courseDetails h5 {
     font-family: sans-serif;
 }
 
@@ -196,7 +196,7 @@ div.card .card-body h4 {
 
 @media (max-width:767.999px) {
 
-    div.card div.courseSummaryWrapper {
+    div.courseItemWrapper div.card div.courseSummaryWrapper {
         margin-bottom: 5px;
         padding-bottom: 5px;
     }
