@@ -153,8 +153,8 @@ $(function () {
                     if (key) {
                         $('.ucorModule').filter(function(i,e) {
                             var value = $(this).text();
-                            // Check to see if the Key and Value are a Match
-                            if (value.match(key)) {
+                            // Check to see if the Key and Value are an exactly equal
+                            if (key === value) {
                                 $(this).parents('.courseItemWrapper').removeClass('hideByModule');
                             } else {
                                 $(this).parents('.courseItemWrapper').addClass('hideByModule');
