@@ -155,7 +155,7 @@ $(function () {
                     let key = $(this).val();
                     // If Search Key is Not Null then Compare to the Term List Items in Each Content Item
                     if (key) {
-                        $('.term').filter(function(i,e) {
+                        $('.ucorModule').filter(function(i,e) {
                             var value = $(this).text();
                             // Check to see if the Key and Value are a Match
                             if (value.match(key)) {
@@ -195,7 +195,7 @@ $(function () {
                     let key = $(this).val();
                     // If Search Key is Not Null then Compare to the Term List Items in Each Content Item
                     if (key) {
-                        $('.term').filter(function(i,e) {
+                        $('.courseNumber').filter(function(i,e) {
                             var value = $(this).text();
                             // Check to see if the Key and Value are a Match
                             if (value.match(key)) {
@@ -235,7 +235,7 @@ $(function () {
                     let key = $(this).val();
                     // If Search Key is Not Null then Compare to the Term List Items in Each Content Item
                     if (key) {
-                        $('.term').filter(function(i,e) {
+                        $('.courseSection').filter(function(i,e) {
                             var value = $(this).text();
                             // Check to see if the Key and Value are a Match
                             if (value.match(key)) {
