@@ -185,6 +185,35 @@ $(function () {
 
 
 
+            //   ***   Course Number Filter   ***   //
+            $(function() {
+                // When the Dropdown Menu Selector Course Number Changes - Execute change function
+                $('#SelectBox-BySection').change(function () {
+                    // Assign Search Key
+                    let key = $(this).val();
+                    // If Search Key is Not Null then Compare to the Term List Items in Each Content Item
+                    if (key) {
+                        $('.term').filter(function(i,e) {
+                            var value = $(this).text();
+                            // Check to see if the Key and Value are a Match
+                            if (value.match(key)) {
+                                $(this).parents('.courseItemWrapper').removeClass('hideBySection');
+                            } else {
+                                $(this).parents('.courseItemWrapper').addClass('hideBySection');
+                            }
+                        });
+                    // Else the Search Key is Null so Reset all Content Items to Visible
+                    } else {
+                        $('.courseItemWrapper').removeClass('hideBySection');
+                    }
+                    // check results for null
+                    parseItems();
+                });
+            });
+
+
+
+
 
 
 
