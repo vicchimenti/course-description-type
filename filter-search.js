@@ -16,10 +16,6 @@
 <script>
 
 
-
-
-
-
 $(function () {
     // After the DOM is ready, Wait until the window loads
     $(window).load(function () {
