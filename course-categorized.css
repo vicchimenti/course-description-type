@@ -34,7 +34,7 @@
     width: 100%;
 }
 
-.hideByText, .hideByType, .hideByTerm, .hideByModule, .hideByCommon, .hideByFaculty, .hideResultsMessage {
+.hideByText, .hideByType, .hideByTerm, .hideByModule, .hideBySection, .hideByNumber, .hideResultsMessage {
     display: none;
 }
 
