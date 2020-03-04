@@ -11,9 +11,34 @@
 *   @version 1.0
 */
 
+
+
 <script>
 
+//** global array holds list of content items that will render after filter selction **//
+var visibleItems = [];
 
+
+
+
+//** parse out unselected content items and limit display to user selected items **/
+ $(function parseItems() {
+    // assign array of currently visible content items
+    visibleItems = $('.courseItemWrapper').not('.hideByText, .hideByType, .hideByTerm, .hideByModule, .hideByCommon, .hideByFaculty');
+    // check to see if array is empty
+    if (visibleItems.length == 0) {
+        // when array is empty show the results message
+        $('.noResultsToShow').removeClass('hideResultsMessage');
+    } else {
+        // when array has content items suppress the results message
+        $('.noResultsToShow').addClass('hideResultsMessage');
+    }
+});
+
+
+
+
+//** wait for window to load then set timeout before reacting to filter search input **/
 $(function () {
     // After the DOM is ready, Wait until the window loads
     $(window).load(function () {
@@ -36,18 +61,8 @@ $(function () {
                             $(this).toggleClass('hideByText', !($(this).text().toLowerCase().indexOf(key) > -1));
                         });
                     });
-                    $(function resultsMessage() {
-                        // assign array of currently visible content items
-                        let visibleItems = $('.courseItemWrapper').not('.hideByText, .hideByTerm, .hideByModule, .hideByCommon, .hideByFaculty');
-                        // check to see if array is empty
-                        if (visibleItems.length == 0) {
-                            // when array is empty show the results message
-                            $('.noResultsToShow').removeClass('hideResultsMessage');
-                        } else {
-                            // when array has content items suppress the results message
-                            $('.noResultsToShow').addClass('hideResultsMessage');
-                        }
-                    });
+                    // check results for null
+                    parseItems();
                 });
             });
 
@@ -75,18 +90,7 @@ $(function () {
                         $('.courseItemWrapper').removeClass('hideByType');
                     }
                     // check results for null
-                    $(function resultsMessage() {
-                        // assign array of currently visible content items
-                        let visibleItems = $('.courseItemWrapper').not('.hideByText, .hideByType, .hideByTerm, .hideByModule, .hideByCommon, .hideByFaculty');
-                        // check to see if array is empty
-                        if (visibleItems.length == 0) {
-                            // when array is empty show the results message
-                            $('.noResultsToShow').removeClass('hideResultsMessage');
-                        } else {
-                            // when array has content items suppress the results message
-                            $('.noResultsToShow').addClass('hideResultsMessage');
-                        }
-                    });
+                    parseItems();
                 });
             });
 
@@ -114,18 +118,7 @@ $(function () {
                         $('.courseItemWrapper').removeClass('hideByTerm');
                     }
                     // check results for null
-                    $(function resultsMessage() {
-                        // assign array of currently visible content items
-                        let visibleItems = $('.courseItemWrapper').not('.hideByText, .hideByType, .hideByTerm, .hideByModule, .hideByCommon, .hideByFaculty');
-                        // check to see if array is empty
-                        if (visibleItems.length == 0) {
-                            // when array is empty show the results message
-                            $('.noResultsToShow').removeClass('hideResultsMessage');
-                        } else {
-                            // when array has content items suppress the results message
-                            $('.noResultsToShow').addClass('hideResultsMessage');
-                        }
-                    });
+                    parseItems();
                 });
             });
         }, 10);
