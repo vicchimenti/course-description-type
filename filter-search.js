@@ -68,33 +68,6 @@ $(function () {
 
 
 
-            //   ***   Type Filter   ***   //
-            $(function() {
-                // When the Dropdown Menu Selector Course Types Change - Execute change function
-                $('#SelectBox-ByType').change(function () {
-                    // Assign Search Key
-                    let key = $(this).val();
-                    // If Search Key is Not Null then Compare to the Type List Items in Each Content Item
-                    if (key) {
-                        $('.courseType').filter(function(i,e) {
-                            var value = $(this).text();
-                            // Check to see if the Key and Value are a Match
-                            if (value.match(key)) {
-                                $(this).parents('.courseItemWrapper').removeClass('hideByType');
-                            } else {
-                                $(this).parents('.courseItemWrapper').addClass('hideByType');
-                            }
-                        });
-                    // Else the Search Key is Null so Reset all Content Items to Visible
-                    } else {
-                        $('.courseItemWrapper').removeClass('hideByType');
-                    }
-                    // check results for null
-                    parseItems();
-                });
-            });
-
-
 
             //   ***   Term Filter   ***   //
             $(function() {
@@ -124,6 +97,36 @@ $(function () {
 
 
 
+
+            //   ***   Type Filter   ***   //
+            $(function() {
+                // When the Dropdown Menu Selector Course Types Change - Execute change function
+                $('#SelectBox-ByType').change(function () {
+                    // Assign Search Key
+                    let key = $(this).val();
+                    // If Search Key is Not Null then Compare to the Type List Items in Each Content Item
+                    if (key) {
+                        $('.courseType').filter(function(i,e) {
+                            var value = $(this).text();
+                            // Check to see if the Key and Value are a Match
+                            if (value.match(key)) {
+                                $(this).parents('.courseItemWrapper').removeClass('hideByType');
+                            } else {
+                                $(this).parents('.courseItemWrapper').addClass('hideByType');
+                            }
+                        });
+                    // Else the Search Key is Null so Reset all Content Items to Visible
+                    } else {
+                        $('.courseItemWrapper').removeClass('hideByType');
+                    }
+                    // check results for null
+                    parseItems();
+                });
+            });
+
+
+
+
             //   ***   Module Filter   ***   //
             $(function() {
                 // When the Dropdown Menu Selector Academic Terms Change - Execute change function
@@ -144,6 +147,35 @@ $(function () {
                     // Else the Search Key is Null so Reset all Content Items to Visible
                     } else {
                         $('.courseItemWrapper').removeClass('hideByModule');
+                    }
+                    // check results for null
+                    parseItems();
+                });
+            });
+
+
+
+            
+            //   ***   Course Number Filter   ***   //
+            $(function() {
+                // When the Dropdown Menu Selector Course Number Changes - Execute change function
+                $('#SelectBox-ByNumber').change(function () {
+                    // Assign Search Key
+                    let key = $(this).val();
+                    // If Search Key is Not Null then Compare to the Term List Items in Each Content Item
+                    if (key) {
+                        $('.term').filter(function(i,e) {
+                            var value = $(this).text();
+                            // Check to see if the Key and Value are a Match
+                            if (value.match(key)) {
+                                $(this).parents('.courseItemWrapper').removeClass('hideByNumber');
+                            } else {
+                                $(this).parents('.courseItemWrapper').addClass('hideByNumber');
+                            }
+                        });
+                    // Else the Search Key is Null so Reset all Content Items to Visible
+                    } else {
+                        $('.courseItemWrapper').removeClass('hideByNumber');
                     }
                     // check results for null
                     parseItems();
