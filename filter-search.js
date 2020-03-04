@@ -121,6 +121,43 @@ $(function () {
                     parseItems();
                 });
             });
+
+
+
+            //   ***   Module Filter   ***   //
+            $(function() {
+                // When the Dropdown Menu Selector Academic Terms Change - Execute change function
+                $('#SelectBox-ByModule').change(function () {
+                    // Assign Search Key
+                    let key = $(this).val();
+                    // If Search Key is Not Null then Compare to the Term List Items in Each Content Item
+                    if (key) {
+                        $('.term').filter(function(i,e) {
+                            var value = $(this).text();
+                            // Check to see if the Key and Value are a Match
+                            if (value.match(key)) {
+                                $(this).parents('.courseItemWrapper').removeClass('hideByModule');
+                            } else {
+                                $(this).parents('.courseItemWrapper').addClass('hideByModule');
+                            }
+                        });
+                    // Else the Search Key is Null so Reset all Content Items to Visible
+                    } else {
+                        $('.courseItemWrapper').removeClass('hideByModule');
+                    }
+                    // check results for null
+                    parseItems();
+                });
+            });
+
+
+
+
+
+
+
+
+
         }, 10);
     });
 });
