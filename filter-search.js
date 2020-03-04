@@ -227,9 +227,9 @@ $(function () {
 
 
 
-            //   ***   Course Number Filter   ***   //
+            //   ***   Section Filter   ***   //
             $(function() {
-                // When the Dropdown Menu Selector Course Number Changes - Execute change function
+                // When the Dropdown Menu Selector Section Changes - Execute change function
                 $('#SelectBox-BySection').change(function () {
                     // Assign Search Key
                     let key = $(this).val();
