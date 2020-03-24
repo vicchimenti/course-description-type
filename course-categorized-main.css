@@ -184,12 +184,12 @@ span {
 
 @media (max-width:767.999px) {
 
-    div.courseItemWrapper div.standardContent div.card div.courseSummaryWrapper {
+    #zoneA.col-xs-12 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent div.card div.courseSummaryWrapper {
         margin-bottom: 5px;
         padding-bottom: 5px;
     }
 
-    #zoneA.col-xs-12 .standardContent div.courseItemWrapper div.courseItem button.btn {
+    #zoneA.col-xs-12 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent button.btn {
         color: #aa0000;
         display: inline-block;
         line-height: 20px;
@@ -199,7 +199,7 @@ span {
         text-decoration: none;
     }
 
-    #zoneA.col-xs-12 .standardContent div.courseItemWrapper div.courseItem button.btn span.courseTitleWrapper span.courseTitle {
+    #zoneA.col-xs-12 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent button.btn span.courseTitleWrapper span.courseTitle {
         color: #aa0000;
         display: inline-block;
         font-size: 2.0rem;
@@ -208,38 +208,38 @@ span {
         padding-bottom: 5px;
     }
 
-    #zoneA.col-xs-12 .standardContent button.btn:hover span.courseTitle {
+    #zoneA.col-xs-12 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent button.btn:hover span.courseTitle {
         text-decoration: underline;
     }
 
-    #zoneA.col-xs-12 .standardContent div.card div.card-header button.btn:hover i.fas {
+    #zoneA.col-xs-12 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent div.card div.card-header button.btn:hover span.courseTitleWrapper i.fas {
         text-decoration: none;
     }
 
-    #zoneA.col-xs-12 .standardContent div.card div.card-header button.btn:active i.fas {
+    #zoneA.col-xs-12 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent div.card div.card-header button.btn:active span.courseTitleWrapper i.fas {
         text-decoration: none;
     }
 
-    #zoneA.col-xs-12 .standardContent div.card div.card-header button.btn:visited i.fas {
+    #zoneA.col-xs-12 #zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent div.card div.card-header button.btn:visited span.courseTitleWrapper i.fas {
         text-decoration: none;
     }
 
-    #zoneA.col-xs-12 .standardContent div.courseItemWrapper div.courseItem button.btn span.courseTitleWrapper i.fas {
+    #zoneA.col-xs-12 #zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent button.btn span.courseTitleWrapper i.fas {
         background-color: inherit;
         color: #aa0000;
         display: inline-block;
         padding-right: 10px;
     }
 
-    #zoneA.col-xs-12 .standardContent div.courseItemWrapper div.courseItem button.btn i.fa-plus {
+    #zoneA.col-xs-12 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent button.btn span.courseTitleWrapper i.fa-plus {
         display: none;
     }
 
-    #zoneA.col-xs-12 .standardContent div.courseItemWrapper div.courseItem button.btn[aria-expanded="false"] i.fa-plus {
+    #zoneA.col-xs-12 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent button.btn[aria-expanded="false"] span.courseTitleWrapper i.fa-plus {
         display: initial;
     }
 
-    #zoneA.col-xs-12 .standardContent div.courseItemWrapper div.courseItem button.btn[aria-expanded="false"] i.fa-minus {
+    #zoneA.col-xs-12 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent button.btn[aria-expanded="false"] span.courseTitleWrapper i.fa-minus {
         display: none;
     }
 }
