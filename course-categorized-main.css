@@ -76,34 +76,34 @@ div.courseItemWrapper div.standardContent div.card div.card-header button:hover 
     text-decoration: underline;
 }
 
-div.organizerWrapper div.organizer div.courseItemWrapper div.standardContent div.card div.card-header button:hover span.courseTitleWrapper i.fas {
+#zoneA.col-xs-12 div.courseItemWrapper div.standardContent div.card div.card-header .btn button:hover span.courseTitleWrapper i.fas {
     text-decoration: none;
 }
 
-div.organizerWrapper div.organizer div.courseItemWrapper div.standardContent div.card div.card-header button:active span.courseTitleWrapper i.fas {
+#zoneA.col-xs-12 div.courseItemWrapper div.standardContent div.card div.card-header .btn button:active span.courseTitleWrapper i.fas {
     text-decoration: none;
 }
 
-div.organizerWrapper div.organizer div.courseItemWrapper div.standardContent div.card div.card-header button:visited span.courseTitleWrapper i.fas {
+#zoneA.col-xs-12 div.courseItemWrapper div.standardContent div.card div.card-header .btn button:visited span.courseTitleWrapper i.fas {
     text-decoration: none;
 }
 
-div.organizerWrapper div.organizer div.courseItemWrapper div.standardContent.courseItem button span.courseTitleWrapper .fas {
+#zoneA.col-xs-12 div.courseItemWrapper div.standardContent.courseItem .btn button span.courseTitleWrapper .fas {
     background-color: inherit;
     color: #aa0000;
     display: inline-block;
     padding-right: 10px;
 }
 
-div.organizerWrapper div.organizer div.courseItemWrapper div.standardContent.courseItem button span.courseTitleWrapper .fa-plus {
+#zoneA.col-xs-12 div.courseItemWrapper div.standardContent.courseItem .btn button span.courseTitleWrapper .fa-plus {
     display: none;
 }
 
-div.organizerWrapper div.organizer div.courseItemWrapper div.standardContent.courseItem button[aria-expanded="false"] span.courseTitleWrapper .fa-plus {
+#zoneA.col-xs-12 div.courseItemWrapper div.standardContent.courseItem .btn button[aria-expanded="false"] span.courseTitleWrapper .fa-plus {
     display: initial;
 }
 
-div.organizerWrapper div.organizer div.courseItemWrapper div.standardContent.courseItem button[aria-expanded="false"] span.courseTitleWrapper .fa-minus {
+#zoneA.col-xs-12 div.courseItemWrapper div.standardContent.courseItem .btn button[aria-expanded="false"] span.courseTitleWrapper .fa-minus {
     display: none;
 }
 
@@ -208,7 +208,47 @@ div.courseItemWrapper div.standardContent.courseItem .card-body .courseDetails .
         padding-bottom: 5px;
     }
 
+    #zoneA.col-xs-12 .standardContent .btn span.courseTitleWrapper span.courseTitle {
+        color: #aa0000;
+        display: inline-block;
+        font-size: 2.0rem;
+        font-weight: 700;
+        font-family: sans-serif;
+        padding-bottom: 5px;
+    }
+
     #zoneA.col-xs-12 .standardContent .btn button:hover span.courseTitle {
         text-decoration: underline;
+    }
+
+    #zoneA.col-xs-12 .standardContent div.card div.card-header .btn button:hover span.courseTitleWrapper i.fas {
+        text-decoration: none;
+    }
+
+    #zoneA.col-xs-12 .standardContent div.card div.card-header .btn button:active span.courseTitleWrapper i.fas {
+        text-decoration: none;
+    }
+
+    #zoneA.col-xs-12 .standardContent div.card div.card-header .btn button:visited span.courseTitleWrapper i.fas {
+        text-decoration: none;
+    }
+
+    #zoneA.col-xs-12 div.courseItemWrapper div.standardContent.courseItem .btn button span.courseTitleWrapper .fas {
+        background-color: inherit;
+        color: #aa0000;
+        display: inline-block;
+        padding-right: 10px;
+    }
+
+    #zoneA.col-xs-12 div.courseItemWrapper div.standardContent.courseItem .btn button span.courseTitleWrapper .fa-plus {
+        display: none;
+    }
+
+    #zoneA.col-xs-12 div.courseItemWrapper div.standardContent.courseItem .btn button[aria-expanded="false"] span.courseTitleWrapper .fa-plus {
+        display: initial;
+    }
+
+    #zoneA.col-xs-12 div.courseItemWrapper div.standardContent.courseItem .btn button[aria-expanded="false"] span.courseTitleWrapper .fa-minus {
+        display: none;
     }
 }
