@@ -3,7 +3,7 @@
   *     @file course-type.js
   *
   *     This new content type is being adapted from the education abroad program type
-  *     and is intended to replace the plain text course desctiptions shown in the
+  *     and is intended to replace the plain text course descriptions shown in the
   *     following link:
   *         @see https://www.seattleu.edu/core/for-students/course-descriptions-20sq/
   *
