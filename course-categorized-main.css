@@ -180,3 +180,12 @@ div.courseItemWrapper .courseItem .card-body .courseDetails p {
 div.courseItemWrapper .courseItem .card-body .courseDetails .standardContent h5 {
     font-family: sans-serif;
 }
+
+
+@media (max-width:767.999px) {
+
+    div.courseItemWrapper div.card div.courseSummaryWrapper {
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+    }
+}
