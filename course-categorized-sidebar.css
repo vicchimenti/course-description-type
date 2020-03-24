@@ -44,25 +44,6 @@
     margin: 15px;
 }
 
-div.standardContent h5 {
-    font-family: sans-serif;
-    font-size: 1.8rem;
-    font-weight: 600;
-}
-
-div.standardContent h4 {
-    font-family: sans-serif;
-    font-size: 1.75rem;
-    font-weight: 600;
-}
-
-span {
-    color: black;
-    font-family: sans-serif;
-    font-size: 1.5rem;
-    font-weight: 500;
-}
-
 @media (max-width:767.999px) {
     #filterFieldWrapper {
         padding-bottom: 2rem;
