@@ -189,7 +189,7 @@ span {
         padding-bottom: 5px;
     }
 
-    #zoneA.col-xs-12 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent button.btn {
+    #zoneA.col-xs-12 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent button.btn span.courseTitleWrapper {
         color: #aa0000;
         display: inline-block;
         line-height: 20px;
