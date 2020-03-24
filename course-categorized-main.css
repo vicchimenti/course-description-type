@@ -76,34 +76,34 @@ div.courseItemWrapper div.standardContent div.card div.card-header button:hover 
     text-decoration: underline;
 }
 
-div.organizerWrapper div.organizer div.courseItemWrapper div.standardContent div.card div.card-header button:hover i.fas {
+div.organizerWrapper div.organizer div.courseItemWrapper div.standardContent div.card div.card-header button:hover span.courseTitleWrapper i.fas {
     text-decoration: none;
 }
 
-div.organizerWrapper div.organizer div.courseItemWrapper div.standardContent div.card div.card-header button:active i.fas {
+div.organizerWrapper div.organizer div.courseItemWrapper div.standardContent div.card div.card-header button:active span.courseTitleWrapper i.fas {
     text-decoration: none;
 }
 
-div.organizerWrapper div.organizer div.courseItemWrapper div.standardContent div.card div.card-header button:visited i.fas {
+div.organizerWrapper div.organizer div.courseItemWrapper div.standardContent div.card div.card-header button:visited span.courseTitleWrapper i.fas {
     text-decoration: none;
 }
 
-div.organizerWrapper div.organizer div.courseItemWrapper div.standardContent.courseItem button .fas {
+div.organizerWrapper div.organizer div.courseItemWrapper div.standardContent.courseItem button span.courseTitleWrapper .fas {
     background-color: inherit;
     color: #aa0000;
     display: inline-block;
     padding-right: 10px;
 }
 
-div.organizerWrapper div.organizer div.courseItemWrapper div.standardContent.courseItem button .fa-plus {
+div.organizerWrapper div.organizer div.courseItemWrapper div.standardContent.courseItem button span.courseTitleWrapper .fa-plus {
     display: none;
 }
 
-div.organizerWrapper div.organizer div.courseItemWrapper div.standardContent.courseItem button[aria-expanded="false"] .fa-plus {
+div.organizerWrapper div.organizer div.courseItemWrapper div.standardContent.courseItem button[aria-expanded="false"] span.courseTitleWrapper .fa-plus {
     display: initial;
 }
 
-div.organizerWrapper div.organizer div.courseItemWrapper div.standardContent.courseItem button[aria-expanded="false"] .fa-minus {
+div.organizerWrapper div.organizer div.courseItemWrapper div.standardContent.courseItem button[aria-expanded="false"] span.courseTitleWrapper .fa-minus {
     display: none;
 }
 
@@ -197,5 +197,9 @@ div.courseItemWrapper div.standardContent.courseItem .card-body .courseDetails .
     div.courseItemWrapper div.standardContent div.card div.courseSummaryWrapper {
         margin-bottom: 5px;
         padding-bottom: 5px;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn {
+
     }
 }
