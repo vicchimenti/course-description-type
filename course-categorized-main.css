@@ -220,11 +220,11 @@ span {
         text-decoration: none;
     }
 
-    #zoneA.col-xs-12 #zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent div.card div.card-header button.btn:visited span.courseTitleWrapper i.fas {
+    #zoneA.col-xs-12 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent div.card div.card-header button.btn:visited span.courseTitleWrapper i.fas {
         text-decoration: none;
     }
 
-    #zoneA.col-xs-12 #zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent button.btn span.courseTitleWrapper i.fas {
+    #zoneA.col-xs-12 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent button.btn span.courseTitleWrapper i.fas {
         background-color: inherit;
         color: #aa0000;
         display: inline-block;
