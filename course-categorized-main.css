@@ -208,47 +208,47 @@ div.courseItemWrapper div.standardContent.courseItem .card-body .courseDetails .
         padding-bottom: 5px;
     }
 
-    #zoneA.col-xs-12 .standardContent .btn span.courseTitleWrapper span.courseTitle {
+    /* #zoneA.col-xs-12 .standardContent .btn span.courseTitleWrapper span.courseTitle {
         color: #aa0000;
         display: inline-block;
         font-size: 2.0rem;
         font-weight: 700;
         font-family: sans-serif;
         padding-bottom: 5px;
-    }
+    } */
 
     #zoneA.col-xs-12 .standardContent .btn button:hover span.courseTitle {
         text-decoration: underline;
     }
 
-    #zoneA.col-xs-12 .standardContent div.card div.card-header .btn button:hover span.courseTitleWrapper i.fas {
+    #zoneA.col-xs-12 .standardContent div.card div.card-header button.btn:hover i.fas {
         text-decoration: none;
     }
 
-    #zoneA.col-xs-12 .standardContent div.card div.card-header .btn button:active span.courseTitleWrapper i.fas {
+    #zoneA.col-xs-12 .standardContent div.card div.card-header button.btn:active i.fas {
         text-decoration: none;
     }
 
-    #zoneA.col-xs-12 .standardContent div.card div.card-header .btn button:visited span.courseTitleWrapper i.fas {
+    #zoneA.col-xs-12 .standardContent div.card div.card-header button.btn:visited i.fas {
         text-decoration: none;
     }
 
-    #zoneA.col-xs-12 div.courseItemWrapper div.standardContent.courseItem .btn button span.courseTitleWrapper .fas {
+    #zoneA.col-xs-12 .standardContent div.courseItemWrapper div.courseItem button.btn span.courseTitleWrapper i.fas {
         background-color: inherit;
         color: #aa0000;
         display: inline-block;
         padding-right: 10px;
     }
 
-    #zoneA.col-xs-12 div.courseItemWrapper div.standardContent.courseItem .btn button span.courseTitleWrapper .fa-plus {
+    #zoneA.col-xs-12 .standardContent div.courseItemWrapper div.courseItem button.btn i.fa-plus {
         display: none;
     }
 
-    #zoneA.col-xs-12 div.courseItemWrapper div.standardContent.courseItem .btn button[aria-expanded="false"] span.courseTitleWrapper .fa-plus {
+    #zoneA.col-xs-12 .standardContent div.courseItemWrapper div.courseItem button.btn[aria-expanded="false"] i.fa-plus {
         display: initial;
     }
 
-    #zoneA.col-xs-12 div.courseItemWrapper div.standardContent.courseItem .btn button[aria-expanded="false"] span.courseTitleWrapper .fa-minus {
+    #zoneA.col-xs-12 .standardContent div.courseItemWrapper div.courseItem button.btn[aria-expanded="false"] i.fa-minus {
         display: none;
     }
 }
