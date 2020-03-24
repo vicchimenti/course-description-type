@@ -21,12 +21,12 @@ span {
     font-weight: 500;
 }
 
-div.organizerWrapper div.organizer h2.organizerTitle {
+#zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent h2.organizerTitle {
     font-family: sans-serif;
     font-weight: 600;
 }
 
-div.courseItemWrapper div.courseItem div.standardContent button {
+#zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent button {
     color: #aa0000;
     display: inline-block;
     line-height: 20px;
@@ -36,12 +36,12 @@ div.courseItemWrapper div.courseItem div.standardContent button {
     text-decoration: none;
 }
 
-div.organizerWrapper div.organizer div.courseItemWrapper div.standardContent.courseItem div.card {
+#zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent div.card {
     height: auto;
     padding: 0 20px 30px 10px;
 }
 
-div.organizerWrapper div.organizer div.courseItemWrapper div.standardContent div.card .card-header {
+#zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent div.card .card-header {
     font-family: sans-serif;
     font-weight: 600;
     margin-bottom: 5px;
@@ -56,58 +56,58 @@ div.organizerWrapper div.organizer div.courseItemWrapper div.standardContent div
     padding: 20px 20px 0 10px;
     text-align: left;
     text-decoration: none; */
-}
+/* } */
 
-div.organizerWrapper div.organizer div.courseItemWrapper div.standardContent div.card .card-header button span.courseTitleWrapper {
+#zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent div.card .card-header button.btn span.courseTitleWrapper {
     display: inline-block;
     font-size: 2.0rem;
     font-weight: 700;
     padding-bottom: 5px;
 }
 
-div.organizerWrapper div.organizer div.courseItemWrapper div.standardContent div.card div.card-header button span.courseTitleWrapper span.courseTitle {
+#zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent div.card div.card-header button.btn span.courseTitleWrapper span.courseTitle {
     color: #aa0000;
     font-family: sans-serif;
     font-size: 2.0rem;
     font-weight: 700;
 }
 
-div.courseItemWrapper div.standardContent div.card div.card-header button:hover span.courseTitle {
+#zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent div.card div.card-header button.btn:hover span.courseTitle {
     text-decoration: underline;
 }
 
-#zoneA.col-md-9 div.organizerWrapper div.organizer div.courseItemWrapper .standardContent div.card div.card-header .btn button:hover span.courseTitleWrapper i.fas {
+#zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent div.card div.card-header button.btn:hover span.courseTitleWrapper i.fas {
     text-decoration: none;
 }
 
-#zoneA.col-md-9 div.organizerWrapper div.organizer div.courseItemWrapper .standardContent div.card div.card-header .btn button:active span.courseTitleWrapper i.fas {
+#zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent div.card div.card-header button.btn:active span.courseTitleWrapper i.fas {
     text-decoration: none;
 }
 
-#zoneA.col-md-9 div.organizerWrapper div.organizer div.courseItemWrapper .standardContent div.card div.card-header .btn button:visited span.courseTitleWrapper i.fas {
+#zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent div.card div.card-header button.btn:visited span.courseTitleWrapper i.fas {
     text-decoration: none;
 }
 
-#zoneA.col-md-9 div.organizerWrapper div.organizer div.courseItemWrapper .standardContent .btn button span.courseTitleWrapper .fas {
+#zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent button.btn span.courseTitleWrapper .fas {
     background-color: inherit;
     color: #aa0000;
     display: inline-block;
     padding-right: 10px;
 }
 
-#zoneA.col-md-9 div.organizerWrapper div.organizer div.courseItemWrapper .standardContent .btn button span.courseTitleWrapper .fa-plus {
+#zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent button.btn span.courseTitleWrapper .fa-plus {
     display: none;
 }
 
-#zoneA.col-md-9 div.organizerWrapper div.organizer div.courseItemWrapper .standardContent .btn button[aria-expanded="false"].fa-plus {
+#zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent button.btn[aria-expanded="false"].fa-plus {
     display: initial;
 }
 
-#zoneA.col-md-9 div.organizerWrapper div.organizer div.courseItemWrapper .standardContent .btn button[aria-expanded="false"].fa-minus {
+#zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent button.btn[aria-expanded="false"].fa-minus {
     display: none;
 }
 
-div.courseItemWrapper div.standardContent div.card div.courseSummaryWrapper {
+#zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent div.card div.courseSummaryWrapper {
     color: black;
     display: block;
     font-family: sans-serif;
@@ -121,23 +121,23 @@ div.courseItemWrapper div.standardContent div.card div.courseSummaryWrapper {
     text-decoration: none;
 }
 
-div.organizerWrapper div.organizer div.courseItemWrapper div.standardContent div.card .card-header h4 {
+#zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent div.card .card-header h4 {
     font-family: sans-serif;
     font-size: 1.75rem;
     font-weight: 600;
 }
 
-div.courseItemWrapper div.standardContent div.card div.card-header div.courseSummaryWrapper span.courseType {
+#zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent div.card div.card-header div.courseSummaryWrapper span.courseType {
     font-size: 1.75rem;
     font-weight: 550;
 }
 
 
-div.courseItemWrapper div.standardContent.courseItem div.courseSummaryWrapper p.courseSummary {
+#zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent div.courseSummaryWrapper p.courseSummary {
     min-height: 230px;
 }
 
-div.courseItemWrapper div.standardContent div.card div.card-body div.courseDetails{
+#zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent div.card div.card-body div.courseDetails{
     color: black;
     display: block;
     font-size: 1.5rem;
@@ -149,45 +149,45 @@ div.courseItemWrapper div.standardContent div.card div.card-body div.courseDetai
     text-decoration: none;
 }
 
-div.organizerWrapper div.organizer div.courseItemWrapper div.standardContent.courseItem div.card div.card-header div.courseSummaryWrapper div.courseSummaryHeader div.courseDetails .standardContent h5 {
+#zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent div.card div.card-header div.courseSummaryWrapper div.courseSummaryHeader div.courseDetails .standardContent h5 {
     font-family: sans-serif;
     font-size: 1.8rem;
     font-weight: 600;
 }
 
-div.organizerWrapper div.organizer div.courseItemWrapper div.standardContent div.card div.courseSummaryHeader div.courseDetails .standardContent h4 {
+#zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent div.card div.courseSummaryHeader div.courseDetails .standardContent h4 {
     font-family: sans-serif;
     font-size: 1.75rem;
     font-weight: 600;
 }
 
-div.organizerWrapper div.organizer div.courseItemWrapper div.standardContent div.card div.card-body .standardContent h5 {
+#zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent div.card div.card-body .standardContent h5 {
     font-family: sans-serif;
     font-size: 1.8rem;
     font-weight: 600;
 }
 
-div.organizerWrapper div.organizer div.courseItemWrapper div.standardContent div.card div.card-body .standardContent h4 {
+#zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent div.card div.card-body .standardContent h4 {
     font-family: sans-serif;
     font-size: 1.75rem;
     font-weight: 600;
 }
 
-div.courseItemWrapper.accordion div.standardContent.accordion-group .card {
+#zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper.accordion div.courseItem.standardContent .card {
     height: auto;
 }
 
-div.courseItemWrapper div.standardContent.courseItem .card-body .courseDetails {
+#zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent .card-body .courseDetails {
     padding: 20px;
 }
 
-div.courseItemWrapper div.standardContent.courseItem .card-body .courseDetails p {
+#zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent .card-body .courseDetails p {
     float: left;
     margin: 0 10px 10px 0;
     padding: 5px;
 }
 
-div.courseItemWrapper div.standardContent.courseItem .card-body .courseDetails .standardContent h5 {
+#zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent .card-body .courseDetails .standardContent h5 {
     font-family: sans-serif;
 }
 
