@@ -199,7 +199,16 @@ div.courseItemWrapper div.standardContent.courseItem .card-body .courseDetails .
         padding-bottom: 5px;
     }
 
-    #zoneA.col-xs-12 .standardContent .btn {
+    #zoneA.col-xs-12 .standardContent .btn span.courseTitleWrapper {
+        color: #aa0000;
+        display: inline-block;
+        font-size: 2.0rem;
+        font-weight: 700;
+        font-family: sans-serif;
+        padding-bottom: 5px;
+    }
 
+    #zoneA.col-xs-12 .standardContent .btn button:hover span.courseTitle {
+        text-decoration: underline;
     }
 }
