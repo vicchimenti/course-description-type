@@ -199,6 +199,16 @@ div.courseItemWrapper div.standardContent.courseItem .card-body .courseDetails .
         padding-bottom: 5px;
     }
 
+    #zoneA.col-xs-12 .standardContent div.courseItemWrapper div.courseItem button.btn {
+        color: #aa0000;
+        display: inline-block;
+        line-height: 20px;
+        min-height: 60px;
+        padding: 20px 20px 0 10px;
+        text-align: left;
+        text-decoration: none;
+    }
+
     #zoneA.col-xs-12 .standardContent .btn span.courseTitleWrapper span.courseTitle {
         color: #aa0000;
         display: inline-block;
