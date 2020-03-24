@@ -204,19 +204,21 @@ span {
         text-decoration: none;
     }
 
-    #zoneA.col-xs-12 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent button.btn span.courseTitleWrapper span.courseTitle {
-        /* color: #aa0000;
-        display: inline-block; */
-        /* font-size: 2.0rem;
-        font-weight: 700;
-        font-family: sans-serif; */
-    }
+
 
     #zoneA.col-xs-12 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent button.btn span.courseTitleWrapper span.courseTitle i.fas {
         /* background-color: inherit;
         color: #aa0000;
         display: inline-block; */
         padding-right: 5px;
+    }
+
+    #zoneA.col-xs-12 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent button.btn span.courseTitleWrapper span.courseTitle {
+        color: #aa0000;
+        /* display: inline-block; */
+        font-size: 2.0rem;
+        font-weight: 700;
+        font-family: sans-serif;
     }
 
     #zoneA.col-xs-12 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent button.btn:hover span.courseTitle {
