@@ -88,22 +88,22 @@ span {
     text-decoration: none;
 }
 
-#zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent button.btn span.courseTitleWrapper .fas {
+#zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent button.btn span.courseTitleWrapper i.fas {
     background-color: inherit;
     color: #aa0000;
     display: inline-block;
     padding-right: 10px;
 }
 
-#zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent button.btn span.courseTitleWrapper .fa-plus {
+#zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent button.btn span.courseTitleWrapper i.fa-plus {
     display: none;
 }
 
-#zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent button.btn[aria-expanded="false"].fa-plus {
+#zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent button.btn[aria-expanded="false"] span.courseTitleWrapper i.fa-plus {
     display: initial;
 }
 
-#zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent button.btn[aria-expanded="false"].fa-minus {
+#zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent button.btn[aria-expanded="false"] span.courseTitleWrapper i.fa-minus {
     display: none;
 }
 
