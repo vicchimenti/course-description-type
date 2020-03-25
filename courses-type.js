@@ -87,7 +87,7 @@ try {
     document.write('<div class="col-xs-12 courseDetails syllabus"><h5>Syllabus</h5><p class="syllabus">' + syllabus + '</p></div>');
     document.write('</div>');
   } else {
-    document.write('<div class="row levelOne syllabus" style="display: none";><h5>No Syllabus Provided</h5></div>');
+    document.write('<div class="row levelOne courseDetails syllabus" style="display: none";><h5>No Syllabus Provided</h5></div>');
   }
 
   /* -- Write Program Level 2 Details --*/
@@ -96,7 +96,7 @@ try {
     document.write('<div class="col-xs-12 courseDetails assignments"><h5>Assignments</h5><p class="assignments">' + assignments + '</p></div>');
     document.write('</div>');
   } else {
-    document.write('<div class="row levelTwo assignments" style="display: none";><h5>No Assignments Provided</h5></div>');
+    document.write('<div class="row levelTwo courseDetails assignments" style="display: none";><h5>No Assignments Provided</h5></div>');
   }
 
   /* -- Write Program Level 3 Details --*/
@@ -105,7 +105,7 @@ try {
     document.write('<div class="col-xs-12 courseDetails textbooks"><h5>Textbooks</h5><p class="textbooks">' + textbooks + '</p></div>');
     document.write('</div>');
   } else {
-    document.write('<div class="row levelThree textbooks" style="display: none";><h5>No Textbooks Provided</h5></div>');
+    document.write('<div class="row levelThree courseDetails textbooks" style="display: none";><h5>No Textbooks Provided</h5></div>');
   }
 
   /* -- Write Program Level 4 Details --*/
@@ -123,7 +123,7 @@ try {
     document.write('<div class="col-xs-12 courseDetails groupDescription"><h5>Group Description: </h5><p class="standardContent groupDescription">' + groupDescription + '</p></div>');
     document.write('</div>');
   } else {
-    document.write('<div class="row levelFive courseDetails" style="display: none";><h5>No Group Description Provided</h5></div>');
+    document.write('<div class="row levelFive courseDetails groupDescription" style="display: none";><h5>No Group Description Provided</h5></div>');
   }
 
   /* -- Write Program Level 6 Details --*/
@@ -133,7 +133,7 @@ try {
     document.write('<div class="col-xs-12 courseDetails keyWords" style="display: none";><h5>Keywords</h5><p class="keyWords">' + keyWords + '</p></div>');
     document.write('</div>');
   } else {
-    document.write('<div class="row levelSix keyWords" style="display: none";><h5>No Keywords Provided</h5></div>');
+    document.write('<div class="row levelSix courseDetails keyWords" style="display: none";><h5>No Keywords Provided</h5></div>');
   }
 
 
