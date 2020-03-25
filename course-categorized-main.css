@@ -1,6 +1,4 @@
-/**
-*   Primitive Selector Overrides
-*/
+
 
 .standardContent h5 {
     font-family: sans-serif;
@@ -82,6 +80,10 @@ span {
     text-decoration: none;
 }
 
+#zoneA.col-md-9 .standardContent .btn:hover span.courseTitle {
+    text-decoration: underline;
+}
+
 #zoneA.col-xs-12 .standardContent .btn {
     margin-bottom: 0;
     padding-bottom: 0;
@@ -115,11 +117,13 @@ span {
     display: none;
 }
 
+#zoneA.col-xs-12 .standardContent .btn:hover span.courseTitle {
+    text-decoration: underline;
+}
 
 
-/**
-*   Targeted Selectors
-*/
+
+
 
 #zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent h2.organizerTitle {
     font-family: sans-serif;
