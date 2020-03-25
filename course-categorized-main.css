@@ -238,7 +238,12 @@ span.courseType {
     display: block;
     margin-bottom: 0;
     width: 100%;
-}  
+}
+
+#zoneA.col-xs-12 div.levelFive {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
 
 
 
@@ -288,7 +293,12 @@ span.courseType {
         display: block;
         margin-bottom: 0;
         width: 100%;
-    }   
+    }
+
+    #zoneA.col-xs-12 div.levelFive {
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+    }
 }
 
 
