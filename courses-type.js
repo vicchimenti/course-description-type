@@ -12,7 +12,7 @@
   *
   *     Document will write once when the page loads
   *
-  *     @version 1.1
+  *     @version 1.2
   */
 
 
@@ -84,7 +84,7 @@ try {
   /* -- Write Program Level 1 Details --*/
   if (syllabus != "") {
     document.write('<div class="row levelOne">');
-    document.write('<div class="col-xs-12 courseDetails syllabus"><h5>Syllabus</h5><p class="syllabus">' + syllabus + '</p></div>');
+    document.write('<div class="col-xs-12 courseDetails syllabus"><h5>Syllabus</h5><span class="syllabus">' + syllabus + '</span></div>');
     document.write('</div>');
   } else {
     document.write('<div class="row levelOne courseDetails syllabus" style="display: none";><h5>No Syllabus Provided</h5></div>');
@@ -93,7 +93,7 @@ try {
   /* -- Write Program Level 2 Details --*/
   if (assignments != "") {
     document.write('<div class="row levelTwo">');
-    document.write('<div class="col-xs-12 courseDetails assignments"><h5>Assignments</h5><p class="assignments">' + assignments + '</p></div>');
+    document.write('<div class="col-xs-12 courseDetails assignments"><h5>Assignments</h5><span class="assignments">' + assignments + '</span></div>');
     document.write('</div>');
   } else {
     document.write('<div class="row levelTwo courseDetails assignments" style="display: none";><h5>No Assignments Provided</h5></div>');
@@ -102,7 +102,7 @@ try {
   /* -- Write Program Level 3 Details --*/
   if (textbooks != "") {
     document.write('<div class="row levelThree">');
-    document.write('<div class="col-xs-12 courseDetails textbooks"><h5>Textbooks</h5><p class="textbooks">' + textbooks + '</p></div>');
+    document.write('<div class="col-xs-12 courseDetails textbooks"><h5>Textbooks</h5><span class="textbooks">' + textbooks + '</span></div>');
     document.write('</div>');
   } else {
     document.write('<div class="row levelThree courseDetails textbooks" style="display: none";><h5>No Textbooks Provided</h5></div>');
@@ -111,7 +111,7 @@ try {
   /* -- Write Program Level 4 Details --*/
   if (prerequisites != "") {
     document.write('<div class="row levelFour">');
-    document.write('<div class="col-xs-12 courseDetails prerequisites"><h5>Prerequisites</h5><p class="prerequisites">' + prerequisites + '</p></div>');
+    document.write('<div class="col-xs-12 courseDetails prerequisites"><h5>Prerequisites</h5><span class="prerequisites">' + prerequisites + '</span></div>');
     document.write('</div>');
   } else {
     document.write('<div class="row levelFour courseDetails prerequisites" style="display: none";><h5>No Prerequisites Provided</h5></div>');
@@ -120,7 +120,7 @@ try {
   /* -- Write Program Level 5 Details --*/
   if (groupDescription != "") {
     document.write('<div class="row levelFive">');
-    document.write('<div class="col-xs-12 courseDetails groupDescription"><h5>Group Description: </h5><p class="standardContent groupDescription">' + groupDescription + '</p></div>');
+    document.write('<div class="col-xs-12 courseDetails groupDescription"><h5>Group Description: </h5><span class="standardContent groupDescription">' + groupDescription + '</span></div>');
     document.write('</div>');
   } else {
     document.write('<div class="row levelFive courseDetails groupDescription" style="display: none";><h5>No Group Description Provided</h5></div>');
@@ -130,7 +130,7 @@ try {
   if (keyWords != "") {
     /* -- Keywords is a hidden field that is used to add searchable keywords when creating a program item but is not displayed on the live page -- */
     document.write('<div class="row levelSix">');
-    document.write('<div class="col-xs-12 courseDetails keyWords" style="display: none";><h5>Keywords</h5><p class="keyWords">' + keyWords + '</p></div>');
+    document.write('<div class="col-xs-12 courseDetails keyWords" style="display: none";><h5>Keywords</h5><span class="keyWords">' + keyWords + '</span></div>');
     document.write('</div>');
   } else {
     document.write('<div class="row levelSix courseDetails keyWords" style="display: none";><h5>No Keywords Provided</h5></div>');
