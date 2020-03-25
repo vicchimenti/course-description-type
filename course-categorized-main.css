@@ -252,6 +252,34 @@ span {
 
 @media (max-width:767.999px) {
 
+    #zoneA.col-xs-12 .standardContent .btn .fas {
+        padding-right: 5px;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn:hover .fas {
+        text-decoration: none;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn:active .fas {
+        text-decoration: none;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn:visited .fas {
+        text-decoration: none;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn .fa-plus {
+        display: none;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn[aria-expanded="false"] .fa-plus {
+        display: initial;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn[aria-expanded="false"] .fa-minus {
+        display: none;
+    }
+
     #zoneA.col-xs-12 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent button.btn {
         margin-bottom: 0;
         padding-bottom: 0;
