@@ -22,7 +22,29 @@ span {
     font-weight: 550;
 }
 
+/* #zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent button {
+    color: #aa0000;
+    display: inline-block;
+    line-height: 20px;
+    min-height: 60px;
+    padding: 20px 20px 0 10px;
+    text-align: left;
+    text-decoration: none;
+} */
+
 #zoneA.col-md-9 .standardContent .btn {
+    color: #aa0000;
+    display: inline-block;
+    font-size: 2.0rem;
+    font-weight: 700;
+    line-height: 20px;
+    min-height: 60px;
+    padding: 20px 20px 0 10px;
+    text-align: left;
+    text-decoration: none;
+}
+
+#zoneA.col-md-9 .standardContent .btn span.courseTitleWrapper{
     display: inline-block;
     font-size: 2.0rem;
     font-weight: 700;
@@ -41,6 +63,20 @@ span {
     font-size: 2.0rem;
     font-weight: 700;
 }
+
+#zoneA.col-md-9 .standardContent .btn .fa-plus {
+    display: none;
+}
+
+#zoneA.col-md-9 .standardContent .btn[aria-expanded="false"] .fa-plus {
+    display: initial;
+}
+
+#zoneA.col-md-9 .standardContent .btn[aria-expanded="false"] .fa-minus {
+    display: none;
+}
+
+
 
 #zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent h2.organizerTitle {
     font-family: sans-serif;
