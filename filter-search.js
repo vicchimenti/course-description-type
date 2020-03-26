@@ -1,4 +1,5 @@
-/**
+<script>
+/***
 *   @author Victor Chimenti, MSCS 2020
 *   @file filter-search.js
 *   @see UCOR, UNIVERSITY CORE CURRICULUM, https://www.seattleu.edu/core/for-students/course-descriptions-20sq/
@@ -10,10 +11,6 @@
 *
 *   @version 1.0
 */
-
-
-
-<script>
 
 
 $(function () {
