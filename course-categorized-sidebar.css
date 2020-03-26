@@ -34,9 +34,6 @@
     width: 100%;
 }
 
-/* .hideByText, .hideByType, .hideByTerm, .hideByModule, .hideBySection, .hideByNumber, .hideResultsMessage {
-    display: none;
-} */
 
 .noResultsToShow {
     background: #e3e3da;
