@@ -62,7 +62,7 @@ $(function () {
 
             //   ***   Term Filter   ***   //
             $(function() {
-                // When the Radio Button Selector for Academic Terms Changes - Execute change function
+                // When the Radio Button Selector for Academic Terms Changes - Execute change function 
                 $('#SelectBox-ByTerm').change(function () {
                     let key;
                     let radioButtons = document.getElementsByName("SelectBox-ByTerm");
@@ -72,7 +72,7 @@ $(function () {
                             key = radioButtons[i].value;
                         }
                     }
-                    // If Search Key is Not Null then Compare to the Term List Items in Each Content Item
+                    // If Search Key is Not Null then Compare to the Term List Items in Each Content Item 
                     if (key) {
                         $('.term').filter(function(i,e) {
                             var value = $(this).text();
@@ -83,11 +83,11 @@ $(function () {
                                 $(this).parents('.courseItemWrapper').addClass('hideByTerm');
                             }
                         });
-                    // Else the Search Key is Null so Reset all Content Items to Visible
+                    // Else the Search Key is Null so Reset all Content Items to Visible 
                     } else {
                         $('.courseItemWrapper').removeClass('hideByTerm');
                     }
-                    //** parse out unselected content items and limit display to user selected items **/
+                    // parse out unselected content items and limit display to user selected items
                     $(function parseItems() {
                         // assign array of currently visible content items
                         visibleItems = $('.courseItemWrapper').not('.hideByText, .hideByType, .hideByTerm, .hideByModule, .hideByCommon, .hideByFaculty');
