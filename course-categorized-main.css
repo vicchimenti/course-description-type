@@ -96,6 +96,12 @@ span.courseType {
     text-decoration: underline;
 }
 
+#zoneA.col-md-9 .standardContent div.courseSummaryHeader2 {
+    padding-bottom: 1rem;
+}
+
+
+
 
 
 
@@ -240,6 +246,10 @@ span.courseType {
     width: 100%;
 }
 
+#zoneA.col-xs-12 .standardContent div.courseSummaryHeader2 {
+    padding-bottom: 1rem;
+}
+
 #zoneA.col-xs-12 div.levelFive {
     padding-bottom: 1rem;
     margin-bottom: 1rem;
@@ -293,6 +303,10 @@ span.courseType {
         display: block;
         margin-bottom: 0;
         width: 100%;
+    }
+
+    #zoneA.col-xs-12 .standardContent div.courseSummaryHeader2 {
+        padding-bottom: 1rem;
     }
 
     #zoneA.col-xs-12 div.levelFive {
