@@ -13,7 +13,7 @@
     <!-- Search Field -->
     <fieldset for="courseFilter">
 
-        
+
         <!-- Keyword Search Input -->
         <div class="col-xs-12 input input-wrap text-input">
             <label for="id_search">Search</label>
@@ -41,6 +41,36 @@
 
 
 
+        <!-- Search By Module -->
+        <div class="col-xs-12 input input-wrap" id="SelectBox-ByModule">
+            <legend for="SelectBox-ByModule">Module</legend>
+            
+            <input type="radio" name="SelectBox-ByModule" id="Module I" value="Module I">
+            <label for="Module I">Module I</label><br />
+            
+            <input type="radio" name="SelectBox-ByModule" id="Module II" value="Module II">
+            <label for="Module II">Module II</label><br />
+            
+            <input type="radio" name="SelectBox-ByModule" id="Module III" value="Module III">
+            <label for="Module III">Module III</label>
+        </div>
+
+
+        <!-- Search By Module -->
+        <!-- <div class="col-xs-12 input input-wrap">
+            <label for="SelectBox-ByModule">Module</label>
+            <div class="select-input">
+                <select name="SelectBox-ByModule" id="SelectBox-ByModule">
+                    <option value="" selected>Select a Module...</option>
+                    <option value="Module I">Module I</option>
+                    <option value="Module II">Module II</option>
+                    <option value="Module III">Module III</option>
+                </select>
+            </div>
+        </div> -->
+
+
+
         <!-- Search By Type -->
         <div class="col-xs-12 input input-wrap">
             <label for="SelectBox-ByType">Type</label>
@@ -64,18 +94,6 @@
             </div>
         </div>
 
-        <!-- Search By Module -->
-        <div class="col-xs-12 input input-wrap">
-            <label for="SelectBox-ByModule">Module</label>
-            <div class="select-input">
-                <select name="SelectBox-ByModule" id="SelectBox-ByModule">
-                    <option value="" selected>Select a Module...</option>
-                    <option value="Module I">Module I</option>
-                    <option value="Module II">Module II</option>
-                    <option value="Module III">Module III</option>
-                </select>
-            </div>
-        </div>
 
         <!-- Search By Common Name -->
         <div class="col-xs-12 input input-wrap">
@@ -99,6 +117,7 @@
                 </select>
             </div>
         </div>
+
 
         <!-- Search By Faculty -->
         <div class="col-xs-12 input input-wrap">
