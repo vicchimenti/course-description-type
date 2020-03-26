@@ -247,12 +247,13 @@ span.courseType {
 }
 
 #zoneA.col-xs-12 .standardContent div.courseSummaryHeader2 {
+    margin-bottom: 1rem;
     padding-bottom: 1rem;
 }
 
 #zoneA.col-xs-12 div.levelFive {
-    padding-bottom: 1rem;
     margin-bottom: 1rem;
+    padding-bottom: 1rem;
 }
 
 
@@ -306,12 +307,13 @@ span.courseType {
     }
 
     #zoneA.col-xs-12 .standardContent div.courseSummaryHeader2 {
+        margin-bottom: 1rem;
         padding-bottom: 1rem;
     }
 
     #zoneA.col-xs-12 div.levelFive {
-        padding-bottom: 1rem;
         margin-bottom: 1rem;
+        padding-bottom: 1rem;
     }
 }
 
