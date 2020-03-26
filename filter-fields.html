@@ -9,15 +9,17 @@
 *   User may filter by keyword input, course type, term, module, common course name, and faculty
 -->
 
-<form action="#">
+<form action="#" id="courseFilter">
     <!-- Search Field -->
-    <fieldset>
-
+    <fieldset for="courseFilter">
         <!-- Keyword Search Input -->
         <div class="col-xs-12 input input-wrap text-input">
             <label for="id_search">Search</label>
             <input type="text" class="form-control" name="searchthispage" value="" id="id_search" placeholder="Search by Keyword" autofocus aria-label="Search Keyword" />
         </div>
+    </fieldset>
+    <fieldset for="courseFilter">
+
 
         <!-- Search By Term -->
         <div class="col-xs-12 input input-wrap SelectBox-ByTerm">
@@ -35,6 +37,11 @@
             <input type="radio" name="Summer" id="Summer">
             <label for="Summer" value="Summer">Summer Quarter</label>
         </div>
+        
+
+    </fieldset>
+    <fieldset for="courseFilter">
+
 
 
 
