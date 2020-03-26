@@ -62,7 +62,7 @@ $(function () {
 
             //   ***   Term Filter   ***   //
             $(function() {
-                // When the Dropdown Menu Selector Academic Terms Change - Execute change function
+                // When the Radio Button Selector for Academic Terms Changes - Execute change function
                 $('#SelectBox-ByTerm').change(function () {
                     let key;
                     let radioButtons = document.getElementsByName("SelectBox-ByTerm");
@@ -70,17 +70,12 @@ $(function () {
                         if (radioButtons[i].checked == true) {
                             // Assign Search Key
                             key = radioButtons[i].value;
-                            console.log("radioButton key: " + key);
                         }
                     }
-                    // Assign Search Key
-                    // let key = $(this).val();
                     // If Search Key is Not Null then Compare to the Term List Items in Each Content Item
                     if (key) {
                         $('.term').filter(function(i,e) {
                             var value = $(this).text();
-                            console.log("term value: " + value);
-
                             // Check to see if the Key and Value are a Match
                             if (value.match(key)) {
                                 $(this).parents('.courseItemWrapper').removeClass('hideByTerm');
