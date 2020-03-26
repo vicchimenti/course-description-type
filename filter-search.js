@@ -106,26 +106,32 @@ $(function () {
 
 
 
-            //   ***   Type Filter   ***   //
-            $(function() {
-                // When the Dropdown Menu Selector Course Types Change - Execute change function
-                $('#SelectBox-ByType').change(function () {
-                    // Assign Search Key
-                    let key = $(this).val();
-                    // If Search Key is Not Null then Compare to the Type List Items in Each Content Item
+            //   ***   Module Filter   ***   //
+            $(function () {
+                // When the Dropdown Menu Selector Academic Terms Change - Execute change function
+                $('#SelectBox-ByModule').change(function () {
+                    let key;
+                    let radioButtons = document.getElementsByName("SelectBox-ByModule");
+                    for (let i = 0; i < radioButtons.length; i++) {
+                        if (radioButtons[i].checked == true) {
+                            // Assign Search Key
+                            key = radioButtons[i].value;
+                        }
+                    }
+                    // If Search Key is Not Null then Compare to the Term List Items in Each Content Item
                     if (key) {
-                        $('.courseType').filter(function(i,e) {
+                        $('.ucorModule').filter(function (i, e) {
                             var value = $(this).text();
-                            // Check to see if the Key and Value are a Match
-                            if (value.match(key)) {
-                                $(this).parents('.courseItemWrapper').removeClass('hideByType');
+                            // Check to see if the Key and Value are an exactly equal
+                            if (key === value) {
+                                $(this).parents('.courseItemWrapper').removeClass('hideByModule');
                             } else {
-                                $(this).parents('.courseItemWrapper').addClass('hideByType');
+                                $(this).parents('.courseItemWrapper').addClass('hideByModule');
                             }
                         });
-                    // Else the Search Key is Null so Reset all Content Items to Visible
+                        // Else the Search Key is Null so Reset all Content Items to Visible
                     } else {
-                        $('.courseItemWrapper').removeClass('hideByType');
+                        $('.courseItemWrapper').removeClass('hideByModule');
                     }
                     //** parse out unselected content items and limit display to user selected items **/
                     $(function parseItems() {
@@ -146,26 +152,26 @@ $(function () {
 
 
 
-            //   ***   Module Filter   ***   //
+            //   ***   Type Filter   ***   //
             $(function() {
-                // When the Dropdown Menu Selector Academic Terms Change - Execute change function
-                $('#SelectBox-ByModule').change(function () {
+                // When the Dropdown Menu Selector Course Types Change - Execute change function
+                $('#SelectBox-ByType').change(function () {
                     // Assign Search Key
                     let key = $(this).val();
-                    // If Search Key is Not Null then Compare to the Term List Items in Each Content Item
+                    // If Search Key is Not Null then Compare to the Type List Items in Each Content Item
                     if (key) {
-                        $('.ucorModule').filter(function(i,e) {
+                        $('.courseType').filter(function(i,e) {
                             var value = $(this).text();
-                            // Check to see if the Key and Value are an exactly equal
-                            if (key === value) {
-                                $(this).parents('.courseItemWrapper').removeClass('hideByModule');
+                            // Check to see if the Key and Value are a Match
+                            if (value.match(key)) {
+                                $(this).parents('.courseItemWrapper').removeClass('hideByType');
                             } else {
-                                $(this).parents('.courseItemWrapper').addClass('hideByModule');
+                                $(this).parents('.courseItemWrapper').addClass('hideByType');
                             }
                         });
                     // Else the Search Key is Null so Reset all Content Items to Visible
                     } else {
-                        $('.courseItemWrapper').removeClass('hideByModule');
+                        $('.courseItemWrapper').removeClass('hideByType');
                     }
                     //** parse out unselected content items and limit display to user selected items **/
                     $(function parseItems() {
