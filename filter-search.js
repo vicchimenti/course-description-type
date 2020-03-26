@@ -64,8 +64,16 @@ $(function () {
             $(function() {
                 // When the Dropdown Menu Selector Academic Terms Change - Execute change function
                 $('#SelectBox-ByTerm').change(function () {
+                    let key;
+                    let radioButtons = document.getElementsByName("SelectBox-ByTerm");
+                    for (let i = 0; i < radioButtons.length; i++) {
+                        if (radioButtons[i].checked == true) {
+                            // Assign Search Key
+                            key = radioButtons[i].value;
+                        }
+                    }
                     // Assign Search Key
-                    let key = $(this).val();
+                    // let key = $(this).val();
                     // If Search Key is Not Null then Compare to the Term List Items in Each Content Item
                     if (key) {
                         $('.term').filter(function(i,e) {
