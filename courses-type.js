@@ -12,7 +12,7 @@
   *
   *     Document will write once when the page loads
   *
-  *     @version 1.3
+  *     @version 2.0
   */
 
 
@@ -66,8 +66,9 @@ try {
   document.write('<div class="col-xs-12 col-sm-4 courseDetails terms"><h5>Term: </h5><span class="term">' + term + '</span></div>');
   document.write('<div class="col-xs-12 col-sm-4 courseDetails years"><h5>Year: </h5><span class="year">' + year + '</span></div>');
   document.write('<div class="col-xs-12 col-sm-4 courseDetails instructors"><h5>Faculty: </h5><span class="faculty">' + faculty + '</span></div></div>');
-  document.write('<div class="row col-xs-12 properCourseName"><h5>Course Title: </h5><span class="properCourseName">' + properCourseName + '</span></div>');
-  document.write('</div></div>'); // close courseSummaryWrapper and card header divs
+  document.write('<div class="row col-xs-12 courseSummaryHeader3">');
+  document.write('<div class="col-xs-12 properCourseName"><h5>Course Title: </h5><span class="properCourseName">' + properCourseName + '</span></div>');
+  document.write('</div></div></div>'); // close courseSummaryWrapper, courseSummaryHeader3 and card header divs
 
 
   /* -- Write the collapsible body -- */
