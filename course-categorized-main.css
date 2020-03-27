@@ -96,8 +96,8 @@ span.courseType {
     text-decoration: underline;
 }
 
-#zoneA.col-md-9 .standardContent div.courseSummaryHeader2 {
-    padding-bottom: 1rem;
+#zoneA.col-md-9 .standardContent div.courseSummaryHeader3 {
+    padding-bottom: 0.5rem;
 }
 
 
@@ -246,9 +246,9 @@ span.courseType {
     width: 100%;
 }
 
-#zoneA.col-xs-12 .standardContent div.courseSummaryHeader2 {
-    margin-bottom: 1.5rem;
-    padding-bottom: 1.5rem;
+#zoneA.col-xs-12 .standardContent div.courseSummaryHeader3 {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
 }
 
 #zoneA.col-xs-12 div.levelFive {
@@ -306,9 +306,9 @@ span.courseType {
         width: 100%;
     }
 
-    #zoneA.col-xs-12 .standardContent div.courseSummaryHeader2 {
-        margin-bottom: 1.5rem;
-        padding-bottom: 1.5rem;
+    #zoneA.col-xs-12 .standardContent div.courseSummaryHeader3 {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
     }
 
     #zoneA.col-xs-12 div.levelFive {
