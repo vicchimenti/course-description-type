@@ -66,6 +66,7 @@ try {
   document.write('<div class="col-xs-12 col-sm-4 courseDetails terms"><h5>Term: </h5><span class="term">' + term + '</span></div>');
   document.write('<div class="col-xs-12 col-sm-4 courseDetails years"><h5>Year: </h5><span class="year">' + year + '</span></div>');
   document.write('<div class="col-xs-12 col-sm-4 courseDetails instructors"><h5>Faculty: </h5><span class="faculty">' + faculty + '</span></div></div>');
+  document.write('<div class="row col-xs-12 properCourseName"><h5>Course Title: </h5><span class="properCourseName">' + properCourseName + '</span></div>');
   document.write('</div></div>'); // close courseSummaryWrapper and card header divs
 
 
@@ -77,9 +78,9 @@ try {
   document.write('<div class="container-fluid">');        // closed in *** write closing tags ***
 
   /* -- Write the collapsed viewable summary header -- */
-  document.write('<div class="col-xs-12 fullcourseDescriptionWrapper">');
-  document.write('<div class="row col-xs-12 courseDetails properCourseName"><h5>Course Title: </h5><span class="properCourseName">' + properCourseName + '</span></div>');
-  document.write('<div class="row col-xs-12 courseDetails courseDescriptions"><h5>Course Description: </h5><span class="courseDescription">' + courseDescription + '</span></div></div>'); // close fullcourseDescriptionWrapper div
+  document.write('<div class="col-xs-12 fullCourseDescriptionWrapper">');
+  // document.write('<div class="row col-xs-12 courseDetails properCourseName"><h5>Course Title: </h5><span class="properCourseName">' + properCourseName + '</span></div>');
+  document.write('<div class="row col-xs-12 courseDetails courseDescriptions"><h5>Course Description: </h5><span class="courseDescription">' + courseDescription + '</span></div></div>'); // close fullCourseDescriptionWrapper div
 
   /* -- Write Program Level 1 Details --*/
   if (syllabus != "") {
