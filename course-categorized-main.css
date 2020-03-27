@@ -36,7 +36,7 @@ span.courseType {
     font-weight: 600;
 }
 
-#zoneA.col-md-9 .standardContent .btn {
+body.homePage #zoneA.col-md-9 .standardContent .btn {
     color: #aa0000;
     display: inline-block;
     font-size: 2.0rem;
@@ -55,14 +55,14 @@ span.courseType {
     padding-bottom: 5px;
 }
 
-#zoneA.col-md-9 .standardContent .btn .fas {
+body.homePage #zoneA.col-md-9 .standardContent .btn .fas {
     background-color: inherit;
     color: #aa0000;
     display: inline-block;
     padding-right: 5px;
 }
 
-#zoneA.col-md-9 .standardContent .btn span.courseTitleWrapper span.courseTitle {
+body.homePage #zoneA.col-md-9 .standardContent .btn span.courseTitleWrapper span.courseTitle {
     color: #aa0000;
     font-size: 2.0rem;
     font-weight: 700;
@@ -256,6 +256,279 @@ span.courseType {
 }
 
 
+@media (min-width:992px) {
+
+    /* body div.card-header {
+        color: #aa0000;
+    }
+
+    div.card-header .btn-link {
+        color: #aa0000;
+    } */
+
+    body.homePage #zoneA.col-md-9 .standardContent .btn span.courseTitleWrapper{
+        display: inline-block;
+        font-size: 2.0rem;
+        font-weight: 700;
+        padding-bottom: 5px;
+    }
+
+    body.homePage #zoneA.col-md-9 .standardContent .btn .fas {
+        background-color: inherit;
+        color: #aa0000;
+        display: inline-block;
+        padding-right: 5px;
+    }
+
+    body.homePage #zoneA.col-md-9 .standardContent .btn span.courseTitleWrapper span.courseTitle {
+        color: #aa0000;
+        font-size: 2.0rem;
+        font-weight: 700;
+    }
+
+    #zoneA.col-md-9 .standardContent .btn .fa-plus {
+        display: none;
+    }
+
+    #zoneA.col-md-9 .standardContent .btn[aria-expanded="false"] .fa-plus {
+        display: initial;
+    }
+
+    #zoneA.col-md-9 .standardContent .btn[aria-expanded="false"] .fa-minus {
+        display: none;
+    }
+
+    #zoneA.col-md-9 .standardContent .btn:hover .fas {
+        text-decoration: none;
+    }
+
+    #zoneA.col-md-9 .standardContent .btn:active .fas {
+        text-decoration: none;
+    }
+
+    #zoneA.col-md-9 .standardContent .btn:visited .fas {
+        text-decoration: none;
+    }
+
+    #zoneA.col-md-9 .standardContent .btn:hover span.courseTitle {
+        text-decoration: underline;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn .fas {
+        padding-right: 5px;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn:hover .fas {
+        text-decoration: none;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn:active .fas {
+        text-decoration: none;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn:visited .fas {
+        text-decoration: none;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn .fa-plus {
+        display: none;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn[aria-expanded="false"] .fa-plus {
+        display: initial;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn[aria-expanded="false"] .fa-minus {
+        display: none;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn:hover span.courseTitle {
+        text-decoration: underline;
+    }
+}
+
+
+@media (max-width:992px) {
+
+    body.homePage #zoneA.col-md-9 .standardContent .btn span.courseTitleWrapper{
+        display: inline-block;
+        font-size: 2.0rem;
+        font-weight: 700;
+        padding-bottom: 5px;
+    }
+
+    body.homePage #zoneA.col-md-9 .standardContent .btn .fas {
+        background-color: inherit;
+        color: #aa0000;
+        display: inline-block;
+        padding-right: 5px;
+    }
+
+    body.homePage #zoneA.col-md-9 .standardContent .btn span.courseTitleWrapper span.courseTitle {
+        color: #aa0000;
+        font-size: 2.0rem;
+        font-weight: 700;
+    }
+
+    #zoneA.col-md-9 .standardContent .btn .fa-plus {
+        display: none;
+    }
+
+    #zoneA.col-md-9 .standardContent .btn[aria-expanded="false"] .fa-plus {
+        display: initial;
+    }
+
+    #zoneA.col-md-9 .standardContent .btn[aria-expanded="false"] .fa-minus {
+        display: none;
+    }
+
+    #zoneA.col-md-9 .standardContent .btn:hover .fas {
+        text-decoration: none;
+    }
+
+    #zoneA.col-md-9 .standardContent .btn:active .fas {
+        text-decoration: none;
+    }
+
+    #zoneA.col-md-9 .standardContent .btn:visited .fas {
+        text-decoration: none;
+    }
+
+    #zoneA.col-md-9 .standardContent .btn:hover span.courseTitle {
+        text-decoration: underline;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn .fas {
+        padding-right: 5px;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn:hover .fas {
+        text-decoration: none;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn:active .fas {
+        text-decoration: none;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn:visited .fas {
+        text-decoration: none;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn .fa-plus {
+        display: none;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn[aria-expanded="false"] .fa-plus {
+        display: initial;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn[aria-expanded="false"] .fa-minus {
+        display: none;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn:hover span.courseTitle {
+        text-decoration: underline;
+    }
+}
+
+
+@media (min-width:767.999px) {
+
+    body.homePage #zoneA.col-md-9 .standardContent .btn span.courseTitleWrapper{
+        display: inline-block;
+        font-size: 2.0rem;
+        font-weight: 700;
+        padding-bottom: 5px;
+    }
+
+    body.homePage #zoneA.col-md-9 .standardContent .btn .fas {
+        background-color: inherit;
+        color: #aa0000;
+        display: inline-block;
+        padding-right: 5px;
+    }
+
+    body.homePage #zoneA.col-md-9 .standardContent .btn span.courseTitleWrapper span.courseTitle {
+        color: #aa0000;
+        font-size: 2.0rem;
+        font-weight: 700;
+    }
+
+    #zoneA.col-md-9 .standardContent .btn .fa-plus {
+        display: none;
+    }
+
+    #zoneA.col-md-9 .standardContent .btn[aria-expanded="false"] .fa-plus {
+        display: initial;
+    }
+
+    #zoneA.col-md-9 .standardContent .btn[aria-expanded="false"] .fa-minus {
+        display: none;
+    }
+
+    #zoneA.col-md-9 .standardContent .btn:hover .fas {
+        text-decoration: none;
+    }
+
+    #zoneA.col-md-9 .standardContent .btn:active .fas {
+        text-decoration: none;
+    }
+
+    #zoneA.col-md-9 .standardContent .btn:visited .fas {
+        text-decoration: none;
+    }
+
+    #zoneA.col-md-9 .standardContent .btn:hover span.courseTitle {
+        text-decoration: underline;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn .fas {
+        padding-right: 5px;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn:hover .fas {
+        text-decoration: none;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn:active .fas {
+        text-decoration: none;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn:visited .fas {
+        text-decoration: none;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn .fa-plus {
+        display: none;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn[aria-expanded="false"] .fa-plus {
+        display: initial;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn[aria-expanded="false"] .fa-minus {
+        display: none;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn:hover span.courseTitle {
+        text-decoration: underline;
+    }
+}
 
 
 
@@ -350,6 +623,95 @@ span.courseType {
     #zoneA.col-xs-12 div.levelFive {
         margin-bottom: 1rem;
         padding-bottom: 1rem;
+    }
+}
+
+
+@media (min-width:267.999px) {
+
+    #zoneA.col-md-9 .standardContent .btn span.courseTitleWrapper{
+        display: inline-block;
+        font-size: 2.0rem;
+        font-weight: 700;
+        padding-bottom: 5px;
+    }
+
+    #zoneA.col-md-9 .standardContent .btn .fas {
+        background-color: inherit;
+        color: #aa0000;
+        display: inline-block;
+        padding-right: 5px;
+    }
+
+    #zoneA.col-md-9 .standardContent .btn span.courseTitleWrapper span.courseTitle {
+        color: #aa0000;
+        font-size: 2.0rem;
+        font-weight: 700;
+    }
+
+    #zoneA.col-md-9 .standardContent .btn .fa-plus {
+        display: none;
+    }
+
+    #zoneA.col-md-9 .standardContent .btn[aria-expanded="false"] .fa-plus {
+        display: initial;
+    }
+
+    #zoneA.col-md-9 .standardContent .btn[aria-expanded="false"] .fa-minus {
+        display: none;
+    }
+
+    #zoneA.col-md-9 .standardContent .btn:hover .fas {
+        text-decoration: none;
+    }
+
+    #zoneA.col-md-9 .standardContent .btn:active .fas {
+        text-decoration: none;
+    }
+
+    #zoneA.col-md-9 .standardContent .btn:visited .fas {
+        text-decoration: none;
+    }
+
+    #zoneA.col-md-9 .standardContent .btn:hover span.courseTitle {
+        text-decoration: underline;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn .fas {
+        padding-right: 5px;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn:hover .fas {
+        text-decoration: none;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn:active .fas {
+        text-decoration: none;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn:visited .fas {
+        text-decoration: none;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn .fa-plus {
+        display: none;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn[aria-expanded="false"] .fa-plus {
+        display: initial;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn[aria-expanded="false"] .fa-minus {
+        display: none;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn:hover span.courseTitle {
+        text-decoration: underline;
     }
 }
 
