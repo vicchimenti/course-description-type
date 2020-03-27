@@ -282,6 +282,43 @@ span.courseType {
         font-weight: 700;
     }
 
+    #zoneA.col-xs-12 .standardContent .btn {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn .fas {
+        padding-right: 5px;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn:hover .fas {
+        text-decoration: none;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn:active .fas {
+        text-decoration: none;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn:visited .fas {
+        text-decoration: none;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn .fa-plus {
+        display: none;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn[aria-expanded="false"] .fa-plus {
+        display: initial;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn[aria-expanded="false"] .fa-minus {
+        display: none;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn:hover span.courseTitle {
+        text-decoration: underline;
+    }
+
     #zoneA.col-xs-12 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent div.card div.courseSummaryWrapper {
         margin-bottom: 5px;
         padding-bottom: 5px;
