@@ -12,7 +12,7 @@
   *
   *     Document will write once when the page loads
   *
-  *     @version 2.0
+  *     @version 2.1
   */
 
 
@@ -75,13 +75,12 @@ try {
   document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, collapseDiv));  // closed in *** write closing tags ***
 
   /* -- Write Program Cards--*/
-  document.write('<div class="card-body">');              // closed in *** write closing tags ***
-  document.write('<div class="container-fluid">');        // closed in *** write closing tags ***
+  document.write('<div class="card-body">');
+  document.write('<div class="container-fluid">');
 
-  /* -- Write the collapsed viewable summary header -- */
-  document.write('<div class="col-xs-12 fullCourseDescriptionWrapper">');
-  // document.write('<div class="row col-xs-12 courseDetails properCourseName"><h5>Course Title: </h5><span class="properCourseName">' + properCourseName + '</span></div>');
-  document.write('<div class="row col-xs-12 courseDetails courseDescriptions"><h5>Course Description: </h5><span class="courseDescription">' + courseDescription + '</span></div></div>'); // close fullCourseDescriptionWrapper div
+  /* -- Write the collapsed summary header -- */
+  document.write('<div class="row col-xs-12 fullCourseDescriptionWrapper">');
+  document.write('<div class="courseDetails courseDescriptions"><h5>Course Description: </h5><div class="courseDescription">' + courseDescription + '</div></div></div>'); // close fullCourseDescriptionWrapper div
 
   /* -- Write Program Level 1 Details --*/
   if (syllabus != "") {
