@@ -12,7 +12,7 @@
   *
   *     Document will write once when the page loads
   *
-  *     @version 2.1
+  *     @version 2.2
   */
 
 
@@ -80,12 +80,12 @@ try {
 
   /* -- Write the collapsed summary header -- */
   document.write('<div class="row col-xs-12 fullCourseDescriptionWrapper">');
-  document.write('<div class="col-xs-12 courseDetails courseDescriptions"><h5>Course Description: </h5><div class="courseDescription">' + courseDescription + '</div></div></div>'); // close fullCourseDescriptionWrapper div
+  document.write('<div class="col-xs-12 courseDetails courseDescriptions"><h5>Course Description: </h5><div class="courseInfo">' + courseDescription + '</div></div></div>'); // close fullCourseDescriptionWrapper div
 
   /* -- Write Program Level 1 Details --*/
   if (syllabus != "") {
     document.write('<div class="row col-xs-12 levelOne">');
-    document.write('<div class="courseDetails syllabus"><h5>Syllabus</h5><div class="courseInfo">' + syllabus + '</div></div>');
+    document.write('<div class="col-xs-12 courseDetails syllabus"><h5>Syllabus</h5><div class="courseInfo">' + syllabus + '</div></div>');
     document.write('</div>');
   } else {
     document.write('<div class="row levelOne courseDetails syllabus" style="display: none";><h5>No Syllabus Provided</h5></div>');
@@ -94,7 +94,7 @@ try {
   /* -- Write Program Level 2 Details --*/
   if (assignments != "") {
     document.write('<div class="row col-xs-12 levelTwo">');
-    document.write('<div class="courseDetails assignments"><h5>Assignments</h5><div class="courseInfo">' + assignments + '</div></div>');
+    document.write('<div class="col-xs-12 courseDetails assignments"><h5>Assignments</h5><div class="courseInfo">' + assignments + '</div></div>');
     document.write('</div>');
   } else {
     document.write('<div class="row levelTwo courseDetails assignments" style="display: none";><h5>No Assignments Provided</h5></div>');
@@ -103,7 +103,7 @@ try {
   /* -- Write Program Level 3 Details --*/
   if (textbooks != "") {
     document.write('<div class="row col-xs-12 levelThree">');
-    document.write('<div class="courseDetails textbooks"><h5>Textbooks</h5><div class="courseInfo">' + textbooks + '</div></div>');
+    document.write('<div class="col-xs-12 courseDetails textbooks"><h5>Textbooks</h5><div class="courseInfo">' + textbooks + '</div></div>');
     document.write('</div>');
   } else {
     document.write('<div class="row levelThree courseDetails textbooks" style="display: none";><h5>No Textbooks Provided</h5></div>');
@@ -112,7 +112,7 @@ try {
   /* -- Write Program Level 4 Details --*/
   if (prerequisites != "") {
     document.write('<div class="row col-xs-12 levelFour">');
-    document.write('<div class="courseDetails prerequisites"><h5>Prerequisites</h5><div class="courseInfo">' + prerequisites + '</div></div>');
+    document.write('<div class="col-xs-12 courseDetails prerequisites"><h5>Prerequisites</h5><div class="courseInfo">' + prerequisites + '</div></div>');
     document.write('</div>');
   } else {
     document.write('<div class="row levelFour courseDetails prerequisites" style="display: none";><h5>No Prerequisites Provided</h5></div>');
@@ -121,7 +121,7 @@ try {
   /* -- Write Program Level 5 Details --*/
   if (groupDescription != "") {
     document.write('<div class="row col-xs-12 levelFive">');
-    document.write('<div class="courseDetails groupDescription"><h5>Group Description: </h5><div class="courseInfo">' + groupDescription + '</div></div>');
+    document.write('<div class="col-xs-12 courseDetails groupDescription"><h5>Group Description: </h5><div class="courseInfo">' + groupDescription + '</div></div>');
     document.write('</div>');
   } else {
     document.write('<div class="row levelFive courseDetails groupDescription" style="display: none";><h5>No Group Description Provided</h5></div>');
@@ -131,7 +131,7 @@ try {
   if (keyWords != "") {
     /* -- Keywords is a hidden field that is used to add searchable keywords when creating a program item but is not displayed on the live page -- */
     document.write('<div class="row col-xs-12 levelSix">');
-    document.write('<div class="courseDetails keyWords" style="display: none";><h5>Keywords</h5><div class="courseInfo">' + keyWords + '</div></div>');
+    document.write('<div class="col-xs-12 courseDetails keyWords" style="display: none";><h5>Keywords</h5><div class="courseInfo">' + keyWords + '</div></div>');
     document.write('</div>');
   } else {
     document.write('<div class="row levelSix courseDetails keyWords" style="display: none";><h5>No Keywords Provided</h5></div>');
