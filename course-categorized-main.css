@@ -36,7 +36,7 @@ span.courseType {
     font-weight: 600;
 }
 
-body.homePage #zoneA.col-md-9 .standardContent .btn {
+#zoneA.col-md-9 .standardContent .btn {
     color: #aa0000;
     display: inline-block;
     font-size: 2.0rem;
@@ -55,14 +55,14 @@ body.homePage #zoneA.col-md-9 .standardContent .btn {
     padding-bottom: 5px;
 }
 
-body.homePage #zoneA.col-md-9 .standardContent .btn .fas {
+#zoneA.col-md-9 .standardContent .btn .fas {
     background-color: inherit;
     color: #aa0000;
     display: inline-block;
     padding-right: 5px;
 }
 
-body.homePage #zoneA.col-md-9 .standardContent .btn span.courseTitleWrapper span.courseTitle {
+#zoneA.col-md-9 .standardContent .btn span.courseTitleWrapper span.courseTitle {
     color: #aa0000;
     font-size: 2.0rem;
     font-weight: 700;
