@@ -48,7 +48,7 @@ span.courseType {
     text-decoration: none;
 }
 
-#zoneA.col-md-9 .standardContent .btn span.courseTitleWrapper{
+#zoneA.col-md-9 .standardContent .btn span.courseTitleWrapper {
     display: inline-block;
     font-size: 2.0rem;
     font-weight: 700;
@@ -256,6 +256,69 @@ span.courseType {
 
 
 
+
+
+#zoneA.col-sm-8 .standardContent .btn {
+    color: #aa0000;
+    display: inline-block;
+    font-size: 2.0rem;
+    font-weight: 700;
+    line-height: 20px;
+    min-height: 60px;
+    padding: 20px 20px 0 10px;
+    text-align: left;
+    text-decoration: none;
+}
+
+#zoneA.col-sm-8 .standardContent .btn span.courseTitleWrapper {
+    display: inline-block;
+    font-size: 2.0rem;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+#zoneA.col-sm-8 .standardContent .btn .fas {
+    background-color: inherit;
+    color: #aa0000;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+#zoneA.col-sm-8 .standardContent .btn span {
+    color: #aa0000;
+    font-size: 2.0rem;
+    font-weight: 700;
+}
+
+#zoneA.col-sm-8 .standardContent .btn span.courseTitleWrapper span.courseTitle {
+    color: #aa0000;
+    font-size: 2.0rem;
+    font-weight: 700;
+}
+
+#zoneA.col-sm-8 .standardContent .btn .fa-plus {
+    display: none;
+}
+
+#zoneA.col-sm-8 .standardContent .btn[aria-expanded="false"] .fa-plus {
+    display: initial;
+}
+
+#zoneA.col-sm-8 .standardContent .btn[aria-expanded="false"] .fa-minus {
+    display: none;
+}
+
+#zoneA.col-sm-8 .standardContent .btn:hover .fas {
+    text-decoration: none;
+}
+
+#zoneA.col-sm-8 .standardContent .btn:active .fas {
+    text-decoration: none;
+}
+
+#zoneA.col-sm-8 .standardContent .btn:visited .fas {
+    text-decoration: none;
+}
 
 
 @media (max-width:767.999px) {
