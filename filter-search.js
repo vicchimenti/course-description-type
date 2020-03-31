@@ -64,7 +64,7 @@ $(function () {
             $(function() {
                 // When the Radio Button Selector for Academic Terms Changes - Execute change function 
                 $('#SelectBox-ByTerm').change(function () {
-                    let key = [];
+                    let keys = [];
                     $(':checkbox:checked').map(function (i,e) {
                         return $(e).val();
                     }).get();
@@ -80,15 +80,21 @@ $(function () {
                     //     }
                     // }
                     // If Search Key is Not Null then Compare to the Term List Items in Each Content Item 
-                    if (key) {
+                    if (keys) {
                         $('.term').filter(function(i,e) {
+                            $(this).parents('.courseItemWrapper').addClass('hideByTerm');
                             var value = $(this).text();
                             // Check to see if the Key and Value are a Match
-                            if (value.match(key)) {
-                                $(this).parents('.courseItemWrapper').removeClass('hideByTerm');
-                            } else {
-                                $(this).parents('.courseItemWrapper').addClass('hideByTerm');
+                            for (let index = 0; index < keys.length; index++) {
+                                if (value.match(keys[index])) {
+                                    $(this).parents('.courseItemWrapper').removeClass('hideByTerm');
+                                }
                             }
+                            // if (value.match(key)) {
+                            //     $(this).parents('.courseItemWrapper').removeClass('hideByTerm');
+                            // } else {
+                            //     $(this).parents('.courseItemWrapper').addClass('hideByTerm');
+                            // }
                         });
                     // Else the Search Key is Null so Reset all Content Items to Visible 
                     } else {
