@@ -64,7 +64,7 @@ $(function () {
             $(function() {
                 // When the Multi-Select Checkbox Selector for Academic Terms Changes - Execute change function 
                 $('#SelectBox-ByTerm').change(function () {
-                    // store an array of keys for each check box selected
+                    // initialize an array of keys to hold each check box selected
                     let keys = [];
                     $(':checkbox:checked').each(function(item) {
                         keys[item] = $(this).val();
