@@ -69,8 +69,8 @@ $(function () {
                     $(':checkbox:checked').each(function(item) {
                         keys[item] = $(this).val();
                     });
-                    // If Search Key array is Not Null then Compare to the Term List Items in Each Content Item 
-                    if (keys) {
+                    // If Search Key array has at least one valid value then Compare to the Each Content Item in term
+                    if (keys[0]) {
                         $('.term').filter(function(i,e) {
                             var value = $(this).text();
                             // default state is hidden for all items
