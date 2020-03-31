@@ -64,14 +64,21 @@ $(function () {
             $(function() {
                 // When the Radio Button Selector for Academic Terms Changes - Execute change function 
                 $('#SelectBox-ByTerm').change(function () {
-                    let key;
-                    let radioButtons = document.getElementsByName("SelectBox-ByTerm");
-                    for (let i = 0; i < radioButtons.length; i++) {
-                        if (radioButtons[i].checked == true) {
-                            // Assign Search Key
-                            key = radioButtons[i].value;
-                        }
-                    }
+                    let key = [];
+                    $(':checkbox:checked').map(function (i,e) {
+                        return $(e).val();
+                    }).get();
+                    // $(':checkbox:checked').each(function (i) {
+                    //     key[i] = $(this).val();
+                    // });
+                    // let key;
+                    // let radioButtons = document.getElementsByName("SelectBox-ByTerm");
+                    // for (let i = 0; i < radioButtons.length; i++) {
+                    //     if (radioButtons[i].checked == true) {
+                    //         // Assign Search Key
+                    //         key = radioButtons[i].value;
+                    //     }
+                    // }
                     // If Search Key is Not Null then Compare to the Term List Items in Each Content Item 
                     if (key) {
                         $('.term').filter(function(i,e) {
