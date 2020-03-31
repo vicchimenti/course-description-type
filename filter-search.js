@@ -62,31 +62,28 @@ $(function () {
 
             //   ***   Term Filter   ***   //
             $(function() {
-                // When the Radio Button Selector for Academic Terms Changes - Execute change function 
+                // When the Multi-Select Checkbox Selector for Academic Terms Changes - Execute change function 
                 $('#SelectBox-ByTerm').change(function () {
+                    // store an array of keys for each check box selected
                     let keys = [];
                     $(':checkbox:checked').each(function(item) {
                         keys[item] = $(this).val();
                     });
-                    // $(':checkbox:checked').map(function (i,e) {
-                    //     return $(e).val();
-                    // }).get();
                     // If Search Key is Not Null then Compare to the Term List Items in Each Content Item 
                     if (keys) {
-                        console.log("keys length: " + keys.length);
                         $('.term').filter(function(i,e) {
-                            // default to hide all
                             var value = $(this).text();
+                            // default state is hidden for all items
                             $(this).parents('.courseItemWrapper').addClass('hideByTerm');
                             // Check to see if the Key and Value are a Match
                             for (let index = 0; index < keys.length; index++) {
                                 if (value.match(keys[index])) {
-                                    // unhide when match is confirmed
+                                    // make each item visible when we validate a match
                                     $(this).parents('.courseItemWrapper').removeClass('hideByTerm');
                                 }
                             }
                         });
-                    // Else the Search Key is Null so Reset all Content Items to Visible 
+                    // Else the Search Key is Null so Reset all Content Items to Visible
                     } else {
                         $('.courseItemWrapper').removeClass('hideByTerm');
                     }
