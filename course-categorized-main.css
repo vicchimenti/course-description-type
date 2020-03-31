@@ -145,12 +145,11 @@ span.courseType {
     font-weight: 550;
 }
 
-
 #zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent div.courseSummaryWrapper p.courseSummary {
     min-height: 230px;
 }
 
-#zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent div.card div.card-body div.courseDetails{
+#zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent div.card div.card-body div.courseDetails {
     color: black;
     display: block;
     font-size: 1.5rem;
