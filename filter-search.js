@@ -69,16 +69,16 @@ $(function () {
                     $(':checkbox:checked').each(function(item) {
                         keys[item] = $(this).val();
                     });
-                    // If Search Key is Not Null then Compare to the Term List Items in Each Content Item 
+                    // If Search Key array is Not Null then Compare to the Term List Items in Each Content Item 
                     if (keys) {
                         $('.term').filter(function(i,e) {
                             var value = $(this).text();
                             // default state is hidden for all items
                             $(this).parents('.courseItemWrapper').addClass('hideByTerm');
-                            // Check to see if the Key and Value are a Match
+                            // Check to see if any Key is a match with the current Value
                             for (let index = 0; index < keys.length; index++) {
                                 if (value.match(keys[index])) {
-                                    // make each item visible when we validate a match
+                                    // make current item visible when we validate a match
                                     $(this).parents('.courseItemWrapper').removeClass('hideByTerm');
                                 }
                             }
