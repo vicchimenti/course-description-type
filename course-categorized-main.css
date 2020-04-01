@@ -341,6 +341,14 @@ span.courseType {
     text-decoration: none;
 }
 
+#zoneA.col-sm-8 .standardContent .btn:default .fas {
+    text-decoration: none;
+}
+
+
+
+
+
 
 @media (max-width:767.999px) {
 
