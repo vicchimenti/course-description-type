@@ -92,6 +92,10 @@ span.courseType {
     text-decoration: none;
 }
 
+#zoneA.col-md-9 .standardContent .btn:default .fas {
+    text-decoration: none;
+}
+
 #zoneA.col-md-9 .standardContent .btn:hover span.courseTitle {
     text-decoration: underline;
 }
@@ -217,6 +221,18 @@ span.courseType {
     padding-right: 5px;
 }
 
+#zoneA.col-xs-12 .standardContent .btn .fa-plus {
+    display: none;
+}
+
+#zoneA.col-xs-12 .standardContent .btn[aria-expanded="false"] .fa-plus {
+    display: initial;
+}
+
+#zoneA.col-xs-12 .standardContent .btn[aria-expanded="false"] .fa-minus {
+    display: none;
+}
+
 #zoneA.col-xs-12 .standardContent .btn:hover .fas {
     text-decoration: none;
 }
@@ -229,16 +245,8 @@ span.courseType {
     text-decoration: none;
 }
 
-#zoneA.col-xs-12 .standardContent .btn .fa-plus {
-    display: none;
-}
-
-#zoneA.col-xs-12 .standardContent .btn[aria-expanded="false"] .fa-plus {
-    display: initial;
-}
-
-#zoneA.col-xs-12 .standardContent .btn[aria-expanded="false"] .fa-minus {
-    display: none;
+#zoneA.col-xs-12 .standardContent .btn:default .fas {
+    text-decoration: none;
 }
 
 #zoneA.col-xs-12 .standardContent .btn:hover span.courseTitle {
