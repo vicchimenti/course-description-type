@@ -200,7 +200,7 @@ span.courseType {
 
 
 
-
+/**  xs default and targeted selectors  **/
 
 #zoneA.col-xs-12 .standardContent .btn {
     color: #aa0000;
@@ -282,6 +282,8 @@ span.courseType {
 
 
 
+/**  sm default and targeted selectors  **/
+
 #zoneA.col-sm-8 .standardContent .btn {
     color: #aa0000;
     display: inline-block;
@@ -351,7 +353,7 @@ span.courseType {
 
 
 
-
+/**  media queries  **/
 
 @media (max-width:767.999px) {
 
@@ -413,6 +415,8 @@ span.courseType {
 
 
 
+
+/**  filter-search hidden classes  **/
 
 .hideByText, .hideByType, .hideByTerm, .hideByModule, .hideBySection, .hideByNumber, .hideResultsMessage {
     display: none;
