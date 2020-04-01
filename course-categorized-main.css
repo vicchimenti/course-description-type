@@ -1,3 +1,5 @@
+/**  md to large default selectors  **/
+
 span {
     color: black;
     font-family: sans-serif;
@@ -109,6 +111,7 @@ span.courseType {
 
 
 
+/**  md to large targeted selectors  **/
 
 #zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent h2.organizerTitle {
     font-family: sans-serif;
