@@ -413,6 +413,113 @@ span.courseType {
 }
 
 
+@media (orientation:landscape) {
+
+    #zoneA.col-xs-12 .standardContent .btn {
+        color: #aa0000;
+        display: inline-block;
+        font-size: 1.8rem;
+        font-weight: 700;
+        line-height: 20px;
+        min-height: 60px;
+        padding: 20px 20px 0 10px;
+        text-align: left;
+        text-decoration: none;
+        margin-bottom: 0;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn span.courseTitleWrapper {
+        padding-bottom: 5px;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn .fas {
+        padding-right: 5px;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn .fa-plus {
+        display: none;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn[aria-expanded="false"] .fa-plus {
+        display: initial;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn[aria-expanded="false"] .fa-minus {
+        display: none;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn:hover .fas {
+        text-decoration: none;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn:active .fas {
+        text-decoration: none;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn:visited .fas {
+        text-decoration: none;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn:default .fas {
+        text-decoration: none;
+    }
+}
+
+
+
+@media (orientation:portrait) {
+
+    #zoneA.col-xs-12 .standardContent .btn {
+        color: #aa0000;
+        display: inline-block;
+        font-size: 1.8rem;
+        font-weight: 700;
+        line-height: 20px;
+        min-height: 60px;
+        padding: 20px 20px 0 10px;
+        text-align: left;
+        text-decoration: none;
+        margin-bottom: 0;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn span.courseTitleWrapper {
+        padding-bottom: 5px;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn .fas {
+        padding-right: 5px;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn .fa-plus {
+        display: none;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn[aria-expanded="false"] .fa-plus {
+        display: initial;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn[aria-expanded="false"] .fa-minus {
+        display: none;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn:hover .fas {
+        text-decoration: none;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn:active .fas {
+        text-decoration: none;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn:visited .fas {
+        text-decoration: none;
+    }
+
+    #zoneA.col-xs-12 .standardContent .btn:default .fas {
+        text-decoration: none;
+    }
+}
+
+
 
 
 
