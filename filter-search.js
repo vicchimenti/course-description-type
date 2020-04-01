@@ -29,6 +29,9 @@ $(function () {
             var parseItems = {};
 
 
+
+            
+            //   ***   Process and Parse Visible Items   ***   //
             $(function () {
                 let parseItemsToDisplay = function() {
                     // assign array of currently visible content items
@@ -63,18 +66,6 @@ $(function () {
                     });
                     //** parse out unselected content items and limit display to user selected items **/
                     parseItems.process();
-                    // $(function parseItems() {
-                    //     // assign array of currently visible content items
-                    //     visibleItems = $('.courseItemWrapper').not('.hideByText, .hideByType, .hideByTerm, .hideByModule, .hideByCommon, .hideByFaculty');
-                    //     // check to see if array is empty
-                    //     if (visibleItems.length == 0) {
-                    //         // when array is empty show the results message
-                    //         $('.noResultsToShow').removeClass('hideResultsMessage');
-                    //     } else {
-                    //         // when array has content items suppress the results message
-                    //         $('.noResultsToShow').addClass('hideResultsMessage');
-                    //     }
-                    // });
                 });
             });
 
@@ -110,19 +101,6 @@ $(function () {
                     }
                     // parse out unselected content items and limit display to user selected items
                     parseItems.process();
-
-                    // $(function parseItems() {
-                    //     // assign array of currently visible content items
-                    //     visibleItems = $('.courseItemWrapper').not('.hideByText, .hideByType, .hideByTerm, .hideByModule, .hideByCommon, .hideByFaculty');
-                    //     // check to see if array is empty
-                    //     if (visibleItems.length == 0) {
-                    //         // when array is empty show the results message
-                    //         $('.noResultsToShow').removeClass('hideResultsMessage');
-                    //     } else {
-                    //         // when array has content items suppress the results message
-                    //         $('.noResultsToShow').addClass('hideResultsMessage');
-                    //     }
-                    // });
                 });
             });
 
@@ -158,19 +136,6 @@ $(function () {
                     }
                     //** parse out unselected content items and limit display to user selected items **/
                     parseItems.process();
-
-                    // $(function parseItems() {
-                    //     // assign array of currently visible content items
-                    //     visibleItems = $('.courseItemWrapper').not('.hideByText, .hideByType, .hideByTerm, .hideByModule, .hideByCommon, .hideByFaculty');
-                    //     // check to see if array is empty
-                    //     if (visibleItems.length == 0) {
-                    //         // when array is empty show the results message
-                    //         $('.noResultsToShow').removeClass('hideResultsMessage');
-                    //     } else {
-                    //         // when array has content items suppress the results message
-                    //         $('.noResultsToShow').addClass('hideResultsMessage');
-                    //     }
-                    // });
                 });
             });
 
@@ -200,19 +165,6 @@ $(function () {
                     }
                     //** parse out unselected content items and limit display to user selected items **/
                     parseItems.process();
-
-                    // $(function parseItems() {
-                    //     // assign array of currently visible content items
-                    //     visibleItems = $('.courseItemWrapper').not('.hideByText, .hideByType, .hideByTerm, .hideByModule, .hideByCommon, .hideByFaculty');
-                    //     // check to see if array is empty
-                    //     if (visibleItems.length == 0) {
-                    //         // when array is empty show the results message
-                    //         $('.noResultsToShow').removeClass('hideResultsMessage');
-                    //     } else {
-                    //         // when array has content items suppress the results message
-                    //         $('.noResultsToShow').addClass('hideResultsMessage');
-                    //     }
-                    // });
                 });
             });
 
@@ -242,19 +194,6 @@ $(function () {
                     }
                     //** parse out unselected content items and limit display to user selected items **/
                     parseItems.process();
-
-                    // $(function parseItems() {
-                    //     // assign array of currently visible content items
-                    //     visibleItems = $('.courseItemWrapper').not('.hideByText, .hideByType, .hideByTerm, .hideByModule, .hideByCommon, .hideByFaculty');
-                    //     // check to see if array is empty
-                    //     if (visibleItems.length == 0) {
-                    //         // when array is empty show the results message
-                    //         $('.noResultsToShow').removeClass('hideResultsMessage');
-                    //     } else {
-                    //         // when array has content items suppress the results message
-                    //         $('.noResultsToShow').addClass('hideResultsMessage');
-                    //     }
-                    // });
                 });
             });
 
@@ -284,19 +223,6 @@ $(function () {
                     }
                     //** parse out unselected content items and limit display to user selected items **/
                     parseItems.process();
-
-                    // $(function parseItems() {
-                    //     // assign array of currently visible content items
-                    //     visibleItems = $('.courseItemWrapper').not('.hideByText, .hideByType, .hideByTerm, .hideByModule, .hideByCommon, .hideByFaculty');
-                    //     // check to see if array is empty
-                    //     if (visibleItems.length == 0) {
-                    //         // when array is empty show the results message
-                    //         $('.noResultsToShow').removeClass('hideResultsMessage');
-                    //     } else {
-                    //         // when array has content items suppress the results message
-                    //         $('.noResultsToShow').addClass('hideResultsMessage');
-                    //     }
-                    // });
                 });
             });
         }, 10);
