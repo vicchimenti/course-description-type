@@ -57,18 +57,21 @@ try {
 
   /* -- Write the open viewable summary header -- */
   document.write('<div class="col-xs-12 courseSummaryWrapper">');
-  document.write('<div class="row col-xs-12 courseDetails courseTypes"><h4>Course Type: </h4><span class="courseType">' + courseType + '</span></div>');
+  document.write('<div class="row col-xs-12 courseDetails courseTypes"><h4>Course Type: </h4><span class="courseType">' + courseNumber + " " + courseType + '</span></div>');
+
+
   document.write('<div class="row col-xs-12 courseSummaryHeader">');
-  document.write('<div class="col-xs-12 col-sm-4 courseDetails courseNumbers"><h5>Course Number: </h5><span class="courseNumber">' + courseNumber + '</span></div>');
-  document.write('<div class="col-xs-12 col-sm-4 courseDetails courseSections"><h5>Section: </h5><span class="courseSection">' + courseSection + '</span></div>');
-  document.write('<div class="col-xs-12 col-sm-4 courseDetails ucorModules"><h5>Module: </h5><span class="ucorModule">' + ucorModule + '</span></div></div>');  // Closes courseSummaryHeader row div 
+  // document.write('<div class="col-xs-12 col-sm-4 courseDetails courseNumbers"><h5>Course Number: </h5><span class="courseNumber">' + courseNumber + '</span></div>');
+  // document.write('<div class="col-xs-12 col-sm-4 courseDetails courseSections"><h5>Section: </h5><span class="courseSection">' + courseSection + '</span></div>');
+  // document.write('<div class="row col-xs-12 courseSummaryHeader2">');
+  document.write('<div class="col-xs-12 col-sm-3 courseDetails instructors"><h5>Faculty: </h5><span class="faculty">' + faculty + '</span></div>');
+  document.write('<div class="col-xs-12 col-sm-3 courseDetails terms"><h5>Term: </h5><span class="term">' + term + '</span></div>');
+  document.write('<div class="col-xs-12 col-sm-3 courseDetails years"><h5>Year: </h5><span class="year">' + year + '</span></div>');
+  document.write('<div class="col-xs-12 col-sm-3 courseDetails ucorModules"><h5>Module: </h5><span class="ucorModule">' + ucorModule + '</span></div></div>');  // Closes courseSummaryHeader row div 
+
   document.write('<div class="row col-xs-12 courseSummaryHeader2">');
-  document.write('<div class="col-xs-12 col-sm-4 courseDetails terms"><h5>Term: </h5><span class="term">' + term + '</span></div>');
-  document.write('<div class="col-xs-12 col-sm-4 courseDetails years"><h5>Year: </h5><span class="year">' + year + '</span></div>');
-  document.write('<div class="col-xs-12 col-sm-4 courseDetails instructors"><h5>Faculty: </h5><span class="faculty">' + faculty + '</span></div></div>');
-  document.write('<div class="row col-xs-12 courseSummaryHeader3">');
   document.write('<div class="col-xs-12 properCourseName"><h5>Course Title: </h5><span class="properCourseName">' + properCourseName + " " + courseTitle + '</span></div>');
-  document.write('</div></div></div>'); // close courseSummaryWrapper, courseSummaryHeader3 and card header divs
+  document.write('</div></div></div>'); // close courseSummaryWrapper, courseSummaryHeader2 and card header divs
 
 
   /* -- Write the collapsible body -- */
