@@ -148,7 +148,7 @@ $(function () {
                         moduleKeys[item] = $(this).val();
                     });
                     // If Search Key array has at least one valid value then Compare to the Each Content Item in term
-                    if (moduleKeys[0] != -1) {
+                    if (moduleKeys[0]) {
                         $('.ucorModule').filter(function (i, e) {
                             let moduleValue = $(this).text();
                             // set state to hidden for all items
