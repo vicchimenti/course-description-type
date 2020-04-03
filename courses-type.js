@@ -20,6 +20,7 @@
 try {
   /* -- Initialize function scope variables -- */
   var courseTitle = content.get("Name");
+  var courseName = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Course Name' output='normal' display_field='value' />");
   var commonName = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Common Course Name' output='normal' display_field='value' />");
   var courseNumber = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Course Number' output='normal' display_field='value' />");
   var courseSection = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Section' output='normal' display_field='value' />");
@@ -53,11 +54,11 @@ try {
   document.write('<div class="card">'); // closed individually in *** write closing tags *** found near bottom of file currently line 142
   document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, cardHeader));
   document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, buttonLink));
-  document.write('<span class="courseTitleWrapper"><i class="fas fa-minus"></i><i class="fas fa-plus"></i><span class="courseTitle">' + commonName + '</span></span></button>');  // close buttonLink tag here
+  document.write('<span class="courseTitleWrapper"><i class="fas fa-minus"></i><i class="fas fa-plus"></i><span class="courseTitle">' + properCourseName + " " + courseTitle + '</span></span></button>');  // close buttonLink tag here
 
   /* -- Write the open viewable summary header -- */
   document.write('<div class="col-xs-12 courseSummaryWrapper">');
-  document.write('<div class="row col-xs-12 courseDetails courseTypes"><h4>Course Type: </h4><span class="courseType">' + courseNumber + " " + courseType + '</span></div>');
+  document.write('<div class="row col-xs-12 courseDetails courseTypes"><h4>Course Type: </h4><span class="courseType">' + courseName + '</span></div>');
 
 
   document.write('<div class="row col-xs-12 courseSummaryHeader">');
@@ -69,9 +70,11 @@ try {
   document.write('<div class="col-xs-12 col-sm-3 courseDetails years"><h5>Year: </h5><span class="year">' + year + '</span></div>');
   document.write('<div class="col-xs-12 col-sm-3 courseDetails ucorModules"><h5>Module: </h5><span class="ucorModule">' + ucorModule + '</span></div></div>');  // Closes courseSummaryHeader row div 
 
-  document.write('<div class="row col-xs-12 courseSummaryHeader2">');
-  document.write('<div class="col-xs-12 properCourseName"><h5>Course Title: </h5><span class="properCourseName">' + properCourseName + " " + courseTitle + '</span></div>');
-  document.write('</div></div></div>'); // close courseSummaryWrapper, courseSummaryHeader2 and card header divs
+  // document.write('<div class="row col-xs-12 courseSummaryHeader2">');
+  // document.write('<div class="col-xs-12 properCourseName"><h5>Course Title: </h5><span class="properCourseName">' + properCourseName + " " + courseTitle + '</span></div>');
+  // document.write('</div></div></div>'); // close courseSummaryWrapper, courseSummaryHeader2 and card header divs
+  document.write('</div></div>'); // close courseSummaryWrapper, and card header divs
+
 
 
   /* -- Write the collapsible body -- */
