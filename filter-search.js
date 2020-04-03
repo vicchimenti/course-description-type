@@ -72,76 +72,6 @@ $(function () {
 
 
 
-            //   ***   Term Filter   ***   //
-            $(function() {
-                // When the Multi-Select Checkbox Selector for Academic Terms Changes - Execute change function 
-                $('#SelectBox-ByTerm').change(function () {
-                    // initialize an array of keys to hold each check box selected
-                    let keys = [];
-                    $(':checkbox:checked').each(function(item) {
-                        keys[item] = $(this).val();
-                    });
-                    // If Search Key array has at least one valid value then Compare to the Each Content Item in term
-                    if (keys[0]) {
-                        $('.term').filter(function(i,e) {
-                            var value = $(this).text();
-                            // default state is hidden for all items
-                            $(this).parents('.courseItemWrapper').addClass('hideByTerm');
-                            // Check to see if any Key is a match with the current Value
-                            for (let index = 0; index < keys.length; index++) {
-                                if (value.match(keys[index])) {
-                                    // make current item visible when we validate a match
-                                    $(this).parents('.courseItemWrapper').removeClass('hideByTerm');
-                                }
-                            }
-                        });
-                    // Else the Search Key is Null so Reset all Content Items to Visible
-                    } else {
-                        $('.courseItemWrapper').removeClass('hideByTerm');
-                    }
-                    // parse out unselected content items and limit display to user selected items
-                    parseItems.process();
-                });
-            });
-
-
-
-
-            //   ***   Module Filter   ***   //
-            $(function () {
-                // When the Dropdown Menu Selector Academic Terms Change - Execute change function
-                $('#SelectBox-ByModule').change(function () {
-                    let key;
-                    let radioButtons = document.getElementsByName("SelectBox-ByModule");
-                    for (let i = 0; i < radioButtons.length; i++) {
-                        if (radioButtons[i].checked == true) {
-                            // Assign Search Key
-                            key = radioButtons[i].value;
-                        }
-                    }
-                    // If Search Key is Not Null then Compare to the Term List Items in Each Content Item
-                    if (key) {
-                        $('.ucorModule').filter(function (i, e) {
-                            var value = $(this).text();
-                            // Check to see if the Key and Value are an exactly equal
-                            if (key === value) {
-                                $(this).parents('.courseItemWrapper').removeClass('hideByModule');
-                            } else {
-                                $(this).parents('.courseItemWrapper').addClass('hideByModule');
-                            }
-                        });
-                        // Else the Search Key is Null so Reset all Content Items to Visible
-                    } else {
-                        $('.courseItemWrapper').removeClass('hideByModule');
-                    }
-                    //** parse out unselected content items and limit display to user selected items **/
-                    parseItems.process();
-                });
-            });
-
-
-
-
             //   ***   Type Filter   ***   //
             $(function() {
                 // When the Dropdown Menu Selector Course Types Change - Execute change function
@@ -168,6 +98,95 @@ $(function () {
                 });
             });
 
+
+
+
+            //   ***   Term Filter   ***   //
+            $(function() {
+                // When the Multi-Select Checkbox Selector for Academic Terms Changes - Execute change function 
+                $('#SelectBox-ByTerm').change(function () {
+                    // initialize an array of keys to hold each check box selected
+                    let keys = [];
+                    $(':checkbox:checked').each(function(item) {
+                        keys[item] = $(this).val();
+                    });
+                    // If Search Key array has at least one valid value then Compare to the Each Content Item in term
+                    if (keys[0]) {
+                        $('.term').filter(function(i,e) {
+                            var value = $(this).text();
+                            // set state to hidden for all items
+                            $(this).parents('.courseItemWrapper').addClass('hideByTerm');
+                            // Check to see if any Key is a match with the current Value
+                            for (let index = 0; index < keys.length; index++) {
+                                if (value.match(keys[index])) {
+                                    // make current item visible when we validate a match
+                                    $(this).parents('.courseItemWrapper').removeClass('hideByTerm');
+                                }
+                            }
+                        });
+                    // Else the Search Key is Null so Reset all Content Items to Visible
+                    } else {
+                        $('.courseItemWrapper').removeClass('hideByTerm');
+                    }
+                    // parse out unselected content items and limit display to user selected items
+                    parseItems.process();
+                });
+            });
+
+
+
+
+            //   ***   Module Filter   ***   //
+            $(function () {
+                // When the Dropdown Menu Selector Academic Terms Change - Execute change function
+                $('#SelectBox-ByModule').change(function () {
+                    // initialize an array of keys to hold each check box selected
+                    let keys = [];
+                    $(':checkbox:checked').each(function(item) {
+                        keys[item] = $(this).val();
+                    });
+                    // If Search Key array has at least one valid value then Compare to the Each Content Item in term
+                    if (keys[0]) {
+                        $('.ucorModule').filter(function (i, e) {
+                            var value = $(this).text();
+                            // set state to hidden for all items
+                            $(this).parents('.courseItemWrapper').addClass('hideByModule');
+                            // Check to see if the Key and Value are exactly equal
+                            for (let index = 0; index < keys.length; index++) {
+                                if (value.match(keys[index])) {
+                                    // make current item visible when we validate a match
+                                    $(this).parents('.courseItemWrapper').removeClass('hideByModule');
+                                }
+                            }
+                        });
+                        // Else the Search Key is Null so Reset all Content Items to Visible
+                    } else {
+                        $('.courseItemWrapper').removeClass('hideByModule');
+                    }
+                    //** parse out unselected content items and limit display to user selected items **/
+                    parseItems.process();
+                });
+            });
+
+
+
+                                // let key;
+                    // let radioButtons = document.getElementsByName("SelectBox-ByModule");
+                    // for (let i = 0; i < radioButtons.length; i++) {
+                    //     if (radioButtons[i].checked == true) {
+                    //         // Assign Search Key
+                    //         key = radioButtons[i].value;
+                    //     }
+                    // }
+                    // If Search Key is Not Null then Compare to the Term List Items in Each Content Item
+                    // if (key) {
+
+
+                            // if (key === value) {
+                            //     $(this).parents('.courseItemWrapper').removeClass('hideByModule');
+                            // } else {
+                            //     $(this).parents('.courseItemWrapper').addClass('hideByModule');
+                            // }
 
 
             
