@@ -143,13 +143,14 @@ $(function () {
                 // When the Dropdown Menu Selector Academic Terms Change - Execute change function
                 $('#SelectBox-ByModule').change(function () {
                     // initialize an array of keys to hold each check box selected
-                    let moduleKeys = [];
+                    // let moduleKeys = [];
                     // keys[0] = -1;
-                    $('#SelectBox-ByModule:checkbox:checked').each(function(item) {
-                        moduleKeys[item] = $(this).val();
-                    });
+                    let moduleKeys = $('input[name=SelectBox-ByModule]:checked');
+                    // $('#SelectBox-ByModule:checkbox:checked').each(function(item) {
+                    //     moduleKeys[item] = $(this).val();
+                    // });
                     // If Search Key array has at least one valid value then Compare to the Each Content Item in term
-                    if (moduleKeys[0]) {
+                    if (moduleKeys) {
                         $('.ucorModule').filter(function (i, e) {
                             let moduleValue = $(this).text();
                             // set state to hidden for all items
