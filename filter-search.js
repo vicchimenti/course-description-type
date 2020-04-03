@@ -56,12 +56,12 @@ $(function () {
                 // scan the keyword each character the user inputs
                 $('#id_search').on('keyup', function () {
                     // Assign Search Key
-                    let key = $(this).val().toLowerCase();
+                    let keyword = $(this).val().toLowerCase();
                     // filter the education abroad items for the input key
                     $(function () {
                         $('.courseItemWrapper').filter(function () {
                             // when the search key is not present in the item then hide the item
-                            $(this).toggleClass('hideByText', !($(this).text().toLowerCase().indexOf(key) > -1));
+                            $(this).toggleClass('hideByText', !($(this).text().toLowerCase().indexOf(keyword) > -1));
                         });
                     });
                     //** parse out unselected content items and limit display to user selected items **/
@@ -77,13 +77,13 @@ $(function () {
                 // When the Dropdown Menu Selector Course Types Change - Execute change function
                 $('#SelectBox-ByType').change(function () {
                     // Assign Search Key
-                    let key = $(this).val();
+                    let typeKey = $(this).val();
                     // If Search Key is Not Null then Compare to the Type List Items in Each Content Item
-                    if (key) {
+                    if (typeKey) {
                         $('.courseType').filter(function(i,e) {
-                            var value = $(this).text();
+                            var typeValue = $(this).text();
                             // Check to see if the Key and Value are a Match
-                            if (value.match(key)) {
+                            if (typeValue.match(typeKey)) {
                                 $(this).parents('.courseItemWrapper').removeClass('hideByType');
                             } else {
                                 $(this).parents('.courseItemWrapper').addClass('hideByType');
@@ -106,19 +106,20 @@ $(function () {
                 // When the Multi-Select Checkbox Selector for Academic Terms Changes - Execute change function 
                 $('#SelectBox-ByTerm').change(function () {
                     // initialize an array of keys to hold each check box selected
-                    let keys = [];
+                    let termKeys = [];
+                    // keys[0] = -1;
                     $(':checkbox:checked').each(function(item) {
-                        keys[item] = $(this).val();
+                        termKeys[item] = $(this).val();
                     });
                     // If Search Key array has at least one valid value then Compare to the Each Content Item in term
-                    if (keys[0]) {
+                    if (termKeys[0]) {
                         $('.term').filter(function(i,e) {
-                            var value = $(this).text();
+                            var termValue = $(this).text();
                             // set state to hidden for all items
                             $(this).parents('.courseItemWrapper').addClass('hideByTerm');
                             // Check to see if any Key is a match with the current Value
-                            for (let index = 0; index < keys.length; index++) {
-                                if (value.match(keys[index])) {
+                            for (let index = 0; index < termKeys.length; index++) {
+                                if (termValue.match(termKeys[index])) {
                                     // make current item visible when we validate a match
                                     $(this).parents('.courseItemWrapper').removeClass('hideByTerm');
                                 }
@@ -141,19 +142,20 @@ $(function () {
                 // When the Dropdown Menu Selector Academic Terms Change - Execute change function
                 $('#SelectBox-ByModule').change(function () {
                     // initialize an array of keys to hold each check box selected
-                    let keys = [];
+                    let moduleKeys = [];
+                    // keys[0] = -1;
                     $(':checkbox:checked').each(function(item) {
-                        keys[item] = $(this).val();
+                        moduleKeys[item] = $(this).val();
                     });
                     // If Search Key array has at least one valid value then Compare to the Each Content Item in term
-                    if (keys[0]) {
+                    if (moduleKeys[0] != -1) {
                         $('.ucorModule').filter(function (i, e) {
-                            var value = $(this).text();
+                            let moduleValue = $(this).text();
                             // set state to hidden for all items
                             $(this).parents('.courseItemWrapper').addClass('hideByModule');
                             // Check to see if the Key and Value are exactly equal
-                            for (let index = 0; index < keys.length; index++) {
-                                if (value === keys[index]) {
+                            for (let index = 0; index < moduleKeys.length; index++) {
+                                if (moduleValue === moduleKeys[index]) {
                                     // make current item visible when we validate a match
                                     $(this).parents('.courseItemWrapper').removeClass('hideByModule');
                                 }
