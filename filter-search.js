@@ -64,7 +64,7 @@ $(function () {
                             $(this).toggleClass('hideByText', !($(this).text().toLowerCase().indexOf(keyword) > -1));
                         });
                     });
-                    //** parse out unselected content items and limit display to user selected items **/
+                    // parse out unselected content items and limit display to user selected items
                     parseItems.process();
                 });
             });
@@ -93,7 +93,7 @@ $(function () {
                     } else {
                         $('.courseItemWrapper').removeClass('hideByType');
                     }
-                    // ** parse out unselected content items and limit display to user selected items ** //
+                    // parse out unselected content items and limit display to user selected items
                     parseItems.process();
                 });
             });
@@ -108,18 +108,13 @@ $(function () {
                     // initialize an array of keys to hold each check box selected
                     let termKeys = [];
                     termKeys[0] = -1;
-                    // keys[0] = -1;
-                    // let termKeys = $('input[name=SelectBox-ByTerm]:checked');
-                    // $('#SelectBox-ByTerm:checkbox:checked')
                     $('input[name=SelectBox-ByTerm]:checked').each(function(item) {
                         termKeys[item] = $(this).val();
-                        console.log("termKeys: " + termKeys[item]);
                     });
                     // If Search Key array has at least one valid value then Compare to the Each Content Item in term
                     if (termKeys[0] != -1) {
                         $('.term').filter(function(i,e) {
                             let termValue = $(this).text();
-                            console.log("termValue: " + termValue);
                             // set state to hidden for all items
                             $(this).parents('.courseItemWrapper').addClass('hideByTerm');
                             // Check to see if any Key is a match with the current Value
@@ -149,19 +144,13 @@ $(function () {
                     // initialize an array of keys to hold each check box selected
                     let moduleKeys = [];
                     moduleKeys[0] = -1;
-                    // keys[0] = -1;
-                    // let moduleKeys = $('input[name=SelectBox-ByModule]:checked');
-                    // $('#SelectBox-ByModule:checkbox:checked')
-
                     $('input[name=SelectBox-ByModule]:checked').each(function(item) {
                         moduleKeys[item] = $(this).val();
-                        console.log("termKeys: " + moduleKeys[item]);
                     });
                     // If Search Key array has at least one valid value then Compare to the Each Content Item in term
                     if (moduleKeys[0] != -1) {
                         $('.ucorModule').filter(function (i, e) {
                             let moduleValue = $(this).text();
-                            console.log("moduleValue: " + moduleValue);
                             // set state to hidden for all items
                             $(this).parents('.courseItemWrapper').addClass('hideByModule');
                             // Check to see if the Key and Value are exactly equal
@@ -172,11 +161,11 @@ $(function () {
                                 }
                             }
                         });
-                        // Else the Search Key is Null so Reset all Content Items to Visible
+                    // Else the Search Key is Null so Reset all Content Items to Visible
                     } else {
                         $('.courseItemWrapper').removeClass('hideByModule');
                     }
-                    //** parse out unselected content items and limit display to user selected items **/
+                    // parse out unselected content items and limit display to user selected items
                     parseItems.process();
                 });
             });
