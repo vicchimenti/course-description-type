@@ -24,7 +24,7 @@ $(function () {
 
 
 
-            //** global array holds list of content items that will render after filter selction **//
+            //** global array holds list of content items that will render after filter selection **//
             var visibleItems = [];
             var parseItems = {};
 
@@ -153,7 +153,7 @@ $(function () {
                             $(this).parents('.courseItemWrapper').addClass('hideByModule');
                             // Check to see if the Key and Value are exactly equal
                             for (let index = 0; index < keys.length; index++) {
-                                if (value.match(keys[index])) {
+                                if (value === keys[index]) {
                                     // make current item visible when we validate a match
                                     $(this).parents('.courseItemWrapper').removeClass('hideByModule');
                                 }
