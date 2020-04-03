@@ -106,15 +106,16 @@ $(function () {
                 // When the Multi-Select Checkbox Selector for Academic Terms Changes - Execute change function 
                 $('#SelectBox-ByTerm').change(function () {
                     // initialize an array of keys to hold each check box selected
-                    let termKeys = [];
+                    // let termKeys = [];
                     // keys[0] = -1;
-                    $(':checkbox:checked').each(function(item) {
-                        termKeys[item] = $(this).val();
-                    });
+                    let termKeys = $('input[name=SelectBox-ByTerm]:checked');
+                    // $('#SelectBox-ByTerm:checkbox:checked').each(function(item) {
+                    //     termKeys[item] = $(this).val();
+                    // });
                     // If Search Key array has at least one valid value then Compare to the Each Content Item in term
-                    if (termKeys[0]) {
+                    if (termKeys) {
                         $('.term').filter(function(i,e) {
-                            var termValue = $(this).text();
+                            let termValue = $(this).text();
                             // set state to hidden for all items
                             $(this).parents('.courseItemWrapper').addClass('hideByTerm');
                             // Check to see if any Key is a match with the current Value
@@ -144,7 +145,7 @@ $(function () {
                     // initialize an array of keys to hold each check box selected
                     let moduleKeys = [];
                     // keys[0] = -1;
-                    $(':checkbox:checked').each(function(item) {
+                    $('#SelectBox-ByModule:checkbox:checked').each(function(item) {
                         moduleKeys[item] = $(this).val();
                     });
                     // If Search Key array has at least one valid value then Compare to the Each Content Item in term
