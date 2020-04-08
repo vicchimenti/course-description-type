@@ -124,21 +124,23 @@ try {
   }
 
   /* -- Write Program Level 4 Details --*/
+  // prerequisites re-branded as Comments
   if (prerequisites != "") {
     document.write('<div class="row col-xs-12 levelFour">');
-    document.write('<div class="col-xs-12 courseDetails prerequisites"><h5>Prerequisites</h5><div class="courseInfo">' + prerequisites + '</div></div>');
+    document.write('<div class="col-xs-12 courseDetails prerequisites"><h5>Comments</h5><div class="courseInfo">' + prerequisites + '</div></div>');
     document.write('</div>');
   } else {
-    document.write('<div class="row levelFour courseDetails prerequisites" style="display: none";><h5>No Prerequisites Provided</h5></div>');
+    document.write('<div class="row levelFour courseDetails prerequisites" style="display: none";><h5>No Comments Provided</h5></div>');
   }
 
   /* -- Write Program Level 5 Details --*/
+  // group description re-branded as Common UCOR Course Description
   if (groupDescription != "") {
     document.write('<div class="row col-xs-12 levelFive">');
-    document.write('<div class="col-xs-12 courseDetails groupDescription"><h5>Group Description: </h5><div class="courseInfo">' + groupDescription + '</div></div>');
+    document.write('<div class="col-xs-12 courseDetails groupDescription"><h5>Common UCOR Course Description: </h5><div class="courseInfo">' + groupDescription + '</div></div>');
     document.write('</div>');
   } else {
-    document.write('<div class="row levelFive courseDetails groupDescription" style="display: none";><h5>No Group Description Provided</h5></div>');
+    document.write('<div class="row levelFive courseDetails groupDescription" style="display: none";><h5>No Common UCOR Course Description Provided</h5></div>');
   }
 
   /* -- Write Program Level 6 Details --*/
