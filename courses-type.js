@@ -21,9 +21,6 @@ try {
   /* -- Initialize function scope variables -- */
   var courseTitle = content.get("Name");
   var courseName = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Course Name' output='normal' display_field='value' />");
-  // var commonCourseName = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Common Course Name' output='normal' display_field='value' />");
-  // var courseNumber = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Course Number' output='normal' display_field='value' />");
-  // var courseSection = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Section' output='normal' display_field='value' />");
   var courseType = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Course Type' output='normal' display_field='value' />");
   var term = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Term' output='normal' display_field='value' />");
   var year = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Year' output='normal' display_field='value' />");
@@ -40,8 +37,6 @@ try {
   var courseTitleStr = courseTitle.toString();
   var commonNameArray = courseTitleStr.split(":");
   var commonName = commonNameArray[0];
-  // var properCourseName = courseName + commonName;
-
 
 
 
@@ -65,36 +60,30 @@ try {
   /* -- Write the open viewable summary header -- */
   document.write('<div class="col-xs-12 courseSummaryWrapper">');
   document.write('<div class="row col-xs-12 courseDetails courseTypes"><h4>Course Type: </h4><span class="courseType">' + courseName + '</span></div>');
-  // document.write('<div class="row col-xs-12 courseDetails properCourseName"><h4>Full Course: </h4><span class="properCourseName">' + properCourseName + '</span></div>');
-
-
-
   document.write('<div class="row col-xs-12 courseSummaryHeader">');
-  // document.write('<div class="col-xs-12 col-sm-4 courseDetails courseNumbers"><h5>Course Number: </h5><span class="courseNumber">' + courseNumber + '</span></div>');
-  // document.write('<div class="col-xs-12 col-sm-4 courseDetails courseSections"><h5>Section: </h5><span class="courseSection">' + courseSection + '</span></div>');
-  // document.write('<div class="row col-xs-12 courseSummaryHeader2">');
   document.write('<div class="col-xs-12 col-sm-3 courseDetails instructors"><h5>Faculty: </h5><span class="faculty">' + faculty + '</span></div>');
   document.write('<div class="col-xs-12 col-sm-3 courseDetails terms"><h5>Term: </h5><span class="term">' + term + '</span></div>');
   document.write('<div class="col-xs-12 col-sm-3 courseDetails years"><h5>Year: </h5><span class="year">' + year + '</span></div>');
   document.write('<div class="col-xs-12 col-sm-3 courseDetails ucorModules"><h5>Module: </h5><span class="ucorModule">' + ucorModule + '</span></div></div>');  // Closes courseSummaryHeader row div 
-
-  // document.write('<div class="row col-xs-12 courseSummaryHeader2">');
-  // document.write('<div class="col-xs-12 properCourseName"><h5>Course Title: </h5><span class="properCourseName">' + properCourseName + " " + courseTitle + '</span></div>');
-  // document.write('</div></div></div>'); // close courseSummaryWrapper, courseSummaryHeader2 and card header divs
   document.write('</div></div>'); // close courseSummaryWrapper, and card header divs
 
 
 
-  /* -- Write the collapsible body -- */
+
+
+  /**** * -- Write the collapsible body -- **** */
   document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, collapseDiv));  // closed in *** write closing tags ***
+
 
   /* -- Write Program Cards--*/
   document.write('<div class="card-body">');
   document.write('<div class="container-fluid">');
 
+
   /* -- Write the collapsed summary header -- */
   document.write('<div class="row col-xs-12 fullCourseDescriptionWrapper">');
   document.write('<div class="col-xs-12 courseDetails courseDescriptions"><h5>Course Description: </h5><div class="courseInfo">' + courseDescription + '</div></div></div>'); // close fullCourseDescriptionWrapper div
+
 
   /* -- Write Program Level 1 Details --*/
   if (syllabus != "") {
@@ -105,6 +94,7 @@ try {
     document.write('<div class="row levelOne courseDetails syllabus" style="display: none";><h5>No Syllabus Provided</h5></div>');
   }
 
+
   /* -- Write Program Level 2 Details --*/
   if (assignments != "") {
     document.write('<div class="row col-xs-12 levelTwo">');
@@ -114,6 +104,7 @@ try {
     document.write('<div class="row levelTwo courseDetails assignments" style="display: none";><h5>No Assignments Provided</h5></div>');
   }
 
+
   /* -- Write Program Level 3 Details --*/
   if (textbooks != "") {
     document.write('<div class="row col-xs-12 levelThree">');
@@ -122,6 +113,7 @@ try {
   } else {
     document.write('<div class="row levelThree courseDetails textbooks" style="display: none";><h5>No Textbooks Provided</h5></div>');
   }
+
 
   /* -- Write Program Level 4 Details --*/
   // prerequisites re-branded as Comments
@@ -133,6 +125,7 @@ try {
     document.write('<div class="row levelFour courseDetails prerequisites" style="display: none";><h5>No Comments Provided</h5></div>');
   }
 
+
   /* -- Write Program Level 5 Details --*/
   // group description re-branded as Common UCOR Course Description
   if (groupDescription != "") {
@@ -142,6 +135,7 @@ try {
   } else {
     document.write('<div class="row levelFive courseDetails groupDescription" style="display: none";><h5>No Common UCOR Course Description Provided</h5></div>');
   }
+
 
   /* -- Write Program Level 6 Details --*/
   if (keyWords != "") {
@@ -159,6 +153,9 @@ try {
   document.write('</div>'); // close the card
   document.write(endingHTML);
 
+
+
+  
 /* -- Error Checking -- */
 } catch(err) {
     document.write(err.message);
