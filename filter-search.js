@@ -3,13 +3,13 @@
 *   @author Victor Chimenti, MSCS 2020
 *   @file filter-search.js
 *   @see UCOR, UNIVERSITY CORE CURRICULUM, https://www.seattleu.edu/core/for-students/course-descriptions-20sq/
-*   This URI will change after launch to: https://www.seattleu.edu/core/for-students/core-courses/
+*   This URI will change after launch to: https://www.seattleu.edu/core/for-students/courses/
 *
 *   jQuery
 *   This script searches the categorized courses content items for matches to the
 *   user selected search parameters in the filter field dropdown menus
 *
-*   @version 1.0
+*   @version 2.0
 */
 
 
