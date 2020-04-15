@@ -3,9 +3,7 @@
   *     @file course-type.js
   *
   *     This new content type is being adapted from the education abroad program type
-  *     and is intended to replace the plain text course descriptions shown in the
-  *     following link:
-  *         @see https://www.seattleu.edu/core/for-students/course-descriptions-20sq/
+  *     and is intended to provide a searchable, sortable group of courses for the university core courses.
   *
   *     This content type will work in conjunction with the Organizer and each item
   *     will contain one searchable, categorizable course.
