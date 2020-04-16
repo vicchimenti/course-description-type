@@ -90,7 +90,7 @@ try {
   /* -- Write Program Level 1 Details --*/
   if (syllabus != "") {
     document.write('<div class="row col-xs-12 levelOne">');
-    document.write('<div class="col-xs-12 courseDetails syllabus"><h5>Syllabus</h5><div class="courseInfo">' + syllabus + '</div></div>');
+    document.write('<div class="col-xs-12 courseDetails syllabus"><h5>Syllabus: </h5><div class="courseInfo">' + syllabus + '</div></div>');
     document.write('</div>');
   } else {
     document.write('<div class="row levelOne courseDetails syllabus" style="display: none";><h5>No Syllabus Provided</h5></div>');
@@ -100,7 +100,7 @@ try {
   /* -- Write Program Level 2 Details --*/
   if (assignments != "") {
     document.write('<div class="row col-xs-12 levelTwo">');
-    document.write('<div class="col-xs-12 courseDetails assignments"><h5>Assignments</h5><div class="courseInfo">' + assignments + '</div></div>');
+    document.write('<div class="col-xs-12 courseDetails assignments"><h5>Assignments: </h5><div class="courseInfo">' + assignments + '</div></div>');
     document.write('</div>');
   } else {
     document.write('<div class="row levelTwo courseDetails assignments" style="display: none";><h5>No Assignments Provided</h5></div>');
@@ -110,7 +110,7 @@ try {
   /* -- Write Program Level 3 Details --*/
   if (textbooks != "") {
     document.write('<div class="row col-xs-12 levelThree">');
-    document.write('<div class="col-xs-12 courseDetails textbooks"><h5>Textbooks</h5><div class="courseInfo">' + textbooks + '</div></div>');
+    document.write('<div class="col-xs-12 courseDetails textbooks"><h5>Textbooks: </h5><div class="courseInfo">' + textbooks + '</div></div>');
     document.write('</div>');
   } else {
     document.write('<div class="row levelThree courseDetails textbooks" style="display: none";><h5>No Textbooks Provided</h5></div>');
@@ -121,7 +121,7 @@ try {
   // prerequisites re-branded as Comments
   if (prerequisites != "") {
     document.write('<div class="row col-xs-12 levelFour">');
-    document.write('<div class="col-xs-12 courseDetails prerequisites"><h5>Comments</h5><div class="courseInfo">' + prerequisites + '</div></div>');
+    document.write('<div class="col-xs-12 courseDetails prerequisites"><h5>Comments: </h5><div class="courseInfo">' + prerequisites + '</div></div>');
     document.write('</div>');
   } else {
     document.write('<div class="row levelFour courseDetails prerequisites" style="display: none";><h5>No Comments Provided</h5></div>');
