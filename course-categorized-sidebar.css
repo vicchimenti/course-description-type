@@ -41,21 +41,13 @@
     width: 100%;
 }
 
-/* #courseFilter .input.input-wrap */
 
-div#zoneB.col-md-3 .input {
-    font-size: 1rem;
+div#zoneB.col-sm-4 #filterField label {
+    font-size: 1.35rem;
 }
 
-div#zoneB.col-sm-4 .input {
-    font-size: 1rem;
-}
 
-div#zoneB.col-md-3 .input legend {
-    font-size: 1.5rem;
-}
-
-div#zoneB.col-sm-4 .input legend {
+div#zoneB.col-sm-4 #filterField legend {
     font-size: 1.5rem;
 }
 
